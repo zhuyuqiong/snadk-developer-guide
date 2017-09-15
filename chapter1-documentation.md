@@ -2,7 +2,7 @@
 
 本章描述了关于SNADK Developer Guide的简介。旨在帮助你更好的理解本指南，如果对此不敢兴趣，可以跳过本章节。
 
-## 1.关于
+## 1.1 关于
 
 本指南使用GitBook平台开发，指南最新版可在 [https://zhuyuqiong.gitbooks.io/snadk-developer-guide/content](https://zhuyuqiong.gitbooks.io/snadk-developer-guide/content) 下载阅读。
 
@@ -12,7 +12,7 @@ GitBook是一款基于Markdown语法的开源Book制作平台，关于GitBook相
 
 Copies of this document may be made for your own use and for distribution to others, provided that you do not charge any fee for such copies and further provided that each copy contains this Copyright Notice, whether distributed in print or electronically.
 
-## 2.版本控制
+## 1.2 版本控制
 
 **新功能的开发**和**稳定性的提高**对产品都很重要。SNADK采用如下版本开发模式保障两者。
 
@@ -47,7 +47,7 @@ Copies of this document may be made for your own use and for distribution to oth
 * GA版本有Bug会火速Fix
 * 相对出问题才升级到GA版本（可以跨了多个版本）定期升级平摊风险（类似小步快跑）。经历过周期长的大项目的同学会有这样的经历，三方库版本长时间不升级，结果出了问题不得不升级到新版本（跨了多个版本）风险巨大。
 
-## 3.帮助支持
+## 1.3 帮助支持
 
 当你在使用中发现问题时，可尝试在本指南中查找说明，或在帮助中心中寻找示例。同时我们欢迎各位同学积极反馈问题，推动SNADK不断完善和进步。
 
