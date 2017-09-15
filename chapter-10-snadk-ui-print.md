@@ -1,34 +1,56 @@
 # Chapter 10. SNADK-UI-Print
 
-  a. Xls打印格式（PDF，Excel，HTML）；
+a. Xls打印格式（PDF，Excel，HTML）；
+
+  i. 多页；
 
 
 
-      i. 多页；
 
 
 
-      ii. 套打；
+
+  ii. 套打；
 
 
 
-      iii. 图片；
 
 
 
-      iv. 合并单元格；
+
+  iii. 图片；
 
 
 
-      v. 背景色；
 
 
 
-      vi. 求和；
+
+  iv. 合并单元格；
 
 
 
-      vii. 码名；
+
+
+
+
+  v. 背景色；
+
+
+
+
+
+
+
+  vi. 求和；
+
+
+
+
+
+
+
+  vii. 码名；
 
 
 
