@@ -26,7 +26,7 @@ git clone snsoftadk:snsoft_adk.git
 
 ## 分支
 
-我们使用 master 作为主干版本的开发，使用分支作为维护版本。
+我们使用 `master` 作为主干版本的开发，使用分支作为维护版本。
 
 可以通过？？来查看所有版本的标签。
 
