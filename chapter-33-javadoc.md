@@ -130,11 +130,9 @@ Returns:返回表名："model"
 
 `{@literal}`
 
-@see
+以及以下同类注释一致的标签：
 
-参见对类说明
-
-{@docRoot}
+`@see、{@docRoot}`
 
 ## 参考文档
 
