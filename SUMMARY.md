@@ -2,7 +2,7 @@
 
 * [Introduction](README.md)
 * [Chapter 1. Documentation](chapter-1-documentation.md)
-* [Chapter 2. 开发环境](chapter-2-dev-environment.md)
+* [Chapter 2. Dev Environment](chapter-2-dev-environment.md)
   * [2.1 Eclipse](chapter-2-dev-environment/eclipse.md)
   * [2.2 Project](chapter-2-dev-environment/project.md)
   * [2.3 Runtime](chapter-2-dev-environment/runtime.md)
