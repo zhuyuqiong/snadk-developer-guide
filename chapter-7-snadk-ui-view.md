@@ -38,41 +38,41 @@ c. 展示
 
 i. 界面定义；
 
-
-
-
-
-
-
 ii. XML文件（UI.xsd）；
-
-
-
-
-
-
 
 iii. 注：所有界面的例子；
 
 d. 布局
 
-```
     i. 单个GridTable；
+
+
 
     ii. 单个RecordTable；
 
+
+
     iii. DialogPane+GridTable；
+
+
 
     iv. DialogPane+RecordTable；
 
+
+
     v. 左右布局；
+
+
 
     vi. 上下布局；
 
+
+
     vii. Tab页面；
 
+
+
     viii. ProgressPane；
-```
 
 
 
