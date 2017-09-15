@@ -2,15 +2,24 @@
 
 i. 版本Neon；
 
-```
-   ii. CodeFormat：相关注释，需要遵循javadoc规范；
+ii. CodeFormat：相关注释，需要遵循javadoc规范；
 
-      iii. CodeTemplate；
+  
 
-      iv. SaveActions；
 
-      v. Maven设置；
-```
+iii. CodeTemplate；
+
+  
+
+
+iv. SaveActions；
+
+  
+
+
+v. Maven设置；
+
+
 
 
 
