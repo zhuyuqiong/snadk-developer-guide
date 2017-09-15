@@ -69,7 +69,7 @@ Jenkins系统设置菜单位于：`系统管理-Global Tool Configuraion`
 
 配置说明：
 
-```
+```java
 说明：这个插件可以通过ssh连接其他Linux机器
 官方说明：Publish Over SSH
 安装步骤：
@@ -92,6 +92,8 @@ Timeout (ms)：超时时间（毫秒）默认即可
 Disable exec：禁止运行命令
 Test Configuration：测试连接
 ```
+
+
 
 
 
