@@ -2,15 +2,20 @@
 
 i. Tomcat7+；
 
-  ii. SpringBoot：标准
+ii. SpringBoot：标准
 
+1. boot-ui；
 
+1. boot-server；
 
+iii. 默认规则
 
+1. SN.ConfigPath：指定环境变量，开发环境与单元测试环境可以共用；
 
+1. snconfig目录下的标准文件
 
+      a. System.properties：用于设置启用参数；
 
-      1. boot-ui；
 
 
 
@@ -18,7 +23,6 @@ i. Tomcat7+；
 
 
 
-      2. boot-server；
 
 
 
@@ -26,7 +30,7 @@ i. Tomcat7+；
 
 
 
-  iii. 默认规则
+      b. WorkSpace.xml：必须含有默认的00帐套；
 
 
 
@@ -34,7 +38,6 @@ i. Tomcat7+；
 
 
 
-      1. SN.ConfigPath：指定环境变量，开发环境与单元测试环境可以共用；
 
 
 
@@ -42,15 +45,14 @@ i. Tomcat7+；
 
 
 
-      2. snconfig目录下的标准文件
 
+      c. Spring-Configs.xml：用于配置启动后的Spring-Bean参数；
 
 
 
 
 
 
-          a. System.properties：用于设置启用参数；
 
 
 
@@ -58,15 +60,14 @@ i. Tomcat7+；
 
 
 
-          b. WorkSpace.xml：必须含有默认的00帐套；
 
 
+      d. TimerTask.xml：定时任务定义文件；
 
 
 
 
 
-          c. Spring-Configs.xml：用于配置启动后的Spring-Bean参数；
 
 
 
@@ -74,15 +75,10 @@ i. Tomcat7+；
 
 
 
-          d. TimerTask.xml：定时任务定义文件；
 
 
 
-
-
-
-
-          e. ShardingRule.xml：分表分库规则；
+      e. ShardingRule.xml：分表分库规则；
 
 
 
