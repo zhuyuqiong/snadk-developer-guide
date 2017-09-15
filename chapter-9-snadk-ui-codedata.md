@@ -14,20 +14,17 @@ ii. 推荐标准：码、名两列；
 
 c. 辅助录入
 
-  i. 参见页面：xxx；
+i. 参见页面：xxx；
 
-
-
-
-
-
-
-  ii. ComponentListener.itemAidInputing；
+ii. ComponentListener.itemAidInputing；
 
 d. 动态码表
 
-```
   i. AidInfoService；
+
+
+
+
 
 
 
@@ -35,8 +32,11 @@ d. 动态码表
 
 
 
+
+
+
+
   iii. AidInfoParam；
-```
 
 e. 相关接口：参见类图；
 
