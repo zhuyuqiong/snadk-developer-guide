@@ -14,7 +14,7 @@ ftp/software软件安装包/IDE集成开发环境/Eclipse/eclipse-jee-neon-R-win
 
 或者 [eclipse.org](https://www.eclipse.org/downloads/)
 
-### 2.1.2 CodeFormat
+### CodeFormat
 
 相关注释，需要遵循javadoc规范。
 

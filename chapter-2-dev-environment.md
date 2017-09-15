@@ -19,7 +19,7 @@ SNADK使用[maven](http://maven.apache.org/)作为构建工具，Eclipse作为�
 通过以下地址可以签出SNADK最新源码：
 
 ```
-https://???
+git clone snsoftadk:snsoft_adk.git
 ```
 
 ## 分支
