@@ -16,7 +16,11 @@ ftp/software软件安装包/IDE集成开发环境/Eclipse/eclipse-jee-neon-R-win
 
 ### CodeFormat
 
-代码格式
+代码风格使用标准代码格式，主要约束 类/方法等语句块{}位置、缩进个数以及代码折行方式。
+
+eclipse中参见如下图片位置导入标准格式，其他IDE以此为参照设置，保证整个平台代码风格统一。
+
+![](/assets/code-format.png)
 
 ### CodeTemplate
 
