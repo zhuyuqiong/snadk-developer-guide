@@ -6,6 +6,12 @@
 
 比如，你可以用&lt;a href&gt;&lt;/a&gt;来加入超链接。需要换行时，不是敲入一个回车符，而是写入 &lt;br&gt;。如果要分段，就应该在段前写入 &lt;p&gt;。
 
+
+
+## JavaDoc格式规范
+
+
+
 参考Oracle官方Java编程规范：
 
 [http://www.oracle.com/technetwork/java/codeconvtoc-136057.html](http://www.oracle.com/technetwork/java/codeconvtoc-136057.html)
