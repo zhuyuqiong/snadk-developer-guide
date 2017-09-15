@@ -6,4 +6,5 @@
   * [Eclipse](chapter-2-dev-environment/eclipse.md)
   * [Project](chapter-2-dev-environment/project.md)
   * [Runtime](chapter-2-dev-environment/runtime.md)
+  * [Plugins](chapter-2-dev-environment/plugins.md)
 
