@@ -11,6 +11,7 @@ SNADK使用[maven](http://maven.apache.org/)作为构建工具，Eclipse作为�
 * \*Redis
 * \*Zookeeper
 * \*ActiveMQ
+* \*MongoDB
 
 > 注：\*号标记的为可选安装。
 
@@ -29,6 +30,4 @@ git clone snsoftadk:snsoft_adk.git
 我们使用 `master` 作为主干版本的开发，使用分支作为维护版本。
 
 可以通过？？来查看所有版本的标签。
-
-
 
