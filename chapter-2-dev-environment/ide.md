@@ -1,4 +1,6 @@
-## 2.1 Eclipse
+## 2.1 IDE
+
+eclipse
 
 IDE仍旧使用eclipse作为首选，要求版本为eclipse-neon或以上。
 
