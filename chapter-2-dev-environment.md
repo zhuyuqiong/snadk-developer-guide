@@ -30,3 +30,5 @@ git clone snsoftadk:snsoft_adk.git
 
 可以通过？？来查看所有版本的标签。
 
+
+
