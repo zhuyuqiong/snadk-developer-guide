@@ -133,7 +133,7 @@ clean install -Dmaven.test.skip=true
 
 选择高级设置，配置打包使用的pom.xml文件，其他选择默认即可。
 
-![](/assets/jenkins-maven-pom.png)
+Jenkins会自动clone源码到工作空间中，此时选择的文件都是基于工作空间的相对路径。
 
 ### 配置自动部署
 
