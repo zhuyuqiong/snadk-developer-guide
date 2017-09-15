@@ -16,9 +16,13 @@ ftp/software软件安装包/IDE集成开发环境/Eclipse/eclipse-jee-neon-R-win
 
 ### CodeFormat
 
-相关注释，需要遵循javadoc规范。
+代码 
 
-### 2.1.3 CodeTemplate
+
+
+###  CodeTemplate
+
+![](/assets/code-template.png)
 
 ### 2.1.4 SaveActions
 
