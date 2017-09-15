@@ -94,6 +94,8 @@ String org.springframework.samples.websocket.snake.SnakeUtils.testJavaDoc()
 Returns:返回表名："model"
 ```
 
+接口中加了注释，实现类自动继承:
+
 ```
 {@inheritDoc}
 ```
