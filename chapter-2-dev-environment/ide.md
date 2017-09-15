@@ -2,7 +2,7 @@
 
 ### Eclipse
 
-IDE仍旧使用eclipse作为首选，要求版本为·eclipse-neon·或以上。
+IDE仍旧使用eclipse作为首选，要求版本为`eclipse-neon`或以上。
 
 可以通过以下方式获取Eclipse
 
