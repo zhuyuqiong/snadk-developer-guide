@@ -16,4 +16,5 @@
 * [Chapter 9. SNADK-UI-CodeData](chapter-9-snadk-ui-codedata.md)
 * [Chapter 10. SNADK-UI-Print](chapter-10-snadk-ui-print.md)
 * [Chapter 11. SNADK-SERVICE](chapter-11-snadk-service.md)
+* [Chapter 12. SNADK-SERVICE-SpringBean](chapter-12-snadk-service-springbean.md)
 
