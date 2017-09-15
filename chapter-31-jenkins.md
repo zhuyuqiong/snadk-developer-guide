@@ -16,10 +16,13 @@ The leading open source automation server, Jenkins provides hundreds of plugins 
 https://jenkins.io/download/
 ```
 
+环境变量中需要配置`JENKINS_HOME`，这个目录会初始化为Jenkins的工作空间。
+
 Jenkins支持多种部署方案：
 
 * 使用中间件如Tomcat部署。
 * Java -jar 直接部署：
+
   ```
   java -jar jenkins.war --httpPort=8080
   ```
@@ -29,4 +32,16 @@ Jenkins支持多种部署方案：
 ### Linux
 
 ？？
+
+## 应用
+
+部署成功后使用如下地址访问平台：
+
+```
+http://127.0.0.1::8080/jenkins
+```
+
+
+
+
 
