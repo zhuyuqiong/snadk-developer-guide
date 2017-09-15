@@ -46,3 +46,5 @@ private或者package-private类则打上@serial include（@serialField用于序�
 
 [http://www.oracle.com/technetwork/java/codeconvtoc-136057.html](http://www.oracle.com/technetwork/java/codeconvtoc-136057.html)
 
+[http://88250.b3log.org/when-the-little-things-count-javadoc](http://88250.b3log.org/when-the-little-things-count-javadoc)
+
