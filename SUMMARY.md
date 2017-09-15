@@ -17,4 +17,5 @@
 * [Chapter 10. SNADK-UI-Print](chapter-10-snadk-ui-print.md)
 * [Chapter 11. SNADK-SERVICE](chapter-11-snadk-service.md)
 * [Chapter 12. SNADK-SERVICE-SpringBean](chapter-12-snadk-service-springbean.md)
+* [Chapter 13. FileResource](chapter-13-fileresource.md)
 
