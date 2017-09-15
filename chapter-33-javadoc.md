@@ -102,15 +102,21 @@ Returns:返回表名："model"
 
 `{@link}，{@linkplain}`
 
-用于显示原始输入样式：`<pre>`
+用于显示原始输入样式：
+
+`<pre>`
 
 意义完全一样，官方解释说throws更符合语法：
 
 `@throws，@exception`
 
-方法的参数说明：`@param`
+方法的参数说明：
 
-对函数返回值的注释：`@return`
+`@param`
+
+对函数返回值的注释：
+
+`@return`
 
 用于表示计算机源代码或者其他机器可以阅读的文本内容：
 
@@ -121,8 +127,6 @@ Returns:返回表名："model"
 用于解析特定字符（&lt;,&gt;）：
 
 `{@literal}`
-
-
 
 @see
 
