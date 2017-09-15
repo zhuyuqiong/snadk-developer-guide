@@ -24,6 +24,8 @@ eclipse中参见如下图片位置导入标准格式，其他IDE以此为参照�
 
 ### CodeTemplate
 
+代码标准模版参见下图
+
 ![](/assets/code-template.png)
 
 ### 2.1.4 SaveActions
