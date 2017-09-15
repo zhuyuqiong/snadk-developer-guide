@@ -59,7 +59,7 @@
 
 `{@value}`
 
-直接用于常量字段
+##### 直接用于常量字段
 
 ```java
     /**
@@ -76,7 +76,7 @@ String org.springframework.samples.websocket.snake.SnakeUtils.TBLNAME : "model"
 默认表名，值为"model"
 ```
 
-用于引用的方式
+##### 用于引用的方式
 
 ```java
     /**
