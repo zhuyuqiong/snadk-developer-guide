@@ -11,4 +11,5 @@
 * [Chapter 4. Logs](chapter-4-logs.md)
 * [Chapter 5. SNADK-DX-DB](chapter-5-snadk-dx-db.md)
 * [Chapter 6. SNADK-DX-VO](chapter-6-snadk-dx-vo.md)
+* [Chapter 7. SNADK-UI-View](chapter-7-snadk-ui-view.md)
 
