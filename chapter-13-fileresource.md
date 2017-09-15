@@ -1,24 +1,42 @@
 # Chapter 13. FileResource
 
-      a. ResBundle\*\[\_lang\].properties
+  a. ResBundle\\*\\[\\_lang\\].properties
 
-      b. ValidationMessage\[\_lang\].inf
 
-      c. Schema
 
-          i. 表空间；
+  b. ValidationMessage\\[\\_lang\\].inf
 
-          ii. VO类；
 
-          iii. XML；
 
-          iv. XSD发布；
+  c. Schema
 
-      d. 菜单：Menu\*.xml
 
-      e. 建表文件：CreateDatabase\*.xml
 
-      f. 系统选项
+      i. 表空间；
+
+
+
+      ii. VO类；
+
+
+
+      iii. XML；
+
+
+
+      iv. XSD发布；
+
+
+
+  d. 菜单：Menu\\*.xml
+
+
+
+  e. 建表文件：CreateDatabase\\*.xml
+
+
+
+  f. 系统选项
 
 
 
