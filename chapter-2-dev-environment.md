@@ -16,7 +16,7 @@ SNADK使用[maven](http://maven.apache.org/)作为构建工具，Eclipse作为�
 
 ## 代码签出
 
-底层源文件目录：D:\snsoft90；
+底层源文件目录：D:\snsoft90
 
 创建上述目录通过以下地址可以签出SNADK最新源码：
 
