@@ -16,11 +16,9 @@
 ```
 
 ```
-    @version
-    标明该类模块的版本
+@version
+标明该类模块的版本
 ```
-
-
 
 ```
     @since
@@ -41,7 +39,7 @@
 序列化标记，很不常用的属性，经过我对文档的初步翻译是， public或者protected类实现了Serializable就打上@serial exclude，private或者package-private类则打上@serial include（@serialField用于序列化ObjectStreamField组件，@serialData）
 
 ```
-    @see 
+    @see
 ```
 
 添加“参见”标题
