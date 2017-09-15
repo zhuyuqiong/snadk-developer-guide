@@ -4,9 +4,9 @@
 
 ## 1.关于
 
-本指南基于gitbook开发，指南最新版可在 [https://zhuyuqiong.gitbooks.io/snadk-developer-guide/content](https://zhuyuqiong.gitbooks.io/snadk-developer-guide/content) 下载阅读。
+本指南基于GitBook开发，指南最新版可在 [https://zhuyuqiong.gitbooks.io/snadk-developer-guide/content](https://zhuyuqiong.gitbooks.io/snadk-developer-guide/content) 下载阅读。
 
-GitBookGitBook
+GitBook是一款开源Book制作平台，关于GitBook相关知识可在[https://help.gitbook.com/](https://help.gitbook.com/ "GitBook-Help") 中了解。
 
 Copies of this document may be made for your own use and for distribution to others, provided that you do not charge any fee for such copies and further provided that each copy contains this Copyright Notice, whether distributed in print or electronically.
 
