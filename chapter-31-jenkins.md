@@ -93,11 +93,9 @@ Hostname：需要连接ssh的主机名或ip地址（建议ip）
 Username：用户名
 Remote Directory：远程目录
 Use password authentication, or use a different key：可以替换公共配置（选中展开的就是公共配置的东西，这样做扩展性很好）
-
 ```
 
 ```
-
 私有配置的高级设置：
 Port：端口（默认22）
 Timeout (ms)：超时时间（毫秒）默认即可
@@ -168,6 +166,17 @@ Remote directory：远程目录（根据你的需求填写吧，因为我这儿�
 
 ```
 Exec command：把你要执行的命令写在里面
+```
+
+以下是Exec command的一个例子：
+
+```bash
+sudo cp /tmp/run-ui-war.4.0.0-SNAPSHOT.war /opt/run-ui.war
+docker rm -f snadk-ui
+docker rmi snadk-ui:latest
+cd /opt
+docker build -f Dockerfile-ui -t snadk-ui:latest .
+docker run --name snadk-ui -p 1010:1010 -v /snconfig:/opt/snconfig -d snadk-ui:latest
 ```
 
 
