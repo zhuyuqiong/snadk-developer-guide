@@ -9,7 +9,7 @@
   * [2.4 Plugins](chapter-2-dev-environment/plugins.md)
   * [2.5 MySQL](chapter-2-dev-environment/25-mysql.md)
 * [Chapter 3. Git](chapter-3-git.md)
-* [Chapter 4. Logs](chapter-4-logs.md)
+* [Chapter 4. Logging](chapter-4-logs.md)
 * [Chapter 5. SNADK-DX-DB](chapter-5-snadk-dx-db.md)
 * [Chapter 6. SNADK-DX-VO](chapter-6-snadk-dx-vo.md)
 * [Chapter 7. SNADK-UI-View](chapter-7-snadk-ui-view.md)
