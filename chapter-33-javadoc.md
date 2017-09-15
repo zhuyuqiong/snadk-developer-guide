@@ -10,27 +10,39 @@
 
 #### Java类注释规范说明
 
-	@author
-
+```
+@author
 标明开发该类模块的作者
+```
 
-		@version
+```
+    @version
+    标明该类模块的版本
+```
 
-标明该类模块的版本
 
-		@since
+
+```
+    @since
+```
 
 从以下版本开始，可以跟JDK版本，日期，无固定值
 
-		@deprecated
+```
+    @deprecated
+```
 
 已过时或者废弃
 
-		@serial
+```
+    @serial
+```
 
 序列化标记，很不常用的属性，经过我对文档的初步翻译是， public或者protected类实现了Serializable就打上@serial exclude，private或者package-private类则打上@serial include（@serialField用于序列化ObjectStreamField组件，@serialData）
 
-		@see 
+```
+    @see 
+```
 
 添加“参见”标题
 
