@@ -1,6 +1,6 @@
 # Chapter 12. SNADK-SERVICE-SpringBean
 
-Dubbo
+
 
 a. 暴露服务：SpringBean注解（在接口上）；
 
