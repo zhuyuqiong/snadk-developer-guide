@@ -86,9 +86,15 @@ String org.springframework.samples.websocket.snake.SnakeUtils.TBLNAME : "model"
       public String testJavaDoc();
   ```
 
-    生成之后：
+  生成之后：
 
-![](/assets/javadoc-value.png)
+```
+
+String org.springframework.samples.websocket.snake.SnakeUtils.testJavaDoc()
+
+
+Returns:返回表名："model"
+```
 
 ```
 {@inheritDoc}
