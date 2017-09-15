@@ -25,4 +25,6 @@
 * [Chapter 18. SSO](chapter-18-sso.md)
 * [Chapter 19. Approval](chapter-19-approval.md)
 * [Chapter 20. BPM](chapter-20-bpm.md)
+* [Chapter 21. CMC](chapter-21-cmc.md)
+* [Chapter 22. MQ](chapter-22-mq.md)
 
