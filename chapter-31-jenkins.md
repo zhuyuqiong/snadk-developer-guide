@@ -24,13 +24,9 @@ Jenkins支持多种部署方案：
   java -jar jenkins.war --httpPort=8080
   ```
 
-
+  > 注意：经过测试可以部署的Tomcat至少为8.0或以上版本，jdk为1.8。其他版本待验证。
 
 ### Linux
 
 ？？
-
-
-
-
 
