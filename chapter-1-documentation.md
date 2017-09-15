@@ -25,7 +25,7 @@ Copies of this document may be made for your own use and for distribution to oth
 
 在4.1.x够稳定后：
 
-* 4.1.x成为GA版本，只BugFix，推广使用此版本。如何可行，可以推进应用在期望的时间点内升级到GA版本。
+* 4.1.x成为GA版本，只BugFix，推广使用此版本。如果可行，可以推进应用在期望的时间点内升级到GA版本。
 * 4.0.x不再开发，应用碰到Bug让直接升级。（称为“夕阳条款”）
 * 从4.1.x拉成分支4.2.0，作为新功能开发版本。
 
