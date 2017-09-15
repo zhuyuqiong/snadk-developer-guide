@@ -35,4 +35,6 @@
 * [Chapter 28. Redis](chapter-28-redis.md)
 * [Chapter 29. Websocket](chapter-29-websocket.md)
 * [Chapter 30. WebService](chapter-30-webservice.md)
+* [Chapter 31. Jenkins](chapter-31-jenkins.md)
+* [Chapter 32. Docker](chapter-32-docker.md)
 
