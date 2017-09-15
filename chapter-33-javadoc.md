@@ -59,16 +59,16 @@
 
 `{@value}`
 
-* 直接用于常量字段
+直接用于常量字段
 
-  ```java
-      /**
-       * 默认表名，值为{@value}
-       */
-      public static final String TBLNAME = "model";
-  ```
+```java
+    /**
+     * 默认表名，值为{@value}
+     */
+    public static final String TBLNAME = "model";
+```
 
-  生成之后：
+生成之后：
 
 ```
 String org.springframework.samples.websocket.snake.SnakeUtils.TBLNAME : "model"
@@ -76,17 +76,17 @@ String org.springframework.samples.websocket.snake.SnakeUtils.TBLNAME : "model"
 默认表名，值为"model"
 ```
 
-* 用于引用的方式
+用于引用的方式
 
-  ```java
-      /**
-       * 
-       * @return 返回表名：{@value #TBLNAME}
-       */
-      public String testJavaDoc();
-  ```
+```java
+    /**
+     * 
+     * @return 返回表名：{@value #TBLNAME}
+     */
+    public String testJavaDoc();
+```
 
-  生成之后：
+生成之后：
 
 ```java
 String org.springframework.samples.websocket.snake.SnakeUtils.testJavaDoc()
