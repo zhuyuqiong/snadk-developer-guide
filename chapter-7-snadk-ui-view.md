@@ -1,3 +1,5 @@
+# Chapter 7. SNADK-UI-View
+
 1. 功能-UI-界面
 
    a. 接入层：UICompBasService；
@@ -46,61 +48,17 @@ d. 布局
 
 i. 单个GridTable；
 
-
-
-
-
-
-
 ii. 单个RecordTable；
-
-
-
-
-
-
 
 iii. DialogPane+GridTable；
 
-
-
-
-
-
-
 iv. DialogPane+RecordTable；
-
-
-
-
-
-
 
 v. 左右布局；
 
-
-
-
-
-
-
 vi. 上下布局；
-
-
-
-
-
-
 
 vii. Tab页面；
 
-
-
-
-
-
-
 viii. ProgressPane；
-
-
 
