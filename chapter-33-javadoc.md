@@ -108,7 +108,7 @@ Returns:返回表名："model"
 
 `<pre>`
 
-意义完全一样，官方解释说throws更符合语法：
+异常，意义完全一样，官方解释说throws更符合语法：
 
 `@throws，@exception`
 
