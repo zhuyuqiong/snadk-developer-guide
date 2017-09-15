@@ -88,7 +88,7 @@ String org.springframework.samples.websocket.snake.SnakeUtils.TBLNAME : "model"
 
   生成之后：
 
-```
+```java
 String org.springframework.samples.websocket.snake.SnakeUtils.testJavaDoc()
 
 Returns:返回表名："model"
