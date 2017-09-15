@@ -10,13 +10,27 @@ The leading open source automation server, Jenkins provides hundreds of plugins 
 
 ### Windows
 
-官网下载jenkins.war包，下载地址如下;
+官网下载jenkins.war包，下载地址如下：
 
 ```
 https://jenkins.io/download/
 ```
 
+Jenkins支持多种部署方案：
+
+* 使用中间件如Tomcat部署。
+* Java -jar 直接部署：
+  ```
+  java -jar jenkins.war --httpPort=8080
+  ```
+
+
+
 ### Linux
+
+？？
+
+
 
 
 
