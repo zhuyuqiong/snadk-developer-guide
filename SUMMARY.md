@@ -23,4 +23,6 @@
 * [Chapter 16. UnitTest](chapter-16-unittest.md)
 * [Chapter 17. JavaConfig](chapter-17-javaconfig.md)
 * [Chapter 18. SSO](chapter-18-sso.md)
+* [Chapter 19. Approval](chapter-19-approval.md)
+* [Chapter 20. BPM](chapter-20-bpm.md)
 
