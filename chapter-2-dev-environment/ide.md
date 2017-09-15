@@ -2,7 +2,7 @@
 
 ### Eclipse
 
-IDE仍旧使用eclipse作为首选，要求版本为`eclipse-neon`或以上。
+在IDE的选择上，我们仍使用eclipse作为首选，要求版本为`eclipse-neon`或以上。
 
 可以通过以下方式获取Eclipse
 
@@ -42,7 +42,7 @@ Eclipse中参见下图设置：
 
 Maven的setting在工作空间下，里面的jar包仓库按需自己指定位置。
 
-![](/assets/maven-setting.png)
+![](/assets/maven-setting.png)
 
 注意修改文件后更新Eclipse里的Maven：
 
@@ -51,6 +51,4 @@ Maven的setting在工作空间下，里面的jar包仓库按需自己指定位�
 ### Intellij Idea
 
 4.0.0版本底层开始，源码中不再包含IDE相关的描述文件，只包含pom文件描述依赖，因此目前源码可以支持除eclipse以外的其他IDE，有兴趣的同学可以进行尝试。
-
-
 
