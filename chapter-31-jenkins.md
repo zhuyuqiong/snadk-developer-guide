@@ -45,59 +45,53 @@ http://127.0.0.1::8080/jenkins
 
 ![](/assets/jinkins-initial.png)
 
-
-
 插件安装完成之后，需要创建第一个用户。创建完成后就可以使用Jenkins了。
 
 ![](/assets/jenkins-fisrt-user.png)
 
+## 配置
 
+本步骤可以不用配置，如果当前环境没有安装对应的工具，Jenkins都可以自动帮你完成工具的安装。
 
+### 配置maven、jdk、git
 
+Jenkins系统设置菜单位于：`系统管理-Global Tool Configuraion`
 
+这里需要依次安装/配置Maven、JDK、Git工具。
 
+### 系统设置
 
+这里主要设置远程服务器SSH相关配置
 
+#### Publish over SSH配置（可多个）
 
+找到Publish over SSH，配置远程服务连接（注意此配置不是必须的，例如发布到同一服务器的Docker中时）
 
+配置说明：
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+```
+说明：这个插件可以通过ssh连接其他Linux机器
+官方说明：Publish Over SSH
+安装步骤：
+系统管理→管理插件→可选插件→Artifact Uploaders→Publish Over SSH
+ 系统设置（所有的高级全部展开）
+公共配置：
+Passphrase：密码（key的密码，如果你设置了）
+Path to key：key文件（私钥）的路径
+Key：将私钥复制到这个框中
+Disable exec：禁止运行命令
+私有配置：
+SSH Server Name：标识的名字（随便你取什么）
+Hostname：需要连接ssh的主机名或ip地址（建议ip）
+Username：用户名
+Remote Directory：远程目录
+Use password authentication, or use a different key：可以替换公共配置（选中展开的就是公共配置的东西，这样做扩展性很好）
+私有配置的高级设置：
+Port：端口（默认22）
+Timeout (ms)：超时时间（毫秒）默认即可
+Disable exec：禁止运行命令
+Test Configuration：测试连接
+```
 
 
 
