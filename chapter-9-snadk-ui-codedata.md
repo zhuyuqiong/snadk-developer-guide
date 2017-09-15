@@ -8,25 +8,21 @@ ii. 数据库（codetbl,codetbla,codetblc）；
 
 b. 码表
 
-  i. 字典；
+i. 字典；
 
-
-
-
-
-
-
-  ii. 推荐标准：码、名两列；
+ii. 推荐标准：码、名两列；
 
 c. 辅助录入
 
-```
   i. 参见页面：xxx；
 
 
 
+
+
+
+
   ii. ComponentListener.itemAidInputing；
-```
 
 d. 动态码表
 
