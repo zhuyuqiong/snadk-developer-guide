@@ -136,6 +136,23 @@ Returns:返回表名："model"
 
 ### 完整类注释例子
 
+```java
+/**
+ * 
+ * <p>标题：JavaDoc类注释示例</p>
+ * <p>功能：JavaDoc类注释示例</p>
+ * <p>
+ * 其他说明：说明1..............</br>
+ * 说明2...........
+ * </p>
+ * @author 朱郁琼
+ * @version 1.0
+ * @since 1.0
+ * @see <a href="" target="_blank">查看帮助</a>
+ */
+public class SnakeUtils
+```
+
 ### 完整方法注释例子
 
 ## 参考文档
