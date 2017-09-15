@@ -39,13 +39,14 @@
 `@see`
 
 ```java
-    /**
-     * 消息执行监控方法，针对消息status进行计数，
-     * 统计结果反映一段时间内消息执行数、成功数、失败数、执行时长等信息。
-     * @param message 消息对象
-     * @see MQMessage
-     */
-    public void monitors(MQMessage message);
+	/**
+	 * @see 这是一个注释
+	 * @see <a href="www.baidu.com">这是一个超链接</a>
+	 * @see java.lang.String#toString() 这是个方法链接
+	 * @see #hashCode() 这是个方法链接（当前类可以省略）
+	 * @see Snake 这是个类链接(同包的类可以省略)
+	 */
+	public void test();
 ```
 
 用于生成html文档根目录：
