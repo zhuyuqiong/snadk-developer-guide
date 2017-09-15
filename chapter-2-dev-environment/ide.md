@@ -16,11 +16,9 @@ ftp/software软件安装包/IDE集成开发环境/Eclipse/eclipse-jee-neon-R-win
 
 ### CodeFormat
 
-代码 
+代码格式
 
-
-
-###  CodeTemplate
+### CodeTemplate
 
 ![](/assets/code-template.png)
 
