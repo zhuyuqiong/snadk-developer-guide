@@ -78,7 +78,7 @@ String org.springframework.samples.websocket.snake.SnakeUtils.TBLNAME : "model"
 
 * 用于引用的方式
 
-  ```
+  ```java
       /**
        * 
        * @return 返回表名：{@value #TBLNAME}
