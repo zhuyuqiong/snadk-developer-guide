@@ -61,11 +61,11 @@
 
 * 直接用于常量字段
 
-  ```
-  	/**
-  	 * 默认表名，值为{@value}
-  	 */
-  	public static final String TBLNAME = "model";
+  ```java
+      /**
+       * 默认表名，值为{@value}
+       */
+      public static final String TBLNAME = "model";
   ```
 
 * 生成之后：
