@@ -7,4 +7,5 @@
   * [Project](chapter-2-dev-environment/project.md)
   * [Runtime](chapter-2-dev-environment/runtime.md)
   * [Plugins](chapter-2-dev-environment/plugins.md)
+* [Chapter 3. Git](chapter-3-git.md)
 
