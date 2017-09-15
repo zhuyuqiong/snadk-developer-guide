@@ -44,6 +44,84 @@
 
 ### Java方法注释规范说明
 
+{@value}
+
+可以用于生成被标记的常量字段的值
+
+			直接用于常量字段时
+
+
+
+生成之后：
+
+
+
+			也可以用于引用的方式
+
+
+
+生成之后：
+
+	
+
+
+
+
+
+	{@inheritDoc}
+
+接口中加了注释，实现类自动继承
+
+	{@link}，{@linkplain}
+
+作用是一样的，生成的文档样式不一样，后一个会好看一点，可以加类连接
+
+
+
+
+
+&lt;pre&gt;：用于显示原始样子
+
+ 
+
+
+
+@throws，@exception
+
+意义完全一样，官方解释说throws更符合语法
+
+ 
+
+
+
+@param
+
+方法的参数说明
+
+@return
+
+对函数返回值的注释
+
+
+
+
+
+{@code}
+
+类似于html&lt;code&gt;标签，用于表示计算机源代码或者其他机器可以阅读的文本内容。
+
+该标签等同于&lt;code&gt;{@literal}&lt;/code&gt;里面可以直接过滤掉HTML的标签，可在这个代码块里面的text部分，可以直接书写代码，即使使用了&lt;b&gt;Hello&lt;/b&gt;，在HTML里面也不会识别成为加粗的Hello，而还是原来的代码段&lt;b&gt;Hello&lt;/b&gt;的格式输出以不用&lt;和&gt;来显示（&lt;和&gt;）
+
+{@literal}
+
+用于解析特定字符（&lt;,&gt;）
+
+@see
+
+参见对类说明
+
+{@docRoot}
+
 ## 参考文档
 
 Oracle官方Java编程规范：[http://www.oracle.com/technetwork/java/codeconvtoc-136057.html](http://www.oracle.com/technetwork/java/codeconvtoc-136057.html)
