@@ -17,9 +17,9 @@ Maven工程下仅存在pom.xml文件和src目录。
 
 ### 生成工程
 
-```xml
+```css
 <dependency org="org.springframework"
-	name="spring-core" rev="5.0.0.M5" conf="compile->runtime"/>
+    name="spring-core" rev="5.0.0.M5" conf="compile->runtime"/>
 ```
 
 
