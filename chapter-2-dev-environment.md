@@ -12,7 +12,7 @@ SNADK使用[maven](http://maven.apache.org/)作为构建工具，Eclipse作为�
 * \*Zookeeper
 * \*ActiveMQ
 
-> \`注：\*号标记的为可选安装。
+> 注：\*号标记的为可选安装。
 
 ## 代码签出
 
