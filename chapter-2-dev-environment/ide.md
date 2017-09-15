@@ -6,8 +6,6 @@
 
 开发同学可以通过以下方式获取Eclipse
 
-ftp:
-
 ```
 ftp/software软件安装包/IDE集成开发环境/Eclipse/eclipse-jee-neon-R-win32-x86_64.zip
 ```
