@@ -21,4 +21,5 @@
 * [Chapter 14. Bas Service](chapter-14-bas-service.md)
 * [Chapter 15. Cache](chapter-15-cache.md)
 * [Chapter 16. UnitTest](chapter-16-unittest.md)
+* [Chapter 17. JavaConfig](chapter-17-javaconfig.md)
 
