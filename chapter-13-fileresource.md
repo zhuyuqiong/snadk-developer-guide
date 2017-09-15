@@ -20,7 +20,11 @@ e. 建表文件：CreateDatabase\\*.xml
 
 f. 系统选项
 
-      c. 系统号及系统模块配置：AppConfig\*.xml
+  c. 系统号及系统模块配置：AppConfig\\*.xml
 
-      d. 系统功能配置：AppFunc\*.xml
+
+
+  d. 系统功能配置：AppFunc\\*.xml
+
+
 
