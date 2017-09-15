@@ -8,4 +8,6 @@
   * [Runtime](chapter-2-dev-environment/runtime.md)
   * [Plugins](chapter-2-dev-environment/plugins.md)
 * [Chapter 3. Git](chapter-3-git.md)
+* [Chapter 4. Logs](chapter-4-logs.md)
+* [Chapter 5. SNADK-DX-DB](chapter-5-snadk-dx-db.md)
 
