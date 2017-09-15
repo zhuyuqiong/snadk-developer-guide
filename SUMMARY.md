@@ -27,4 +27,5 @@
 * [Chapter 20. BPM](chapter-20-bpm.md)
 * [Chapter 21. CMC](chapter-21-cmc.md)
 * [Chapter 22. MQ](chapter-22-mq.md)
+* [Chapter 23. Help Center](chapter-23-help-center.md)
 
