@@ -83,11 +83,10 @@ String org.springframework.samples.websocket.snake.SnakeUtils.TBLNAME : "model"
        * 
        * @return 返回表名：{@value #TBLNAME}
        */
-      public String testJavaDoc();
+      public String testJavaDoc();   
   ```
 
-* 
-* 生成之后：
+生成之后：
 
 ![](/assets/javadoc-value.png)
 
