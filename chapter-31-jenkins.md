@@ -131,17 +131,30 @@ clean install -Dmaven.test.skip=true
 
 ```
 SSH  Server Name：选个一个你在系统设置里配置的配置的名字
+```
 
+```
 Transfer Set Source files：需要上传的文件（注意：相对于工作区的路径。看后面的配置可以填写多个，默认用,分隔）
 注意：这个是相对于Jenkins服务的工作区而言的相对路径，例如：我自己的Jenkins的主目录设置为 /apps/Jenkins_home（Jenkins服务器）
 我创建的该工程的工作区的目录绝对路径是 /apps/Jenkins_home/jobs/gulu-admin_test/workspace（Jenkins服务器） 
 那我Source files中的 target/*.war 的绝对路径就是 /apps/Jenkins_home/jobs/gulu-admin_test/workspace/target/*.war
+```
+
+```
 Remove prefix：移除目录（只能指定Transfer Set Source files中的目录）
 注：如果该处不填，则构建后的war包相对于远程目录Remote directory的相对路径为 target/*.war (实际上*为maven构建的war包名称)
 如果此处填了，比如我填了target，那么构建后的war包相对于远程目录Remote directory的相对路径为 *.war (实际上*为maven构建的war包名称)
+```
+
+```
 Remote directory：远程目录（根据你的需求填写吧，因为我这儿是测试,所以偷懒没有填写。默认会继承系统配置）
-说明：如果不填写，则将Jenkins服务器打的war包拷贝到远程默认的Remote directory目录（系统设置中的Remote directory，如我途中设置的为 /apps 目录）
-如果填写，比如我填写的为jenkins_war，则将Jenkins服务器打的war包拷贝到远程的Remote directory目录下的jenkins_war 目录下，即该路径是相对于系统配置的远程Remote directory目录的相对路径
+说明：如果不填写，则将Jenkins服务器打的war包拷贝到远程默认的Remote directory目录
+（系统设置中的Remote directory，如我途中设置的为 /apps 目录）
+如果填写，比如我填写的为jenkins_war，则将Jenkins服务器打的war包拷贝到远程的Remote directory目录下的jenkins_war 目录下，
+即该路径是相对于系统配置的远程Remote directory目录的相对路径
+```
+
+```
 Exec command：把你要执行的命令写在里面
 ```
 
