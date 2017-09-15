@@ -38,6 +38,16 @@
 
 `@see`
 
+```
+	/**
+	 * 消息执行监控方法，针对消息status进行计数，
+	 * 统计结果反映一段时间内消息执行数、成功数、失败数、执行时长等信息。
+	 * @param message 消息对象
+	 * @see MQMessage
+	 */
+	public void monitors(MQMessage message);
+```
+
 用于生成html文档根目录：
 
 `{@docRoot}`
