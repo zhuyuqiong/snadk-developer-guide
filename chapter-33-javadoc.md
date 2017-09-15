@@ -68,19 +68,16 @@
       public static final String TBLNAME = "model";
   ```
 
-      生成之后：
+  生成之后：
 
 ```
-       
 String org.springframework.samples.websocket.snake.SnakeUtils.TBLNAME : "model"
 
 
 默认表名，值为"model"
-
 ```
 
-* 
-![](/assets/javadoc-value1.png)
+* ![](/assets/javadoc-value1.png)
 
 * 用于引用的方式
 
