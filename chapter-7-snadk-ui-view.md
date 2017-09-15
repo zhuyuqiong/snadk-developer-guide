@@ -44,35 +44,63 @@ iii. 注：所有界面的例子；
 
 d. 布局
 
-    i. 单个GridTable；
+i. 单个GridTable；
 
 
 
-    ii. 单个RecordTable；
 
 
 
-    iii. DialogPane+GridTable；
+
+ii. 单个RecordTable；
 
 
 
-    iv. DialogPane+RecordTable；
 
 
 
-    v. 左右布局；
+
+iii. DialogPane+GridTable；
 
 
 
-    vi. 上下布局；
 
 
 
-    vii. Tab页面；
+
+iv. DialogPane+RecordTable；
 
 
 
-    viii. ProgressPane；
+
+
+
+
+v. 左右布局；
+
+
+
+
+
+
+
+vi. 上下布局；
+
+
+
+
+
+
+
+vii. Tab页面；
+
+
+
+
+
+
+
+viii. ProgressPane；
 
 
 
