@@ -38,77 +38,19 @@ Eclipse中参见下图设置：
 
 ![](/assets/save-actions.png)
 
+### Maven
 
+Maven的setting在工作空间下，里面的jar包仓库按需自己指定位置。
 
+![](/assets/maven-setting.png)
 
+注意修改文件后更新Eclipse里的Maven：
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### 2.1.5 Maven
+![](/assets/maven-eclipse.png)
 
 ### Intellij Idea
+
+4.0.0版本底层开始，源码中不再包含IDE相关的描述文件，只包含pom文件描述依赖，因此目前源码可以支持除eclipse以外的其他IDE，有兴趣的同学可以进行尝试。
 
 
 
