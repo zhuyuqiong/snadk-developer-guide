@@ -1,25 +1,22 @@
 ## 2.1 Eclipse
 
-i. 版本Neon；
-
-ii. CodeFormat：相关注释，需要遵循javadoc规范；
-
-  
+### 2.1.1 版本Neon
 
 
-iii. CodeTemplate；
 
-  
+### 2.1.2 CodeFormat
 
+相关注释，需要遵循javadoc规范。
 
-iv. SaveActions；
-
-  
+### 2.1.3 CodeTemplate
 
 
-v. Maven设置；
+
+### 2.1.4 SaveActions
 
 
+
+### 2.1.5 Maven
 
 
 
