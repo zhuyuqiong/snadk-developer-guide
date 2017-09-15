@@ -41,7 +41,7 @@ Copies of this document may be made for your own use and for distribution to oth
 
 由于开发只会BugFix GA版本，所以用户需要积极跟进升级到GA版本，以Fix发现的问题。
 
-定期升级版本用户带来了不安。但这是一个假命题，说明如下：
+定期升级版本给用户带来了不安。但这是一个假命题，说明如下：
 
 * GA经过一个试用阶段保持稳定。
 * GA版本有Bug会火速Fix
