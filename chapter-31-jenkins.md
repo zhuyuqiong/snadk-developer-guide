@@ -79,18 +79,25 @@ Jenkins系统设置菜单位于：`系统管理-Global Tool Configuraion`
 系统设置（所有的高级全部展开）
 
 ```
-
 公共配置：
 Passphrase：密码（key的密码，如果你设置了）
 Path to key：key文件（私钥）的路径
 Key：将私钥复制到这个框中
 Disable exec：禁止运行命令
+```
+
+```
 私有配置：
 SSH Server Name：标识的名字（随便你取什么）
 Hostname：需要连接ssh的主机名或ip地址（建议ip）
 Username：用户名
 Remote Directory：远程目录
 Use password authentication, or use a different key：可以替换公共配置（选中展开的就是公共配置的东西，这样做扩展性很好）
+
+```
+
+```
+
 私有配置的高级设置：
 Port：端口（默认22）
 Timeout (ms)：超时时间（毫秒）默认即可
