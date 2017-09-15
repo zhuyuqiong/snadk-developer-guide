@@ -116,9 +116,7 @@ Returns:返回表名："model"
 
 `{@code}`
 
-类似于html&lt;code&gt;标签，用于表示计算机源代码或者其他机器可以阅读的文本内容。
-
-该标签等同于&lt;code&gt;{@literal}&lt;/code&gt;里面可以直接过滤掉HTML的标签，可在这个代码块里面的text部分，可以直接书写代码，即使使用了&lt;b&gt;Hello&lt;/b&gt;，在HTML里面也不会识别成为加粗的Hello，而还是原来的代码段&lt;b&gt;Hello&lt;/b&gt;的格式输出以不用&lt;和&gt;来显示（&lt;和&gt;）
+类似于html&lt;code&gt;标签，用于表示计算机源代码或者其他机器可以阅读的文本内容。该标签等同于&lt;code&gt;{@literal}&lt;/code&gt;里面可以直接过滤掉HTML的标签，可在这个代码块里面的text部分，可以直接书写代码，即使使用了&lt;b&gt;Hello&lt;/b&gt;，在HTML里面也不会识别成为加粗的Hello，而还是原来的代码段&lt;b&gt;Hello&lt;/b&gt;的格式输出以不用&lt;和&gt;来显示（&lt;和&gt;）
 
 {@literal}
 
