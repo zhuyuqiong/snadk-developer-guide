@@ -24,7 +24,7 @@ eclipse中参见如下图片位置导入标准格式，其他IDE以此为参照�
 
 ### CodeTemplate
 
-代码标准模版参见下图
+eclipse中代码标准模版参见下图设置，主要约束类注释格式和方法注释格式，其他IDE参照标准格式设置。
 
 ![](/assets/code-template.png)
 
