@@ -74,7 +74,12 @@ Jenkins系统设置菜单位于：`系统管理-Global Tool Configuraion`
 官方说明：Publish Over SSH
 安装步骤：
 系统管理→管理插件→可选插件→Artifact Uploaders→Publish Over SSH
- 系统设置（所有的高级全部展开）
+```
+
+系统设置（所有的高级全部展开）
+
+```
+
 公共配置：
 Passphrase：密码（key的密码，如果你设置了）
 Path to key：key文件（私钥）的路径
