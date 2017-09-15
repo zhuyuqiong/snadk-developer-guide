@@ -10,15 +10,13 @@ The leading open source automation server, Jenkins provides hundreds of plugins 
 
 ### Windows
 
-官网下载jenkins.war包
+官网下载jenkins.war包，下载地址如下;
 
 ```
 https://jenkins.io/download/
 ```
 
 ### Linux
-
-
 
 
 
