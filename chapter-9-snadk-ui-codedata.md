@@ -2,25 +2,21 @@
 
 a. 定义位置
 
-  i. 文件CoderData\\\*.xml
+i. 文件CoderData\\*.xml
 
-
-
-
-
-
-
-  ii. 数据库（codetbl,codetbla,codetblc）；
+ii. 数据库（codetbl,codetbla,codetblc）；
 
 b. 码表
 
-```
   i. 字典；
 
 
 
+
+
+
+
   ii. 推荐标准：码、名两列；
-```
 
 c. 辅助录入
 
