@@ -32,4 +32,7 @@
 * [Chapter 25. Spring](chapter-25-spring.md)
 * [Chapter 26. Dubbo](chapter-26-dubbo.md)
 * [Chapter 27. Zookeeper](chapter-27-zookeeper.md)
+* [Chapter 28. Redis](chapter-28-redis.md)
+* [Chapter 29. Websocket](chapter-29-websocket.md)
+* [Chapter 30. WebService](chapter-30-webservice.md)
 
