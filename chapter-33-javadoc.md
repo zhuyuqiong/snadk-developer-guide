@@ -155,6 +155,33 @@ public class SnakeUtils
 
 ### 完整方法注释例子
 
+```java
+	/**
+	 * 测试JavaDoc
+	 * <pre>
+	 * 	{
+	 * 		原样输出格式
+	 * 		"key":带pre
+	 * 	}
+	 * 
+	 * </pre>
+	 * 	  		{
+	 * 			输出格式
+	 * 			"key":不带pre
+	 * 			}</br>
+	 * {@link java.lang.String#toString()}</br>
+	 * {@linkplain java.lang.String#toString()}</br>
+	 * {@code java.util.List<String>}</br>
+	 * literal:{@literal <b>Hello</b>}</br>
+	 * 无literal:<b>Hello</b>
+	 * @param p1 第一个参数
+	 * @param p2 第二个参数
+	 * @return 返回表名：{@value #TBLNAME}
+	 * @throws Exception
+	 */
+	public String testJavaDoc(String p1, String p2) throws Exception
+```
+
 ## 参考文档
 
 Oracle官方Java编程规范：[http://www.oracle.com/technetwork/java/codeconvtoc-136057.html](http://www.oracle.com/technetwork/java/codeconvtoc-136057.html)
