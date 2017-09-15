@@ -39,14 +39,14 @@
 `@see`
 
 ```java
-	/**
-	 * @see 这是一个注释
-	 * @see <a href="www.baidu.com">这是一个超链接</a>
-	 * @see java.lang.String#toString() 这是个方法链接
-	 * @see #hashCode() 这是个方法链接（当前类可以省略）
-	 * @see Snake 这是个类链接(同包的类可以省略)
-	 */
-	public void test();
+    /**
+     * @see 这是一个注释
+     * @see <a href="www.baidu.com">这是一个超链接</a>
+     * @see java.lang.String#toString() 这是个方法链接
+     * @see #hashCode() 这是个方法链接（当前类可以省略）
+     * @see Snake 这是个类链接(同包的类可以省略)
+     */
+    public void test();
 ```
 
 用于生成html文档根目录：
@@ -61,7 +61,14 @@
 
 * 直接用于常量字段
 
-  生成之后：
+  ```
+  	/**
+  	 * 默认表名，值为{@value}
+  	 */
+  	public static final String TBLNAME = "model";
+  ```
+
+* 生成之后：
 
 ![](/assets/javadoc-value1.png)
 
