@@ -14,9 +14,9 @@ ii. 写：UICompDataSaveService
 
 1. SaveResults save\\(SaveParams&lt;V&gt; records\\)；
 
-1. void save\\(SaveParams&lt;V&gt; records\\)
+2. void save\\(SaveParams&lt;V&gt; records\\)
 
-1. void save\\(V\\[\\] records\\)
+3. void save\\(V\\[\\] records\\)
 
 iii. 码名：UICompCodeNameService
 
@@ -30,11 +30,15 @@ vii. 用户个性：UICompUserInfoService
 
 b. 客户端
 
-    i. 界面属性控制；
+i. 界面属性控制；
 
 
 
-    ii. 界面按钮控制；
+
+
+
+
+ii. 界面按钮控制；
 
 c. 展示
 
