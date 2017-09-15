@@ -14,7 +14,7 @@ Copies of this document may be made for your own use and for distribution to oth
 
 ## 2.版本控制
 
-
+**新功能的开发**和**稳定性的提高**对产品都很重要。SNADK采用如下版本开发模式保障两者。
 
 
 
