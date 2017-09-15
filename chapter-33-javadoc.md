@@ -102,8 +102,6 @@ Returns:返回表名："model"
 
 `{@link}，{@linkplain}`
 
-作用是一样的，生成的文档样式不一样，后一个会好看一点，可以加类连接
-
 用于显示原始输入样式：`<pre>`
 
 @throws，@exception
