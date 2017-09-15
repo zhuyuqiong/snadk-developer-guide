@@ -49,7 +49,5 @@ Copies of this document may be made for your own use and for distribution to oth
 
 ## 3.帮助支持
 
-当你在使用中发现问题时，可尝试在本指南中查找说明，或在帮助中心中寻找示例。同时我们欢迎各位同学积极反馈问题，推动SNADK进步。
-
-
+当你在使用中发现问题时，可尝试在本指南中查找说明，或在帮助中心中寻找示例。同时我们欢迎各位同学积极反馈问题，推动SNADK不断完善和进步。
 
