@@ -1,8 +1,12 @@
 # Chapter 33. JavaDoc
 
-写文档注释时需要使用 /\*\* .... \*/ 限定。只有这种方式的注释才会生成到JavaDoc API文档中。
-由JavaDoc生成的API文档是 HTML 格式，而这些 HTML 格式的标识符并不是 JavaDoc加的，而是我们在写注释的时候写上去的。所以在注释里可以加HTML标签作为样式控制。
-比如，你可以用&lt;a href&gt;&lt;/a&gt;来加入超链接。需要换行时，不是敲入一个回车符，而是写入 &lt;br&gt;。如果要分段，就应该在段前写入 &lt;p&gt;。
+写文档注释时需要使用 /\*\* .... \*/ 限定。只有这种方式的注释才会生成到JavaDoc API文档中。  
+由JavaDoc生成的API文档是 HTML 格式，而这些 HTML 格式的标识符并不是 JavaDoc加的，而是我们在写注释的时候写上去的。所以在注释里可以加HTML标签作为样式控制。  
+比如：
+
+* 你可以用&lt;a href&gt;&lt;/a&gt;来加入超链接。
+* 需要换行时，不是敲入一个回车符，而是写入 &lt;br&gt;。
+* 如果要分段，就应该在段前写入 &lt;p&gt;。
 
 ## JavaDoc格式规范
 
@@ -154,30 +158,30 @@ public class SnakeUtils
 ### 完整方法注释例子
 
 ```java
-	/**
-	 * 测试JavaDoc
-	 * <pre>
-	 * 	{
-	 * 		原样输出格式
-	 * 		"key":带pre
-	 * 	}
-	 * 
-	 * </pre>
-	 * 	  		{
-	 * 			输出格式
-	 * 			"key":不带pre
-	 * 			}</br>
-	 * {@link java.lang.String#toString()}</br>
-	 * {@linkplain java.lang.String#toString()}</br>
-	 * {@code java.util.List<String>}</br>
-	 * literal:{@literal <b>Hello</b>}</br>
-	 * 无literal:<b>Hello</b>
-	 * @param p1 第一个参数
-	 * @param p2 第二个参数
-	 * @return 返回表名：{@value #TBLNAME}
-	 * @throws Exception
-	 */
-	public String testJavaDoc(String p1, String p2) throws Exception
+    /**
+     * 测试JavaDoc
+     * <pre>
+     *     {
+     *         原样输出格式
+     *         "key":带pre
+     *     }
+     * 
+     * </pre>
+     *               {
+     *             输出格式
+     *             "key":不带pre
+     *             }</br>
+     * {@link java.lang.String#toString()}</br>
+     * {@linkplain java.lang.String#toString()}</br>
+     * {@code java.util.List<String>}</br>
+     * literal:{@literal <b>Hello</b>}</br>
+     * 无literal:<b>Hello</b>
+     * @param p1 第一个参数
+     * @param p2 第二个参数
+     * @return 返回表名：{@value #TBLNAME}
+     * @throws Exception
+     */
+    public String testJavaDoc(String p1, String p2) throws Exception
 ```
 
 ## 参考文档
