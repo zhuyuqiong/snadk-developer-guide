@@ -12,5 +12,5 @@ Copies of this document may be made for your own use and for distribution to oth
 
 ---
 
-.![](/assets/java.png)
+![](/assets/java.png)
 
