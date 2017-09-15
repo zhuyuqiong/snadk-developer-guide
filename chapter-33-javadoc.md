@@ -56,7 +56,7 @@
 
   生成之后：
 
-* ![](/assets/javadoc-value.png)
+![](/assets/javadoc-value.png)
 
 ```
 {@inheritDoc}
