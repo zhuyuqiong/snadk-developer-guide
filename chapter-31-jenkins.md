@@ -99,5 +99,35 @@ Test Configuration：测试连接
 
 新建完成后进入任务配置界面。任务配置界面主要完成源码配置、Maven打包配置、自动部署三项。
 
+### 配置源码
+
+![](/assets/jenkins-git.png)
+
+配置仓库地址，然后点击ADD按钮添加ssh秘钥，输入名称。
+
+![](/assets/jenkins-git-ssh.png)
+
+点击ADD添加完成后选择刚刚创建的秘钥，选择需要拉取的分支。
+
+![](/assets/jenkins-master.png)
+
+### 配置maven打包项
+
+配置构建选项，选择 Invoke top-level Maven targets
+
+配置maven打包命令Goals：
+
+```
+clean install -Dmaven.test.skip=true
+```
+
+选择高级设置，配置打包使用的pom.xml文件，其他选择默认即可。
+
+![](/assets/jenkins-maven-pom.png)
+
+
+
+### 配置自动部署
+
 
 
