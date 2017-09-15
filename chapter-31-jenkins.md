@@ -6,3 +6,19 @@ The leading open source automation server, Jenkins provides hundreds of plugins 
 
 新版底层可使用传统方式部署，也可以使用Jenkins部署。
 
+## 安装
+
+### Windows
+
+官网下载jenkins.war包
+
+```
+https://jenkins.io/download/
+```
+
+### Linux
+
+
+
+
+
