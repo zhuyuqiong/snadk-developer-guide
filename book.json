@@ -1,7 +1,6 @@
 {
 	"root":"docs"
-	"plugins": 
-             [
+	"plugins": [
              "disqus",
              "github",
              "editlink",
