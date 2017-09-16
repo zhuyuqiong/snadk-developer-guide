@@ -5,7 +5,9 @@
     "prism",
     "-highlight",
     "splitter",
-    "anchors"],
+    "anchors",
+    "book-summary-scroll-position-saver"
+    ],
     "pluginsConfig": {
         "github": {
             "url": "https://github.com/zhuyuqiong/snadk-developer-guide"
