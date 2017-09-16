@@ -90,16 +90,16 @@ GitBook is a command line tool (and Node.js library) for building beautiful book
 
 [GitBook Editor](https://www.gitbook.com/editor) 是GibBook.com的本地可视化编辑工具。
 
-### Local Installation
+### 本地安装GitBook
 
-##### Requirements
+##### 必备工具
 
 Installing GitBook is easy and straightforward. Your system just needs to meet these two requirements:
 
 * NodeJS (v4.0.0 and above is recommended)
 * Windows, Linux, Unix, or Mac OS X
 
-##### Install with NPM
+##### 使用 NPM 安装
 
 The best way to install GitBook is via **NPM**. At the terminal prompt, simply run the following command to install GitBook:
 
@@ -109,7 +109,7 @@ $ npm install gitbook-cli -g
 
 `gitbook-cli` is an utility to install and use multiple versions of GitBook on the same system. It will automatically install the required version of GitBook to build a book.
 
-##### Create a book
+##### 创建Book
 
 GitBook can setup a boilerplate book:
 
