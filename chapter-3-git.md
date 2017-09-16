@@ -56,9 +56,7 @@ User "git"
 IdentityFile "~/.ssh/sino_rsa"
 ```
 
-可以看到，config文件中用于标识身份验证的文件名为 `sino`_`rsa，`_因此需要将刚刚生成的两个密钥文件改为_`sino_rsa,sino_rsa.pub`_
-
-
+可以看到，config文件中用于标识身份验证的文件名为 `sinorsa`，因此需要将刚刚生成的两个密钥文件改为`sino_rsa,sino_rsa.pub`
 
 ## 安装Git GUI工具
 
