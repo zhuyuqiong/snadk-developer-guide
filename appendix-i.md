@@ -80,6 +80,7 @@ Markdown 的粗体和斜体也非常简单，用两个 * 包含一段文本就�
 
 ## 参考文档
 [Markdown语法说明](http://wowubuntu.com/markdown/#list)
+
 [Markdown入门指南](http://www.jianshu.com/p/1e402922ee32/)
 
 ## GitBook
@@ -509,5 +510,7 @@ jsbin
 ### 参考文档
 
 [GitBook官方说明](https://github.com/GitbookIO/gitbook)
+
 [GitBook简明教程](http://www.chengweiyang.cn/gitbook/index.html)
+
 [GitBook使用教程](http://blog.csdn.net/axi295309066/article/details/61420694)
