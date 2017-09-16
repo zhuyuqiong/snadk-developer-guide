@@ -58,7 +58,7 @@ IdentityFile "~/.ssh/sino_rsa"
 
 可以看到，config文件中用于标识身份验证的文件名为 `sinorsa`，因此需要将刚刚生成的两个密钥文件改为`sino_rsa,sino_rsa.pub`
 
-同时将公钥`sino_rsa.pub` 复制一份重命名为`你的名字@snsoft.com.cn.pub `，这个文件需要发送给相关人员开通权限。
+同时将公钥`sino_rsa.pub` 复制一份重命名为`你的名字@snsoft.com.cn.pub`，这个文件需要发送给相关人员开通权限。
 
 ## 安装Git GUI工具
 
@@ -73,6 +73,20 @@ windows下Git可视化工具主要选择有以下几种：
 * Eclipse插件
 
 我们推荐使用SourceTree或者Eclipse自带插件。
+
+### SourceTree设置
+
+SoucreTree中菜单选择`工具-选项`
+
+在选项中需要配置**用户全名、用户邮箱和SSH密钥文件路径。**
+
+SSH客户端选择**OpenSSH**
+
+### SourceTree使用
+
+
+
+
 
 a. Git；
 
