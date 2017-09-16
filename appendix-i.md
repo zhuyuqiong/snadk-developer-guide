@@ -86,9 +86,9 @@ Markdown 的粗体和斜体也非常简单，用两个 * 包含一段文本就�
 GitBook is a command line tool (and Node.js library) for building beautiful books using GitHub/Git and Markdown (or AsciiDoc).
 ### GitBook.com
 
-[GitBook.com](https://www.gitbook.com) is an easy to use solution to write, publish and host books. It is the easiest solution for publishing your content and collaborating on it.
+[GitBook.com](https://www.gitbook.com) 是进行GitBook管理、编写发布图书的在线版本。使用GitBook.com可以免去本地安装GitBook、编辑图书、发布的一系列操作，转而在线上完成。
 
-It integrates well with the [GitBook Editor](https://www.gitbook.com/editor).
+[GitBook Editor](https://www.gitbook.com/editor) 是GibBook.com的本地可视化编辑工具。
 
 ### Local Installation
 
@@ -149,6 +149,6 @@ You can use the options `--log=debug` and `--debug` to get better error messages
 $ gitbook build ./ --log=debug --debug
 ```
 
-
+### 
 
 
