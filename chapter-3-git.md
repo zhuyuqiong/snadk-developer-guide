@@ -184,8 +184,6 @@ SSH客户端选择**OpenSSH**
 
 #### 标签管理
 
-
-
 Eclipse发布一个版本时，我们通常先在版本库中打一个标签（tag），这样，就唯一确定了打标签时刻的版本。将来无论什么时候，取某个标签的版本，就是把那个打标签的时刻的历史版本取出来。所以，标签也是版本库的一个快照。
 
 ![](/assets/git-tags.png)![](/assets/git-tags-2.png)
@@ -198,6 +196,22 @@ Eclipse插件主要使用两个视图 Git Staging 和 Git Repositories
 * Git Repositories：仓库展示、Push操作
 
 > 注意：需要设置提交人员的简体名称
+
+#### 克隆远程仓库
+
+Git Repositories视图中选择图中按钮，按照要求选择克隆的仓库分支即可：
+
+![](/assets/git-eclipse-clone.png)
+
+#### Pull（拉取）
+
+Git Repositories视图右键选择要拉取的仓库，选择Pull操作。
+
+#### Commit（提交）
+
+
+
+
 
 ### 
 
