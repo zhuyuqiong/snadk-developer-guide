@@ -17,31 +17,31 @@
     "pluginsConfig": {
         "github": {
         "url": "https://github.com/zhuyuqiong/snadk-developer-guide"
-    },
-    "search-pro": {
-        "cutWordLib": "nodejieba",
-        "defineWord" : ["Gitbook Use"]
-    },
-    "sharing": {
-        "douban": true,
-        "facebook": true,
-        "google": false,
-        "hatenaBookmark": false,
-        "instapaper": false,
-        "line": false,
-        "linkedin": false,
-        "messenger": false,
-        "pocket": false,
-        "qq": true,
-        "qzone": false,
-        "stumbleupon": false,
-        "twitter": true,
-        "viber": false,
-        "vk": false,
-        "weibo": true,
-        "whatsapp": false,
-        "all": [
-            "facebook", "douban", "twitter","weibo", "qq"
+        },
+        "search-pro": {
+            "cutWordLib": "nodejieba",
+            "defineWord" : ["Gitbook Use"]
+        },
+        "sharing": {
+            "douban": true,
+            "facebook": true,
+            "google": false,
+            "hatenaBookmark": false,
+            "instapaper": false,
+            "line": false,
+            "linkedin": false,
+            "messenger": false,
+            "pocket": false,
+            "qq": true,
+            "qzone": false,
+            "stumbleupon": false,
+            "twitter": true,
+            "viber": false,
+            "vk": false,
+            "weibo": true,
+            "whatsapp": false,
+            "all": [
+                "facebook", "douban", "twitter","weibo", "qq"
             ]
         }
     } 
