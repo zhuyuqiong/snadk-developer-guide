@@ -21,6 +21,10 @@
             "cutWordLib": "nodejieba",
             "defineWord" : ["Gitbook Use"]
         },
+        "anchor-navigation-ex":{
+            "multipleH1":false,
+            "showLevel":false
+        },
         "sharing": {
             "douban": false,
             "facebook": true,
