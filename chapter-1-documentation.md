@@ -6,7 +6,7 @@
 
 本指南使用GitBook平台开发，指南最新版可在 [https://zhuyuqiong.gitbooks.io/snadk-developer-guide/content](https://zhuyuqiong.gitbooks.io/snadk-developer-guide/content) 下载阅读。
 
-GitBook是一款基于Markdown语法的开源Book制作平台，关于GitBook相关知识可在[GitBook-Help](https://help.gitbook.com/) 中了解。
+GitBook是一款基于Markdown语法的开源Book制作平台，关于GitBook相关知识可在[GitBook-Help](https://help.gitbook.com/) 中了解。本指南 [附录I](/appendix-i.md) 中也有相关介绍。
 
 本指南源码托管在[github](https://github.com/)上，读者可使用 git clone [https://github.com/zhuyuqiong/snadk-developer-guide.git](https://github.com/zhuyuqiong/snadk-developer-guide.git) 获取源码。
 

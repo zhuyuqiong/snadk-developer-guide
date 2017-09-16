@@ -10,6 +10,8 @@
   * [2.5 MySQL](chapter-2-dev-environment/25-mysql.md)
 * [Chapter 3. Git](chapter-3-git.md)
 * [Chapter 4. Logging](chapter-4-logs.md)
+  * [4.1 slf4j](chapter-4-logs/slf4j.md)
+  * [4.2 logback](chapter-4-logs/logback.md)
 * [Chapter 5. SNADK-DX-DB](chapter-5-snadk-dx-db.md)
 * [Chapter 6. SNADK-DX-VO](chapter-6-snadk-dx-vo.md)
 * [Chapter 7. SNADK-UI-View](chapter-7-snadk-ui-view.md)
