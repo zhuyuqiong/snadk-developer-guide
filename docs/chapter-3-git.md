@@ -115,7 +115,7 @@ SSH客户端选择**OpenSSH**
 
 文件状态页面分为 暂存区、工作区和提交注释区。如图：
 
-![](/assets/git-commit.png)
+![](assets/git-commit.png)
 
 所有未提交文件都会在工作区展示。
 
@@ -163,7 +163,7 @@ SSH客户端选择**OpenSSH**
 
 **场景：**在新分支开发完成后（或者需要临时切换到开发使用的主干分支），需要将新分支的代码合并到开发使用的主干分支上去，这时新分支上最好不要有未提交的代码，否则会在分支切换的时候将你未提交的东西都带到主干分支上去。如果有不需要提交的文件或代码，并且这些东西并不想带到主干分支上去需要进行贮藏操作。
 
-![](/assets/git-branches-stage.png)
+![](assets/git-branches-stage.png)
 
 选择贮藏操作后，会在中间的树形导航视图出现贮藏节点，节点中有你在本仓库暂存的东西，当你在切回新分支的时候，还需要这些暂存的文件的话，右键取出来即可。
 
@@ -187,7 +187,7 @@ SSH客户端选择**OpenSSH**
 
 Eclipse发布一个版本时，我们通常先在版本库中打一个标签（tag），这样，就唯一确定了打标签时刻的版本。将来无论什么时候，取某个标签的版本，就是把那个打标签的时刻的历史版本取出来。所以，标签也是版本库的一个快照。
 
-![](/assets/git-tags.png)![](/assets/git-tags-2.png)
+![](assets/git-tags.png)![](assets/git-tags-2.png)
 
 ### 自带插件
 
@@ -202,7 +202,7 @@ Eclipse插件主要使用两个视图 Git Staging 和 Git Repositories
 
 Git Repositories视图中选择图中按钮，按照要求选择克隆的仓库分支即可：
 
-![](/assets/git-eclipse-clone.png)
+![](assets/git-eclipse-clone.png)
 
 #### Pull（拉取）
 
@@ -267,7 +267,7 @@ Git Repositories视图中右键选择要暂存的本地仓库，输入暂存的�
 
 选择要回退的文件右键，
 
-![](/assets/git-eclipse-revert.png)
+![](assets/git-eclipse-revert.png)
 
 可以选择你要恢复的版本
 
@@ -279,11 +279,11 @@ Git Repositories视图中右键选择要暂存的本地仓库，输入暂存的�
 
 Eclipse发布一个版本时，我们通常先在版本库中打一个标签（tag），这样，就唯一确定了打标签时刻的版本。将来无论什么时候，取某个标签的版本，就是把那个打标签的时刻的历史版本取出来。所以，标签也是版本库的一个快照。
 
-![](/assets/git-eclipse-tags.png)
+![](assets/git-eclipse-tags.png)
 
 #### 快捷键
 
 在使用中，Pull代码和Push Upstream两种操作可以设置Eclipse快捷键：
 
-![](/assets/git-eclipse-keys.png)
+![](assets/git-eclipse-keys.png)
 
