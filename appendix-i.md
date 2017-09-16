@@ -240,4 +240,38 @@ PDF Output can be customized using a set of options in the `book.json`:
 | `pdf.margin.right` | Right margin (default is `62`) |
 | `pdf.margin.left` | Left margin (default is `62`) |
 
+### 主题插件
+用户可以通过在 NPM 上搜索 `gitbook-theme` 来查找主题插件
+#### ComScore
+ComScore 是一个彩色主题，默认的 gitbook 主题是黑白的，也就是标题和正文都是黑色的，而 ComScore 可以为各级标题添加不同的颜色，更容易区分各级标题。
+### 实用插件
+gitbook 也有很多实用性插件，用户可以在 GitHub 或者 NPM 上搜索 `gitbook-plugin` 来查找。
+#### Disqus
+Disqus 是一个非常流行的为网站集成评论系统的工具，同样，gitbook 也可以集成 disqus 以便可以和读者交流。
+首先，需要在 disqus 上注册一个账号，然后添加一个 website，这会获得一个关键字，然后在集成时配置这个关键字即可。
+##### 安装 disqus 插件
 
+可以参考 插件项目主页 来安装，命令如下：
+```
+$ npm install gitbook-plugin-disqus -g
+```
+然后，修改 book.json 配置文件，添加插件的配置内容：
+```
+{
+    "plugins": ["disqus"],
+    "pluginsConfig": {
+        "disqus": {
+            "shortName": "introducetogitbook"
+        }
+    }  
+}
+```
+>注意：上面的 shortName 的值就是你在 disqus 上创建的 website 获得的唯一关键字。
+
+#### multipart
+multipart 插件可以将书籍分成几个部分，例如：
+```
+GitBook Basic
+GitBook Advanced
+```
+对有非常多章节的书籍非常有用，分成两部分后，各个部分的章节都从 1 开始编号。
