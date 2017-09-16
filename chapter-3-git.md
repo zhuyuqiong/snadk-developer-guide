@@ -14,6 +14,7 @@ Git是一个分布式版本控制工具，它的主要特性在于：
 * 分布式，每一处都是完整的代码副本
 
 * 基于工作区操作
+
 * 开源免费
 
 Git官方有一个操作教程，有兴趣的同学可以体验一下shell方式的操作过程：[Try Git](https://try.github.io/)。
@@ -54,6 +55,10 @@ HostName "adk-git.sino-clink.com.cn"
 User "git"
 IdentityFile "~/.ssh/sino_rsa"
 ```
+
+可以看到，config文件中用于标识身份验证的文件名为 `sino`_`rsa，`_因此需要将刚刚生成的两个密钥文件改为_`sino_rsa,sino_rsa.pub`_
+
+
 
 ## 安装Git GUI工具
 
