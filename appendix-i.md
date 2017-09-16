@@ -306,8 +306,9 @@ GitBook Advanced
 ```
 对有非常多章节的书籍非常有用，分成两部分后，各个部分的章节都从 1 开始编号。
 
-##示例
+## 示例
 插件示例
+
 ```
 // book.json
 {
@@ -344,6 +345,7 @@ GitBook Advanced
   }
 }
 ```
+
 ```
 # 安装插件
 $ gitbook install ./
