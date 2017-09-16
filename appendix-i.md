@@ -347,15 +347,167 @@ book.json
 }
 
 ```
-
+安装插件：
 ```
-安装插件
+
 gitbook install ./
 
 ```
 
+```
+
+editlink
+
+内容顶部显示 编辑本页 链接。
+
+ad
+
+在每个页面顶部和底部添加广告或任何自定义内容。
+
+splitter
+
+在左侧目录和右侧内容之间添加一个可以拖拽的栏，用来调整两边的宽度。
+
+image-captions
+
+抓取内容中图片的 alt 或 title 属性，在图片下面显示标题。
+
+github
+
+在右上角显示 github 仓库的图标链接。
+
+anchors
+
+标题带有 github 样式的锚点。
+
+chart
+
+使用 C3.js 图表。
+
+styles-sass
+
+使用 SASS 替换 CSS。
+
+styles-less
+
+使用 LESS 替换 CSS。
+
+ga
+
+添加 Google 统计代码。
+
+disqus
+
+添加 disqus 评论插件。
+
+sitemap
+
+生成站点地图。
+
+latex-codecogs
+
+使用数学方程式。
+
+mermaid
+
+使用流程图。
+
+book-summary-scroll-position-saver
+
+自动保存左侧目录区域导航条的位置。
+
+sharing
+
+默认的分享插件。
+
+fontsettings
+
+默认的字体、字号、颜色设置插件。
+
+search
+
+默认搜索插件。
+
+tbfed-pagefooter
+
+自定义页脚，显示版权和最后修订时间。
+
+prism
+
+基于 Prism 的代码高亮。
+
+atoc
+
+插入 TOC 目录。
+
+ace
+
+插入代码高亮编辑器。
+
+highlight
+
+默认的代码高亮插件，通常会使用 prism 来替换。
+
+github-buttons
+
+显示 github 仓库的 star 和 fork 按钮。
+
+sectionx
+
+分离各个段落，并提供一个展开收起的按钮。
+
+mcqx
+
+使用选择题。
+
+include-codeblock
+
+通过引用文件插入代码。
+
+fbqx
+
+使用填空题。
+
+spoiler
+
+隐藏答案，当鼠标划过时才显示。
+
+anchor-navigation
+
+锚点导航。
+
+youtubex
+
+插入 YouTube 视频。
+
+redirect
+
+页面跳转。
+
+expandable-chapters
+
+收起或展开章节目录中的父节点。
+
+baidu
+
+使用百度统计。
+
+duoshuo
+
+使用多说评论。
+
+jsfiddle
+
+插入 JSFiddle 组件。
+
+jsbin
+
+插入 JSBin 组件。
+
+```
 
 ### 参考文档
+
 [GitBook官方说明](https://github.com/GitbookIO/gitbook)
 [GitBook简明教程](http://www.chengweiyang.cn/gitbook/index.html)
 [GitBook使用教程](http://blog.csdn.net/axi295309066/article/details/61420694)
