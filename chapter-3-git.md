@@ -189,7 +189,7 @@ Eclipse发布一个版本时，我们通常先在版本库中打一个标签（t
 
 ![](/assets/git-tags.png)![](/assets/git-tags-2.png)
 
-### 自带插件
+### Eclipse插件
 
 Eclipse插件主要使用两个视图 Git Staging 和 Git Repositories
 
