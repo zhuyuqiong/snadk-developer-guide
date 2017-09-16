@@ -80,7 +80,7 @@ Markdown 的粗体和斜体也非常简单，用两个 * 包含一段文本就�
 
 ## 参考文档
 [Markdown语法说明](http://wowubuntu.com/markdown/#list)
-[](http://www.jianshu.com/p/1e402922ee32/)
+[Markdown入门指南](http://www.jianshu.com/p/1e402922ee32/)
 
 
 
