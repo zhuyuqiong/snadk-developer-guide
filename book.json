@@ -1,19 +1,19 @@
 {
     "author":"zhuyuqiong",
     "plugins": [
-    "github",
-    "prism",
-    "-highlight",
-    "-splitter",
-    "anchors",
-    "book-summary-scroll-position-saver",
-    "anchor-navigation",
-    "theme-comscore",
-    "search",
-    "-search-pro",
-    "-sharing",
-    "sharing-plus"
-    ],
+        "github",
+        "prism",
+        "-highlight",
+        "-splitter",
+        "anchors",
+        "book-summary-scroll-position-saver",
+        "anchor-navigation",
+        "theme-comscore",
+        "search",
+        "-search-pro",
+        "-sharing",
+        "sharing-plus"
+        ],
     "pluginsConfig": {
     "github": {
     "url": "https://github.com/zhuyuqiong/snadk-developer-guide"
