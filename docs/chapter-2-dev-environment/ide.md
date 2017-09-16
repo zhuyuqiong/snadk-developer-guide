@@ -18,7 +18,7 @@ ftp/software软件安装包/IDE集成开发环境/Eclipse/eclipse-jee-neon-R-win
 
 eclipse中参见如下图片位置导入标准格式，其他IDE以此为参照设置，保证整个平台代码风格统一。
 
-![](/assets/code-format.png)
+![](assets/code-format.png)
 
 ### CodeTemplate
 
