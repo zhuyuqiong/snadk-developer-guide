@@ -12,6 +12,7 @@ Git是一个分布式版本控制工具，它的主要特性在于：
 * 体积小、性能高
 
 * 分布式，每一处都是完整的代码副本
+
 * 基于工作区操作
 * 开源免费
 
@@ -31,20 +32,28 @@ Git官方有一个操作教程，有兴趣的同学可以体验一下shell方式
 ssh-keygen -t rsa -C "你的名字@snsoft.com.cn"
 ```
 
-注意需要将命令中的邮箱替换为你的邮箱，执行完成后会在你的Windows用户文件夹下生成**`.ssh`**文件夹。里面是公钥和私钥文件如下：
+注意需要将命令中的邮箱替换为你的邮箱，执行完成后会在你的Windows用户文件夹下生成`.ssh`文件夹。里面是公钥和私钥文件如下：
 
 ```
 id_rsa
 id_rsa.pub
 ```
 
+同时需要将公司提供的`known_hosts` 文件和`config` 文件拷贝到`.ssh` 文件夹下。
 
+config文件内容：
 
+```
+Host "sino"
+HostName "git.sino-clink.com.cn"
+User "git"
+IdentityFile "~/.ssh/sino_rsa"
 
-
-
-
-
+Host "snsoftadk"
+HostName "adk-git.sino-clink.com.cn"
+User "git"
+IdentityFile "~/.ssh/sino_rsa"
+```
 
 ## 安装Git GUI工具
 
