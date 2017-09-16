@@ -97,11 +97,16 @@ SSH客户端选择**OpenSSH**
 * 分支：展示本地仓库所有分支
 
 * 远程：展示远程仓库所有分支
+
 * 右侧列表则展示当前分支的操作日志
 
-
-
 ### Eclipse自带插件
+
+Eclipse插件主要使用两个视图 Git Staging 和 Git Repositories
+
+Git Staging
+
+Git Repositories
 
 > 注意：需要设置提交人员的简体名称
 
