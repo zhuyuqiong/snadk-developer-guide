@@ -40,8 +40,7 @@
             "whatsapp": false,
             "all": [
                 "facebook", "douban", "twitter",
-                "weibo", "instapaper", "linkedin",
-                "pocket", "stumbleupon"
+                "weibo", "qq"
             ]
         }
     }
