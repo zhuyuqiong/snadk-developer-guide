@@ -499,3 +499,7 @@ jsbin
 
 插入 JSBin 组件。
 ```
+### 参考文档
+[GitBook官方说明](https://github.com/GitbookIO/gitbook)
+[GitBook简明教程](http://www.chengweiyang.cn/gitbook/index.html)
+[GitBook使用教程](http://blog.csdn.net/axi295309066/article/details/61420694)
