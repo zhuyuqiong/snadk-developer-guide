@@ -39,8 +39,7 @@
             "weibo": true,
             "whatsapp": false,
             "all": [
-                "facebook", "douban", "twitter",
-                "weibo", "qq"
+                "facebook", "douban", "twitter","weibo", "qq"
             ]
         }
     }
