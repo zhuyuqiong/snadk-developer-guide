@@ -6,7 +6,7 @@
         "-highlight",
         "anchors",
         "splitter",
-        "anchor-navigation",
+        "anchor-navigation-ex",
         "theme-comscore",
         "-search",
         "search-pro",
