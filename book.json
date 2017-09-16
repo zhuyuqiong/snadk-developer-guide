@@ -13,7 +13,7 @@
             "url": "https://github.com/zhuyuqiong/snadk-developer-guide"
         },
         "editlink": {
-            "base": "https://github.com/zhaoda/webpack-handbook/blob/master/content",
+            "base": "https://zhuyuqiong.gitbooks.io/snadk-developer-guide/content/",
             "label": "编辑本页"
         }
     }
