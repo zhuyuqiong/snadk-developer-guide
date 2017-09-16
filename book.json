@@ -2,7 +2,6 @@
     "root":"docs"
     "plugins": [
     "github",
-    "editlink",
     "prism",
     "-highlight",
     "baidu",
@@ -11,10 +10,6 @@
     "pluginsConfig": {
         "github": {
             "url": "https://github.com/zhuyuqiong/snadk-developer-guide"
-        },
-        "editlink": {
-            "base": "https://zhuyuqiong.gitbooks.io/snadk-developer-guide/content/",
-            "label": "编辑本页"
         }
     }
 }
