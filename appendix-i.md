@@ -84,7 +84,6 @@ Markdown 的粗体和斜体也非常简单，用两个 * 包含一段文本就�
 
 ## GitBook
 GitBook is a command line tool (and Node.js library) for building beautiful books using GitHub/Git and Markdown (or AsciiDoc).
-[GitBook.com](https://www.gitbook.com/) is an easy to use solution to write, publish and host books. It is the easiest solution for publishing your content and collaborating on it.
 ### GitBook.com
 
 [GitBook.com](https://www.gitbook.com) is an easy to use solution to write, publish and host books. It is the easiest solution for publishing your content and collaborating on it.
