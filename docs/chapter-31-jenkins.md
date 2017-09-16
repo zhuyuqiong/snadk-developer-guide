@@ -43,11 +43,11 @@ http://127.0.0.1::8080/jenkins
 
 首次进入后会先初始化环境安装插件，使用默认配置就可以，使用过程中如果使用额外插件在按需下载。
 
-![](assets/jinkins-initial.png)
+![](/assets/jinkins-initial.png)
 
 插件安装完成之后，需要创建第一个用户。创建完成后就可以使用Jenkins了。
 
-![](assets/jenkins-fisrt-user.png)
+![](/assets/jenkins-fisrt-user.png)
 
 ## 配置
 
@@ -111,15 +111,15 @@ Test Configuration：测试连接
 
 ### 配置源码
 
-![](assets/jenkins-git.png)
+![](/assets/jenkins-git.png)
 
 配置仓库地址，然后点击ADD按钮添加ssh秘钥，输入名称。
 
-![](assets/jenkins-git-ssh.png)
+![](/assets/jenkins-git-ssh.png)
 
 点击ADD添加完成后选择刚刚创建的秘钥，选择需要拉取的分支。
 
-![](assets/jenkins-master.png)
+![](/assets/jenkins-master.png)
 
 ### 配置maven打包项
 
