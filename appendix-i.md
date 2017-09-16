@@ -27,7 +27,7 @@ Markdown是一种可以使用普通文本编辑器编写的标记语言，通过
 
 * 列表1
 
-* 列表2 
+* 列表2
 
 ### 引用
 
@@ -43,48 +43,51 @@ Markdown是一种可以使用普通文本编辑器编写的标记语言，通过
 插入链接与插入图片的语法很像，区别在一个 !号
 
 ```
-
 图片为：![](){ImgCap}{/ImgCap}
 
 链接为：[]()
 
 插入图片的地址需要图床
-
 ```
+
 ### 粗体与斜体
 
-Markdown 的粗体和斜体也非常简单，用两个 * 包含一段文本就是粗体的语法，用一个 * 包含一段文本就是斜体的语法。
-例如：**这里是粗体** *这里是斜体*
+Markdown 的粗体和斜体也非常简单，用两个 _ 包含一段文本就是粗体的语法，用一个 _ 包含一段文本就是斜体的语法。  
+例如：**这里是粗体** _这里是斜体_
+
 ### 表格
 
 表格是我觉得 Markdown 比较累人的地方，例子如下：
 
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+| Tables | Are | Cool |
+| --- | :---: | ---: |
+| col 3 is | right-aligned | $1600 |
+| col 2 is | centered | $12 |
+| zebra stripes | are neat | $1 |
 
 ### 代码框
+
 `行内代码`
 
 ```
-
 代码块示例
-
 ```
+
 ### 分割线
 
-分割线的语法只需要三个 * 号，例如：
-***
+分割线的语法只需要三个 \* 号，例如：
+
+---
 
 ## 参考文档
-[Markdown语法说明](http://wowubuntu.com/markdown/#list)
 
-[Markdown入门指南](http://www.jianshu.com/p/1e402922ee32/)
+* [Markdown语法说明](http://wowubuntu.com/markdown/#list)
+* [Markdown入门指南](http://www.jianshu.com/p/1e402922ee32/)
 
 ## GitBook
-GitBook is a command line tool (and Node.js library) for building beautiful books using GitHub/Git and Markdown (or AsciiDoc).
+
+GitBook is a command line tool \(and Node.js library\) for building beautiful books using GitHub/Git and Markdown \(or AsciiDoc\).
+
 ### GitBook.com
 
 [GitBook.com](https://www.gitbook.com) 是进行GitBook管理、编写发布图书的在线版本。使用GitBook.com可以免去本地安装GitBook、编辑图书、发布的一系列操作，转而在线上完成。
@@ -97,7 +100,7 @@ GitBook is a command line tool (and Node.js library) for building beautiful book
 
 Installing GitBook is easy and straightforward. Your system just needs to meet these two requirements:
 
-* NodeJS (v4.0.0 and above is recommended)
+* NodeJS \(v4.0.0 and above is recommended\)
 * Windows, Linux, Unix, or Mac OS X
 
 ##### 使用 NPM 安装
@@ -133,13 +136,16 @@ README.md 和 SUMMARY.md 是两个必须文件，README.md 是对书籍的简单
 ```
 This is a book powered by [GitBook](https://github.com/GitbookIO/gitbook).
 ```
+
 SUMMARY.md 是书籍的目录结构。内容如下：
+
 ```
 * [Chapter1](chapter1/README.md)
   * [Section1.1](chapter1/section1.1.md)
   * [Section1.2](chapter1/section1.2.md)
 * [Chapter2](chapter2/README.md)
 ```
+
 创建了这两个文件后，使用 `gitbook init`，它会为我们创建 SUMMARY.md 中的目录结构。
 
 ```
@@ -153,7 +159,6 @@ SUMMARY.md 是书籍的目录结构。内容如下：
 └── chapter2
     └── README.md
 ```
-
 
 预览:
 
@@ -179,7 +184,7 @@ Use `gitbook ls-remote` to list remote versions available for install.
 
 ##### Debugging
 
-You can use the options `--log=debug` and `--debug` to get better error messages (with stack trace). For example:
+You can use the options `--log=debug` and `--debug` to get better error messages \(with stack trace\). For example:
 
 ```
 $ gitbook build ./ --log=debug --debug
@@ -192,8 +197,8 @@ GitBook allows you to customize your book using a flexible configuration. These 
 #### General Settings
 
 | Variable | Description |
-| -------- | ----------- |
-| `root` | Path to the root folder containing all the book's files, except `book.json`|
+| --- | --- |
+| `root` | Path to the root folder containing all the book's files, except `book.json` |
 | `structure` | To specify paths for Readme, Summary, Glossary etc. See [Structure paragraph](#structure). |
 | `title` | Title of your book, default value is extracted from the README. On GitBook.com this field is pre-filled. |
 | `description` | Description of your book, default value is extracted from the README. On GitBook.com this field is pre-filled. |
@@ -210,45 +215,44 @@ Plugins and their configurations are specified in the `book.json`. See [the plug
 Since version 3.0.0, GitBook can use themes. See [the theming section](themes/README.md) for more details.
 
 | Variable | Description |
-| -------- | ----------- |
+| --- | --- |
 | `plugins` | List of plugins to load |
-| `pluginsConfig` |Configuration for plugins |
+| `pluginsConfig` | Configuration for plugins |
 
 #### Structure
 
-In addition to the `root` variable, you can tell Gitbook the name of the files for Readme, Summary, Glossary, Languages (instead of using the default names such as `README.md`).
-These files must be at the root of your book (or the root of every language book). Paths such as `dir/MY_README.md` are not accepted.
+In addition to the `root` variable, you can tell Gitbook the name of the files for Readme, Summary, Glossary, Languages \(instead of using the default names such as `README.md`\).  
+These files must be at the root of your book \(or the root of every language book\). Paths such as `dir/MY_README.md` are not accepted.
 
 | Variable | Description |
-| -------- | ----------- |
-| `structure.readme` | Readme file name (defaults to `README.md`) |
-| `structure.summary` | Summary file name (defaults to `SUMMARY.md`) |
-| `structure.glossary` | Glossary file name (defaults to `GLOSSARY.md`) |
-| `structure.languages` | Languages file name (defaults to `LANGS.md`) |
+| --- | --- |
+| `structure.readme` | Readme file name \(defaults to `README.md`\) |
+| `structure.summary` | Summary file name \(defaults to `SUMMARY.md`\) |
+| `structure.glossary` | Glossary file name \(defaults to `GLOSSARY.md`\) |
+| `structure.languages` | Languages file name \(defaults to `LANGS.md`\) |
 
 #### PDF Options
 
 PDF Output can be customized using a set of options in the `book.json`:
 
 | Variable | Description |
-| -------- | ----------- |
-| `pdf.pageNumbers` | Add page numbers to the bottom of every page (default is `true`) |
-| `pdf.fontSize` | Base font size (default is `12`) |
-| `pdf.fontFamily` | Base font family (default is `Arial`) |
-| `pdf.paperSize` | Paper size, options are `'a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'b0', 'b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'legal', 'letter'` (default is `a4`) |
-| `pdf.margin.top` | Top margin (default is `56`) |
-| `pdf.margin.bottom` | Bottom margin (default is `56`) |
-| `pdf.margin.right` | Right margin (default is `62`) |
-| `pdf.margin.left` | Left margin (default is `62`) |
+| --- | --- |
+| `pdf.pageNumbers` | Add page numbers to the bottom of every page \(default is `true`\) |
+| `pdf.fontSize` | Base font size \(default is `12`\) |
+| `pdf.fontFamily` | Base font family \(default is `Arial`\) |
+| `pdf.paperSize` | Paper size, options are `'a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'b0', 'b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'legal', 'letter'` \(default is `a4`\) |
+| `pdf.margin.top` | Top margin \(default is `56`\) |
+| `pdf.margin.bottom` | Bottom margin \(default is `56`\) |
+| `pdf.margin.right` | Right margin \(default is `62`\) |
+| `pdf.margin.left` | Left margin \(default is `62`\) |
 
 ### Plugins
 
-Plugins are the best way to extend GitBook functionalities (ebook and website). There exist plugins to do a lot of things: bring math formulas display support, track visits using Google Analytic, etc.
+Plugins are the best way to extend GitBook functionalities \(ebook and website\). There exist plugins to do a lot of things: bring math formulas display support, track visits using Google Analytic, etc.
 
 #### How to find plugins?
 
 Plugins can be easily searched on [plugins.gitbook.com](https://plugins.gitbook.com).
-
 
 #### How to install a plugin?
 
@@ -271,22 +275,32 @@ Plugins are automatically installed on [GitBook.com](https://www.gitbook.com). L
 Plugins specific configurations are stored in `pluginsConfig`. You have to refer to the documentation of the plugin itself for details about the available options.
 
 ### 主题插件
+
 用户可以通过在 NPM 上搜索 `gitbook-theme` 来查找主题插件
+
 #### ComScore
+
 ComScore 是一个彩色主题，默认的 gitbook 主题是黑白的，也就是标题和正文都是黑色的，而 ComScore 可以为各级标题添加不同的颜色，更容易区分各级标题。
 
 ### 实用插件
+
 gitbook 也有很多实用性插件，用户可以在 GitHub 或者 NPM 上搜索 `gitbook-plugin` 来查找。
+
 #### Disqus
-Disqus 是一个非常流行的为网站集成评论系统的工具，同样，gitbook 也可以集成 disqus 以便可以和读者交流。
+
+Disqus 是一个非常流行的为网站集成评论系统的工具，同样，gitbook 也可以集成 disqus 以便可以和读者交流。  
 首先，需要在 disqus 上注册一个账号，然后添加一个 website，这会获得一个关键字，然后在集成时配置这个关键字即可。
+
 ##### 安装 disqus 插件
 
 可以参考 插件项目主页 来安装，命令如下：
+
 ```
 $ npm install gitbook-plugin-disqus -g
 ```
+
 然后，修改 book.json 配置文件，添加插件的配置内容：
+
 ```
 {
     "plugins": ["disqus"],
@@ -297,19 +311,21 @@ $ npm install gitbook-plugin-disqus -g
     }  
 }
 ```
->注意：上面的 shortName 的值就是你在 disqus 上创建的 website 获得的唯一关键字。
+
+> 注意：上面的 shortName 的值就是你在 disqus 上创建的 website 获得的唯一关键字。
 
 #### multipart
+
 multipart 插件可以将书籍分成几个部分，例如：
+
 ```
 GitBook Basic
 GitBook Advanced
 ```
+
 对有非常多章节的书籍非常有用，分成两部分后，各个部分的章节都从 1 开始编号。
 
 ## 示例
-
-
 
 ```
 book.json
@@ -346,17 +362,15 @@ book.json
         }
     }
 }
-
 ```
+
 安装插件：
-```
 
+```
 gitbook install ./
-
 ```
 
 ```
-
 editlink
 
 内容顶部显示 编辑本页 链接。
@@ -504,13 +518,13 @@ jsfiddle
 jsbin
 
 插入 JSBin 组件。
-
 ```
 
 ### 参考文档
 
-[GitBook官方说明](https://github.com/GitbookIO/gitbook)
+* [GitBook官方说明](https://github.com/GitbookIO/gitbook)
+* [GitBook简明教程](http://www.chengweiyang.cn/gitbook/index.html)
+* [GitBook使用教程](http://blog.csdn.net/axi295309066/article/details/61420694)
 
-[GitBook简明教程](http://www.chengweiyang.cn/gitbook/index.html)
 
-[GitBook使用教程](http://blog.csdn.net/axi295309066/article/details/61420694)
+
