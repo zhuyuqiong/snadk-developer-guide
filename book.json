@@ -22,7 +22,7 @@
             "defineWord" : ["Gitbook Use"]
         },
         "sharing": {
-            "douban": true,
+            "douban": false,
             "facebook": true,
             "google": false,
             "hatenaBookmark": false,
@@ -34,7 +34,7 @@
             "qq": true,
             "qzone": false,
             "stumbleupon": false,
-            "twitter": true,
+            "twitter": false,
             "viber": false,
             "vk": false,
             "weibo": true,
