@@ -18,7 +18,7 @@ ftp/software软件安装包/IDE集成开发环境/Eclipse/eclipse-jee-neon-R-win
 
 eclipse中参见如下图片位置导入标准格式，其他IDE以此为参照设置，保证整个平台代码风格统一。
 
-![](assets/code-format.png)
+![](/docs/assets/code-format.png)
 
 ### CodeTemplate
 
@@ -26,7 +26,7 @@ eclipse中代码标准模版参见下图设置，主要约束类注释格式和�
 
 > 注意：注释作者名改成自己的。
 
-![](assets/code-template.png)
+![](/docs/assets/code-template.png)
 
 ### SaveActions
 
@@ -34,17 +34,17 @@ IDE中存盘事件需设置自动格式化、import、自动注解。
 
 Eclipse中参见下图设置：
 
-![](assets/save-actions.png)
+![](/docs/assets/save-actions.png)
 
 ### Maven
 
 Maven的setting在工作空间下，里面的jar包仓库按需自己指定位置。
 
-![](assets/maven-setting.png)
+![](/docs/assets/maven-setting.png)
 
 注意修改文件后更新Eclipse里的Maven：
 
-![](assets/maven-eclipse.png)
+![](/docs/assets/maven-eclipse.png)
 
 ### Intellij Idea
 
