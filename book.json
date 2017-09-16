@@ -5,7 +5,7 @@
     "github",
     "prism",
     "-highlight",
-    "splitter",
+    "-splitter",
     "anchors",
     "book-summary-scroll-position-saver",
     "anchor-navigation",
