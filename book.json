@@ -6,7 +6,8 @@
     "-highlight",
     "splitter",
     "anchors",
-    "book-summary-scroll-position-saver"
+    "book-summary-scroll-position-saver",
+    "anchor-navigation"
     ],
     "pluginsConfig": {
         "github": {
