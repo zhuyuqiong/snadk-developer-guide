@@ -7,7 +7,8 @@
     "splitter",
     "anchors",
     "book-summary-scroll-position-saver",
-    "anchor-navigation"
+    "anchor-navigation",
+    "theme-comscore"
     ],
     "pluginsConfig": {
         "github": {
