@@ -487,9 +487,9 @@ spoiler
 
 隐藏答案，当鼠标划过时才显示。
 
-anchor-navigation
+anchor-navigation-ex
 
-锚点导航。$ npm install --save gitbook-plugin-anchor-navigation
+锚点导航。
 
 youtubex
 
