@@ -1,6 +1,6 @@
 {
     "author":"zhuyuqiong",
-    "root":"/"
+    "root":"./"
     "plugins": [
         "github",
         "prism",
