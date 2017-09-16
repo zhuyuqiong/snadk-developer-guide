@@ -66,7 +66,7 @@ IdentityFile "~/.ssh/sino_rsa"
 
 在如下地址下载Git可视化工具安装：
 
-[https://git-scm.com/downloads/guis](https://git-scm.com/downloads/guis)或公司ftp `ftp/software软件安装包/Git和Svn/Git/`
+[https://git-scm.com/downloads/guis](https://git-scm.com/downloads/guis)或公司FTP `ftp/software软件安装包/Git和Svn/Git/`
 
 windows下Git可视化工具主要选择有以下几种：
 
