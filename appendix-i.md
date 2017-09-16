@@ -119,13 +119,48 @@ $ gitbook init
 
 If you wish to create the book into a new directory, you can do so by running `gitbook init ./directory`
 
-Preview and serve your book using:
+首先，创建如下目录结构：
+
+```
+book/
+├── README.md
+└── SUMMARY.md
+```
+
+README.md 和 SUMMARY.md 是两个必须文件，README.md 是对书籍的简单介绍：
+
+```
+This is a book powered by [GitBook](https://github.com/GitbookIO/gitbook).
+```
+SUMMARY.md 是书籍的目录结构。内容如下：
+```
+* [Chapter1](chapter1/README.md)
+  * [Section1.1](chapter1/section1.1.md)
+  * [Section1.2](chapter1/section1.2.md)
+* [Chapter2](chapter2/README.md)
+```
+创建了这两个文件后，使用 `gitbook init`，它会为我们创建 SUMMARY.md 中的目录结构。
+
+```
+.
+├── README.md
+├── SUMMARY.md
+├── chapter1
+│   ├── README.md
+│   ├── section1.1.md
+│   └── section1.2.md
+└── chapter2
+    └── README.md
+```
+
+
+预览:
 
 ```
 $ gitbook serve
 ```
 
-Or build the static website using:
+生成静态Website:
 
 ```
 $ gitbook build
