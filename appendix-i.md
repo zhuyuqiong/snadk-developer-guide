@@ -240,10 +240,40 @@ PDF Output can be customized using a set of options in the `book.json`:
 | `pdf.margin.right` | Right margin (default is `62`) |
 | `pdf.margin.left` | Left margin (default is `62`) |
 
+### Plugins
+
+Plugins are the best way to extend GitBook functionalities (ebook and website). There exist plugins to do a lot of things: bring math formulas display support, track visits using Google Analytic, etc.
+
+#### How to find plugins?
+
+Plugins can be easily searched on [plugins.gitbook.com](https://plugins.gitbook.com).
+
+
+#### How to install a plugin?
+
+Once you find a plugin that you want to install, you need to add it to your `book.json`:
+
+```
+{
+    "plugins": ["myPlugin", "anotherPlugin"]
+}
+```
+
+You can also specify a specific version using: `"myPlugin@0.3.1"`. By default GitBook will resolve the latest version of the plugin compatbile with the current GitBook version.
+
+#### GitBook.com
+
+Plugins are automatically installed on [GitBook.com](https://www.gitbook.com). Locally, run `gitbook install` to install and prepare all plugins for your books.
+
+#### Configuring plugins
+
+Plugins specific configurations are stored in `pluginsConfig`. You have to refer to the documentation of the plugin itself for details about the available options.
+
 ### 主题插件
 用户可以通过在 NPM 上搜索 `gitbook-theme` 来查找主题插件
 #### ComScore
 ComScore 是一个彩色主题，默认的 gitbook 主题是黑白的，也就是标题和正文都是黑色的，而 ComScore 可以为各级标题添加不同的颜色，更容易区分各级标题。
+
 ### 实用插件
 gitbook 也有很多实用性插件，用户可以在 GitHub 或者 NPM 上搜索 `gitbook-plugin` 来查找。
 #### Disqus
@@ -275,3 +305,197 @@ GitBook Basic
 GitBook Advanced
 ```
 对有非常多章节的书籍非常有用，分成两部分后，各个部分的章节都从 1 开始编号。
+
+##示例
+插件示例
+```
+// book.json
+{
+  "title": "Webpack 中文指南",
+  "description": "Webpack 是当下最热门的前端资源模块化管理和打包工具，本书大部分内容翻译自 Webpack 官网。",
+  "language": "zh",
+  "plugins": [
+    "disqus",
+    "github",
+    "editlink",
+    "prism",
+    "-highlight",
+    "baidu",
+    "splitter",
+    "sitemap"
+  ],
+  "pluginsConfig": {
+    "disqus": {
+      "shortName": "webpack-handbook"
+    },
+    "github": {
+      "url": "https://github.com/zhaoda/webpack-handbook"
+    },
+    "editlink": {
+      "base": "https://github.com/zhaoda/webpack-handbook/blob/master/content",
+      "label": "编辑本页"
+    },
+    "baidu": {
+        "token": "a9787f0ab45d5e237bab522431d0a7ec"
+    },
+    "sitemap": {
+        "hostname": "http://zhaoda.net/"
+    }
+  }
+}
+```
+```
+# 安装插件
+$ gitbook install ./
+```
+例子中的插件说明
+
+```
+editlink
+
+内容顶部显示 编辑本页 链接。
+
+ad
+
+在每个页面顶部和底部添加广告或任何自定义内容。
+
+splitter
+
+在左侧目录和右侧内容之间添加一个可以拖拽的栏，用来调整两边的宽度。
+
+image-captions
+
+抓取内容中图片的 alt 或 title 属性，在图片下面显示标题。
+
+github
+
+在右上角显示 github 仓库的图标链接。
+
+anchors
+
+标题带有 github 样式的锚点。
+
+chart
+
+使用 C3.js 图表。
+
+styles-sass
+
+使用 SASS 替换 CSS。
+
+styles-less
+
+使用 LESS 替换 CSS。
+
+ga
+
+添加 Google 统计代码。
+
+disqus
+
+添加 disqus 评论插件。
+
+sitemap
+
+生成站点地图。
+
+latex-codecogs
+
+使用数学方程式。
+
+mermaid
+
+使用流程图。
+
+book-summary-scroll-position-saver
+
+自动保存左侧目录区域导航条的位置。
+
+sharing
+
+默认的分享插件。
+
+fontsettings
+
+默认的字体、字号、颜色设置插件。
+
+search
+
+默认搜索插件。
+
+tbfed-pagefooter
+
+自定义页脚，显示版权和最后修订时间。
+
+prism
+
+基于 Prism 的代码高亮。
+
+atoc
+
+插入 TOC 目录。
+
+ace
+
+插入代码高亮编辑器。
+
+highlight
+
+默认的代码高亮插件，通常会使用 prism 来替换。
+
+github-buttons
+
+显示 github 仓库的 star 和 fork 按钮。
+
+sectionx
+
+分离各个段落，并提供一个展开收起的按钮。
+
+mcqx
+
+使用选择题。
+
+include-codeblock
+
+通过引用文件插入代码。
+
+fbqx
+
+使用填空题。
+
+spoiler
+
+隐藏答案，当鼠标划过时才显示。
+
+anchor-navigation
+
+锚点导航。
+
+youtubex
+
+插入 YouTube 视频。
+
+redirect
+
+页面跳转。
+
+expandable-chapters
+
+收起或展开章节目录中的父节点。
+
+baidu
+
+使用百度统计。
+
+duoshuo
+
+使用多说评论。
+
+jsfiddle
+
+插入 JSFiddle 组件。
+
+jsbin
+
+插入 JSBin 组件。
+```
