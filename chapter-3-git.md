@@ -104,9 +104,8 @@ SSH客户端选择**OpenSSH**
 
 Eclipse插件主要使用两个视图 Git Staging 和 Git Repositories
 
-Git Staging
-
-Git Repositories
+* Git Staging：文件状态展示、Commit操作等
+* Git Repositories：仓库展示、Push操作等。
 
 > 注意：需要设置提交人员的简体名称
 
