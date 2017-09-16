@@ -1,6 +1,5 @@
 {
     "author":"zhuyuqiong",
-    "root":"./",
     "plugins": [
         "github",
         "prism",
