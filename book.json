@@ -5,7 +5,7 @@
     "prism",
     "-highlight",
     "splitter",
-    "sitemap"],
+    "anchors"],
     "pluginsConfig": {
         "github": {
             "url": "https://github.com/zhuyuqiong/snadk-developer-guide"
