@@ -109,7 +109,7 @@ Eclipse插件主要使用两个视图 Git Staging 和 Git Repositories
 
 > 注意：需要设置提交人员的简体名称
 
-### 操作步骤
+### 
 
-暂存-提交-推送-拉取；
+
 
