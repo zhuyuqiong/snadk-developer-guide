@@ -100,7 +100,7 @@ GitBook is a command line tool \(and Node.js library\) for building beautiful bo
 
 Installing GitBook is easy and straightforward. Your system just needs to meet these two requirements:
 
-* NodeJS \(v4.0.0 and above is recommended\)
+* [NodeJS](https://nodejs.org/en/) \(v4.0.0 and above is recommended\)
 * Windows, Linux, Unix, or Mac OS X
 
 ##### 使用 NPM 安装
