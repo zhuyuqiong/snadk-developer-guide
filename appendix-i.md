@@ -309,6 +309,46 @@ GitBook Advanced
 ## 示例
 插件示例
 
+```
+ces
+```
+
+```
+book.json
+{
+"title": "Webpack 中文指南",
+"description": "Webpack 是当下最热门的前端资源模块化管理和打包工具，本书大部分内容翻译自 Webpack 官网。",
+"language": "zh",
+"plugins": [
+"disqus",
+"github",
+"editlink",
+"prism",
+"-highlight",
+"baidu",
+"splitter",
+"sitemap"
+],
+"pluginsConfig": {
+"disqus": {
+"shortName": "webpack-handbook"
+},
+"github": {
+"url": "https://github.com/zhaoda/webpack-handbook"
+},
+"editlink": {
+"base": "https://github.com/zhaoda/webpack-handbook/blob/master/content",
+"label": "编辑本页"
+},
+"baidu": {
+"token": "a9787f0ab45d5e237bab522431d0a7ec"
+},
+"sitemap": {
+"hostname": "http://zhaoda.net/"
+}
+}
+}
+```
 ### 参考文档
 [GitBook官方说明](https://github.com/GitbookIO/gitbook)
 [GitBook简明教程](http://www.chengweiyang.cn/gitbook/index.html)
