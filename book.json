@@ -39,7 +39,7 @@
             "weibo": true,
             "whatsapp": false,
             "all": [
-                "facebook", "google", "twitter",
+                "facebook", "douban", "twitter",
                 "weibo", "instapaper", "linkedin",
                 "pocket", "stumbleupon"
             ]
