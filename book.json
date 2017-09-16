@@ -10,7 +10,7 @@
     "anchor-navigation",
     "theme-comscore",
     "-search",
-    "search-pro"
+    "search-pro",
     ],
     "pluginsConfig": {
         "github": {
