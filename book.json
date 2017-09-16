@@ -1,11 +1,16 @@
 {
-	"root":"docs"
-	"plugins": [
-             "github",
-             "editlink",
-             "prism",
-             "-highlight",
-             "baidu",
-             "splitter",
-             "sitemap"]
+    "root":"docs"
+    "plugins": [
+    "github",
+    "editlink",
+    "prism",
+    "-highlight",
+    "baidu",
+    "splitter",
+    "sitemap"],
+    "pluginsConfig": {
+        "github": {
+            "url": "https://github.com/zhuyuqiong/snadk-developer-guide"
+        }
+    }
 }
