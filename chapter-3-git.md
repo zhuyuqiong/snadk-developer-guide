@@ -58,6 +58,8 @@ IdentityFile "~/.ssh/sino_rsa"
 
 可以看到，config文件中用于标识身份验证的文件名为 `sinorsa`，因此需要将刚刚生成的两个密钥文件改为`sino_rsa,sino_rsa.pub`
 
+同时将公钥`sino_rsa.pub` 复制一份重命名为`你的名字@snsoft.com.cn.pub `，这个文件需要发送给相关人员开通权限。
+
 ## 安装Git GUI工具
 
 在如下地址下载Git可视化工具安装：
