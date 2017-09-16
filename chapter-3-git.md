@@ -66,7 +66,7 @@ IdentityFile "~/.ssh/sino_rsa"
 
 在如下地址下载Git可视化工具安装：
 
-[https://git-scm.com/downloads/guis](https://git-scm.com/downloads/guis)
+[https://git-scm.com/downloads/guis](https://git-scm.com/downloads/guis)或公司ftp `ftp/software软件安装包/Git和Svn/Git/`
 
 windows下Git可视化工具主要选择有以下几种：
 
@@ -88,8 +88,6 @@ SSH客户端选择**OpenSSH**
 
 首选要克隆一个远程仓库到本地。这里需要设置远程仓库的URL以及本地仓库的存放路径。
 
-
-
 a. Git；
 
 b. 客户端（自行选择，使用其一）
@@ -101,10 +99,6 @@ i. SourceTree；
 ### Eclipse自带插件
 
 1. 需要设置提交人员的简体名称；
-
-
-
-
 
 d. 操作步骤：
 
