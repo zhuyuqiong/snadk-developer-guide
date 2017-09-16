@@ -17,20 +17,32 @@
             "url": "https://github.com/zhuyuqiong/snadk-developer-guide"
         },
         "search-pro": {
-        "cutWordLib": "nodejieba",
-        "defineWord" : ["Gitbook Use"]
+            "cutWordLib": "nodejieba",
+            "defineWord" : ["Gitbook Use"]
         },
         "sharing": {
-        "weibo": true,
-        "facebook": true,
-        "twitter": true,
-        "google": false,
-        "instapaper": false,
-        "vk": false,
-        "all": [
-            "facebook", "google", "twitter",
-                "weibo", "instapaper"
-        ]
+            "douban": true,
+            "facebook": true,
+            "google": false,
+            "hatenaBookmark": false,
+            "instapaper": false,
+            "line": false,
+            "linkedin": false,
+            "messenger": false,
+            "pocket": false,
+            "qq": true,
+            "qzone": false,
+            "stumbleupon": false,
+            "twitter": true,
+            "viber": false,
+            "vk": false,
+            "weibo": true,
+            "whatsapp": false,
+            "all": [
+                "facebook", "google", "twitter",
+                "weibo", "instapaper", "linkedin",
+                "pocket", "stumbleupon"
+            ]
         }
     }
 }
