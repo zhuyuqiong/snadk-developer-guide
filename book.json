@@ -1,4 +1,14 @@
 {
 	"root":"docs"
-	
+	"plugins": 
+             [
+             "disqus",
+             "github",
+             "editlink",
+             "prism",
+             "-highlight",
+             "baidu",
+             "splitter",
+             "sitemap"
+             ]
 }
