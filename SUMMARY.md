@@ -41,5 +41,5 @@
 * [Chapter 33. JavaDoc](chapter-33-javadoc.md)
 * [Chapter 34. Maven](chapter-34-maven.md)
 * [Chapter 35. MongoDB](chapter-35-mongodb.md)
-* [Appendix I. Markdown](appendix-i.md)
+* [Appendix I. Markdown&GitBook](appendix-i.md)
 
