@@ -22,7 +22,7 @@
         "cutWordLib": "nodejieba",
         "defineWord" : ["Gitbook Use"]
     },
-    "sharing-plus": {
+    "sharing": {
         "douban": true,
         "facebook": true,
         "google": false,
