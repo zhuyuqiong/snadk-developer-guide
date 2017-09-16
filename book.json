@@ -6,7 +6,6 @@
         "-highlight",
         "anchors",
         "splitter",
-        "-book-summary-scroll-position-saver",
         "anchor-navigation",
         "theme-comscore",
         "-search",
