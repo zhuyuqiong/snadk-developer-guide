@@ -78,7 +78,9 @@ Markdown 的粗体和斜体也非常简单，用两个 * 包含一段文本就�
 分割线的语法只需要三个 * 号，例如：
 ***
 
-
+## 参考文档
+[Markdown语法说明](http://wowubuntu.com/markdown/#list)
+[](http://www.jianshu.com/p/1e402922ee32/)
 
 
 
