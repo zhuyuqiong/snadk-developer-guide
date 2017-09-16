@@ -489,7 +489,7 @@ spoiler
 
 anchor-navigation
 
-锚点导航。
+锚点导航。$ npm install --save gitbook-plugin-anchor-navigation
 
 youtubex
 
