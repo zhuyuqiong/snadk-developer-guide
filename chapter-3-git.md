@@ -25,6 +25,8 @@ Git官方有一个操作教程，有兴趣的同学可以体验一下shell方式
 
 [https://git-scm.com/downloads](https://git-scm.com/downloads)
 
+或`ftp/software软件安装包/Git和Svn/Git/`
+
 安装完成后，右键菜单中选择 Git Bash 生成ssh密钥（用于同远程仓库验证）
 
 在shell中输入：
@@ -84,7 +86,7 @@ SSH客户端选择**OpenSSH**
 
 ### SourceTree使用
 
-
+首选要克隆一个远程仓库到本地。这里需要设置远程仓库的URL以及本地仓库的存放路径。
 
 
 
@@ -96,13 +98,19 @@ i. SourceTree；
 
 1. 需要设置提交人员的简体名称；
 
-ii. Eclipse自带插件；
+### Eclipse自带插件
 
 1. 需要设置提交人员的简体名称；
 
-c. 账号的设置；
 
-d. 操作步骤：暂存-提交-推送-拉取；
+
+
+
+d. 操作步骤：
+
+暂存-提交-推送-拉取；
+
+其他说明
 
 1、Git相关（ftp/software软件安装包/Git和Svn/Git/）：
 
