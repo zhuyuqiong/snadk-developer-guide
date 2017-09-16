@@ -16,6 +16,9 @@
         "github": {
             "url": "https://github.com/zhuyuqiong/snadk-developer-guide"
         },
-        "share"
+        "search-pro": {
+        "cutWordLib": "nodejieba",
+        "defineWord" : ["Gitbook Use"]
+        }
     }
 }
