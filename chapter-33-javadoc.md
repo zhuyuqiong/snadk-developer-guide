@@ -153,7 +153,7 @@ Returns:返回表名："model"
  * @since 1.0
  * @see <a href="" target="_blank">查看帮助</a>
  */
-public class SnakeUtils
+public class SnakeUtils{}
 ```
 
 ### 完整方法注释例子
@@ -182,7 +182,7 @@ public class SnakeUtils
      * @return 返回表名：{@value #TBLNAME}
      * @throws Exception
      */
-    public String testJavaDoc(String p1, String p2) throws Exception
+    public String testJavaDoc(String p1, String p2) throws Exception;
 ```
 
 ## 参考文档
