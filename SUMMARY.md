@@ -1,6 +1,6 @@
 # Summary
 
-## Preapre
+## Prepare
 
 * [Introduction](README.md)
 * [Documentation](chapter-1-documentation.md)
