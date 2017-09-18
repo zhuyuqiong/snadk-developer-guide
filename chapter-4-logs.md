@@ -39,7 +39,16 @@ org.jboss.logging.provider=slf4j
     （1）开发阶段：任何有意义的信息；
     （2）集成阶段：自己的功能DEBUG级别，三方功能WARN（如果有需要INFO）级别；
     （3）成品阶段：自己的功能INFO级别，三方功能WARN级别；
-### 索引性
+### 调试日志
+提交前去除编码帮助日志
+```
+	LOGGER.debug(“Enter in aMethod”);
+	if (“no”.equals(aParam)) 
+	{
+		LOGGER.debug(“User says no”);
+	}
+```
+	类似于这种代码在提交前需要删除。
 ### 索引性
 ### 索引性
 ### 索引性
