@@ -9,14 +9,14 @@
   * [Project](chapter-2-dev-environment/project.md)
   * [Runtime](chapter-2-dev-environment/runtime.md)
   * [Plugins](chapter-2-dev-environment/plugins.md)
-  * [MySQL](chapter-2-dev-environment/25-mysql.md)
+  * [MySQL](dev-environment-mysql.md)
 * [Git](chapter-3-git.md)
 * [Logging](chapter-4-logs.md)
   * [slf4j](chapter-4-logs/slf4j.md)
   * [logback](chapter-4-logs/logback.md)
-  
-## SNADK  
-  
+
+## SNADK
+
 * [SNADK-DX-DB](chapter-5-snadk-dx-db.md)
 * [SNADK-DX-VO](chapter-6-snadk-dx-vo.md)
 * [SNADK-UI-View](chapter-7-snadk-ui-view.md)
