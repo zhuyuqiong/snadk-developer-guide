@@ -1,7 +1,7 @@
 # Chapter 4. 日志系统
 ## 总体说明
 
-本系统统一使用slf4j并指向logback，特殊情况需单独指定（在snsoft/System.properties中设置），如下：
+本系统统一使用slf4j并指向logback，特殊情况需单独指定（在snsoft/System.properties中设置，也可以通过JVM属性—D指定），如下：
 ```
 #设置Freemarker使用slf4j（logback）
 org.freemarker.loggerLibrary=SLF4J
