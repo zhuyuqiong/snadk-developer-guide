@@ -23,7 +23,8 @@
         },
         "anchor-navigation-ex":{
             "multipleH1":false,
-            "showLevel":false,
+            "showLevel":true,
+            "associatedWithSummary":true,
             "mode":"float"
         },
         "sharing": {
