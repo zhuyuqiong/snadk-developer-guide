@@ -1,7 +1,7 @@
 # Chapter 4. 日志系统
 ## 总体说明
 
-本系统统一使用slf4j并指向logback，特殊情况需单独指定，如下：
+本系统统一使用slf4j并指向logback，特殊情况需单独指定（在snsoft/System.properties中设置），如下：
 ```
 #设置Freemarker使用slf4j（logback）
 org.freemarker.loggerLibrary=SLF4J
@@ -18,21 +18,7 @@ logging.config=D:/snsoft90/snconfig/logback.xml
 b. System.properties中配置以下三项，用于指定日志使用slf4j
 
   i. org.freemarker.loggerLibrary=SLF4J
-
-
-
-
-
-
-
   ii. dubbo.application.logger=slf4j
-
-
-
-
-
-
-
   iii. org.jboss.logging.provider=slf4j
 
 c. 其余参见日志规范7点；
