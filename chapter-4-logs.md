@@ -61,7 +61,8 @@ if (logger.isDebugEnabled())
 了解你的logger，否则可能会带来巨大的开销
 错误：logger.info("Person name is " + person.getName());
 正确：logger.info("Person name is {}", person.getName());
-
+前一种方式，在记录日志时创建日志信息，但是实际上该日志可能被过滤，根本就没有记录；
+后一种方式，在记录日志时，并不创建日志信息，在真正记录时才创建日志信息，可以减少字符串对象的创建。
 ### 索引性
 ### 索引性
 
