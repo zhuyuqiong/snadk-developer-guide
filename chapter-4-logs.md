@@ -48,7 +48,7 @@ org.jboss.logging.provider=slf4j
 		LOGGER.debug(“User says no”);
 	}
 ```
-	类似于这种代码在提交前需要删除。
+类似于这种代码在提交前需要删除。
 ### 索引性
 ### 索引性
 ### 索引性
