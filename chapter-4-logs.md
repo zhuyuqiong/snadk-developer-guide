@@ -57,7 +57,11 @@ if (logger.isDebugEnabled())
 	logger.debug (…….)
 }
 ```
-### 日志的格式
+### 记录日志的方式
+了解你的logger，否则可能会带来巨大的开销
+错误：logger.info("Person name is " + person.getName());
+正确：logger.info("Person name is {}", person.getName());
+
 ### 索引性
 ### 索引性
 
