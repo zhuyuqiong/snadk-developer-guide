@@ -1,9 +1,8 @@
 # Summary
 
-* [Introduction](README.md)
-
 ## Preapre
 
+* [Introduction](README.md)
 * [Documentation](chapter-1-documentation.md)
 * [Dev Environment](chapter-2-dev-environment.md)
   * [IDE](chapter-2-dev-environment/ide.md)
