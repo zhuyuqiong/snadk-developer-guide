@@ -12,6 +12,7 @@
         "search-pro",
         "-sharing",
         "sharing-plus",
+        "atoc"
         ],
     "pluginsConfig": {
         "github": {
@@ -25,6 +26,10 @@
             "multipleH1":false,
             "showLevel":false,
             "mode":"float"
+        },
+        "atoc":{
+            "addClass": true,
+            "className": "atoc"
         },
         "sharing": {
             "douban": false,
