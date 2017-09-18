@@ -12,9 +12,11 @@ dubbo.application.logger=slf4j
 #设置Hibernate(Validator)使用slf4j（logback）
 org.jboss.logging.provider=slf4j
 ```
-a. 开发环境：默认使用snadk-utils下的logback.xml，可以通过-Dlogback.configurationFile指定logback的配置文件；
-logging.config=D:/snsoft90/snconfig/logback.xml
-
+a. 开发环境：默认使用snadk-utils下的logback.xml，可以通过一下方式指定logback的配置文件：
+```
+-Dlogback.configurationFile=D:/snsoft90/snconfig/logback.xml
+-Dlogging.config=D:/snsoft90/snconfig/logback.xml
+```
 b. System.properties中配置以下三项，用于指定日志使用slf4j
 
   i. org.freemarker.loggerLibrary=SLF4J
