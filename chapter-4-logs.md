@@ -42,7 +42,7 @@ org.jboss.logging.provider=slf4j
 ### 调试日志
 提交前去除编码帮助日志
 ```
-	LOGGER.debug(“Enter in aMethod”);
+re
 	if (“no”.equals(aParam)) 
 	{
 		LOGGER.debug(“User says no”);
