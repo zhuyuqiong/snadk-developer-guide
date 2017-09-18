@@ -34,7 +34,11 @@ org.jboss.logging.provider=slf4j
 日志是面向读者的：打印的信息应该可以明确进行定位
     错误：ERROR: Save failure - SQLException .....
     正确：ERROR: Save failure - Entity=Person, Data=[id=123 surname="Mario"] - SQLException....
-### 分类
+### 环境分类
+匹配日志等级和执行环境（ERROR，WARN，INFO，DEBUG）
+    （1）开发阶段：任何有意义的信息；
+    （2）集成阶段：自己的功能DEBUG级别，三方功能WARN（如果有需要INFO）级别；
+    （3）成品阶段：自己的功能INFO级别，三方功能WARN级别；
 ### 索引性
 ### 索引性
 ### 索引性
