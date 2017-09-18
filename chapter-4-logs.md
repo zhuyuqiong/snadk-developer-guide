@@ -69,15 +69,15 @@ if (logger.isDebugEnabled())
 Logger logger = LoggerFactory.getLogger(XXXX.class);
 ```
 这样可以对logger按照类包名进行归类，方便配置、管理。
-### 索引性
-
-
-
-
-
-
-
-
-
-
-
+### 异常记录规范
+catch到的异常，在继续抛出时，必须封装到当前的异常对象中，严禁丢失。
+```
+try
+{
+	....
+}catch(Exception e1)
+{
+	logger.error("msg",e1);
+	throw new XXXXException("msg",e1);
+}
+```
