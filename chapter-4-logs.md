@@ -50,10 +50,10 @@ if ("no".equals(aParam))
 ```
 类似于这种代码在提交前需要删除。
 ### Debug日志判断
-DEBUG消息之前检查日志等级
-if (LOGGER.isDebugEnabled())
+因为Debug日志很多，而且会创建很多的字符串对象，而在生产环境不启用，故Debug消息之前检查日志等级
+if (logger.isDebugEnabled())
 {
-	LOGGER.debug (…….)
+	logger.debug (…….)
 }
 ### 索引性
 ### 索引性
