@@ -42,11 +42,11 @@ org.jboss.logging.provider=slf4j
 ### 调试日志
 提交前去除编码帮助日志
 ```
-re
-	if (“no”.equals(aParam)) 
-	{
-		LOGGER.debug(“User says no”);
-	}
+logger.debug("Enter in aMethod");
+if ("no".equals(aParam)) 
+{
+    logger.debug("User says no");
+}
 ```
 类似于这种代码在提交前需要删除。
 ### 索引性
