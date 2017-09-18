@@ -56,7 +56,3 @@
 
 * [Appendix I. Markdown&GitBook](appendix-i.md)
 
-## License
-
-* [LICENSE](LICENSE)
-
