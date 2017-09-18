@@ -12,6 +12,7 @@
         "search-pro",
         "-sharing",
         "sharing-plus",
+        "editlink"
         ],
     "pluginsConfig": {
         "github": {
@@ -25,6 +26,11 @@
             "multipleH1":false,
             "showLevel":false,
             "mode":"float"
+        },
+        "editlink": {
+          "base": "https://www.gitbook.com/book/zhuyuqiong/snadk-developer-guide/edit#/edit/master",
+          "label": "Edit This Page",
+          "multilingual": false
         },
         "sharing": {
             "douban": false,
