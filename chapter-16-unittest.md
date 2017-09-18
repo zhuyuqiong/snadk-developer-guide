@@ -1,7 +1,5 @@
 # Chapter 16. UnitTest
 
-### jixl
-
 单元测试
 
 a. 统一父类SnsoftTest（根据需要继承）
