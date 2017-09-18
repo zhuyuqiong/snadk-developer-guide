@@ -11,7 +11,8 @@
         "-search",
         "search-pro",
         "-sharing",
-        "sharing-plus"
+        "sharing-plus",
+        "fontsettings"
         ],
     "pluginsConfig": {
         "github": {
