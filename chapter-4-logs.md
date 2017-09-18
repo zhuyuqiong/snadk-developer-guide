@@ -49,7 +49,12 @@ if ("no".equals(aParam))
 }
 ```
 类似于这种代码在提交前需要删除。
-### 索引性
+### Debug日志判断
+DEBUG消息之前检查日志等级
+if (LOGGER.isDebugEnabled())
+{
+	LOGGER.debug (…….)
+}
 ### 索引性
 ### 索引性
 ### 索引性
