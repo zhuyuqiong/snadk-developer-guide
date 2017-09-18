@@ -34,7 +34,7 @@ org.jboss.logging.provider=slf4j
 日志是面向读者的：打印的信息应该可以明确进行定位
     错误：ERROR: Save failure - SQLException .....
     正确：ERROR: Save failure - Entity=Person, Data=[id=123 surname="Mario"] - SQLException....
-### 索引性
+### 分类
 ### 索引性
 ### 索引性
 ### 索引性
