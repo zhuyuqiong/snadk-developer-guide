@@ -32,6 +32,9 @@
 * [MQ](chapter-22-mq.md)
 * [Help Center](chapter-23-help-center.md)
 * [XJS](chapter-24-xjs.md)
+
+## Third Part
+
 * [Spring](chapter-25-spring.md)
 * [Dubbo](chapter-26-dubbo.md)
 * [Zookeeper](chapter-27-zookeeper.md)
@@ -43,5 +46,8 @@
 * [JavaDoc](chapter-33-javadoc.md)
 * [Maven](chapter-34-maven.md)
 * [MongoDB](chapter-35-mongodb.md)
+
+## Appendix
+
 * [Appendix I. Markdown&GitBook](appendix-i.md)
 
