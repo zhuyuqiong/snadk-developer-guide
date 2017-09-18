@@ -1,4 +1,4 @@
-# Chapter 21. CMC
+# CMC
 
 
 

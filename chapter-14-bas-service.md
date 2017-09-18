@@ -1,4 +1,4 @@
-# Chapter 14. Bas Service
+# Bas Service
 
 a. 编码规则；
 

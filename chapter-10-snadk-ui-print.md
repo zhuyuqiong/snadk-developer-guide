@@ -1,4 +1,4 @@
-# Chapter 10. SNADK-UI-Print
+# SNADK-UI-Print
 
 a. Xls打印格式（PDF，Excel，HTML）；
 

@@ -1,2 +1,2 @@
-# Chapter 20. BPM
+# BPM
 

@@ -1,4 +1,4 @@
-# Chapter 34. Maven
+# Maven
 
 使用以下命令做一次构建
 

@@ -1,4 +1,4 @@
-# Chapter 8. SNADK-UI-Servlet
+# SNADK-UI-Servlet
 
 a. UIInvokeServlet：所有远程调用
 

@@ -1,4 +1,4 @@
-# Chapter 6. SNADK-DX-VO
+# SNADK-DX-VO
 
 a. JPA注解
 

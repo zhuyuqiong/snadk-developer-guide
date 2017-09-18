@@ -1,4 +1,4 @@
-# Chapter 7. SNADK-UI-View
+# SNADK-UI-View
 
 1. 功能-UI-界面
 

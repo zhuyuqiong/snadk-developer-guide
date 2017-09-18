@@ -1,2 +1,2 @@
-# Chapter 18. SSO
+# SSO
 

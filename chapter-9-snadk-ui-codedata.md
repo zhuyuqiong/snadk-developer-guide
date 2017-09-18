@@ -1,4 +1,4 @@
-# Chapter 9. SNADK-UI-CodeData
+# SNADK-UI-CodeData
 
 a. 定义位置
 

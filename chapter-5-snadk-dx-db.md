@@ -1,4 +1,4 @@
-# Chapter 5. SNADK-DX-DB
+# SNADK-DX-DB
 
 a. Database的使用规则：
 

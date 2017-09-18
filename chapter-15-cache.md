@@ -1,4 +1,4 @@
-# Chapter 15. Cache
+# Cache
 
 数据缓存（KVCacheManage：根据group获取对应的KVCache）
 

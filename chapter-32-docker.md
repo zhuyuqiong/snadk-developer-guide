@@ -1,2 +1,2 @@
-# Chapter 32. Docker
+# Docker
 

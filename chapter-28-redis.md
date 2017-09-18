@@ -1,4 +1,4 @@
-# Chapter 28. Redis
+# Redis
 
 
 

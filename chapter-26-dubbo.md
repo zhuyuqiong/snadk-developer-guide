@@ -1,4 +1,4 @@
-# Chapter 26. Dubbo
+# Dubbo
 
 
 

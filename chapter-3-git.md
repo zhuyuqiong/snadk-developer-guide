@@ -1,4 +1,4 @@
-# Chapter 3. Git
+# Git
 **Git --everyting is local **
 
 Git是一个分布式版本控制工具，它的主要特性在于：

@@ -1,4 +1,4 @@
-# Chapter 24. XJS
+# XJS
 
 
 

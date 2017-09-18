@@ -1,4 +1,4 @@
-# Chapter 12. SNADK-SpringBean
+# SNADK-SpringBean
 
 a. 暴露服务：SpringBean注解（在接口上）；
 

@@ -1,4 +1,4 @@
-# Chapter 13. FileResource
+# FileResource
 
 a. ResBundle\\*\\[\\_lang\\].properties
 
