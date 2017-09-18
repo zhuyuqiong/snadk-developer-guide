@@ -27,9 +27,7 @@
             "associatedWithSummary":true,
             "mode":"float"
         },
-        "theme-default": {
-            "showLevel": true
-        },
+
         "sharing": {
             "douban": false,
             "facebook": true,
