@@ -63,7 +63,12 @@ if (logger.isDebugEnabled())
 正确：logger.info("Person name is {}", person.getName());
 前一种方式，在记录日志时创建日志信息，但是实际上该日志可能被过滤，根本就没有记录；
 后一种方式，在记录日志时，并不创建日志信息，在真正记录时才创建日志信息，可以减少字符串对象的创建。
-### 索引性
+### logger命名规范
+获取Logger对象的方式必须使用类名，如：
+```
+Logger logger = LoggerFactory.getLogger(XXXX.class);
+```
+这样可以对logger按照类包名进行归类，方便配置、管理。
 ### 索引性
 
 
