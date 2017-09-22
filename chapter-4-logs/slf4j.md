@@ -42,15 +42,17 @@ We`used`to recommend that loggers members be declared as instance variables inst
 
 Here is a summary of the pros and cons of each approach.
 
-| static 优点  | static缺点 |
-| :---- | :--- |
-| 1. static写法更为常见和成熟 </br>2. CPU占用更少: loggers 只在主类初始化时加载一次</br>3. 内存占用更低: logger 声明只占用一个引用 | 1. 无法在应用间通过某种logger仓库技术共享logger实例</br>2. 无法IOC |
+| static 优点 | static缺点 |
+| :--- | :--- |
+| 1. static写法更为常见和成熟 &lt;/br&gt;2. CPU占用更少: loggers 只在主类初始化时加载一次&lt;/br&gt;3. 内存占用更低: logger 声明只占用一个引用 | 1. 无法在应用间通过某种logger仓库技术共享logger实例&lt;/br&gt;2. 无法IOC |
 | non-static优点 | non-static缺点 |
-| 1. 可以在应用间共享logger实例</br>2. 支持IOC | 1. 写法不常见</br>2. CPU占用更高：每次创建主类实例时都会加载 2. 内存占用更高：主类的每个实例都会创建一个引用 |
+| 1. 可以在应用间共享logger实例&lt;/br&gt;2. 支持IOC | 1. 写法不常见&lt;/br&gt;2. CPU占用更高：每次创建主类实例时都会加载 2. 内存占用更高：主类的每个实例都会创建一个引用 |
 
-### Is there a recommended idiom for declaring a logger in a class?
+### 在class中声明logger的推荐方式?
 
-The following is the recommended logger declaration idiom. For reasons[explained above](https://www.slf4j.org/faq.html#declared_static), it is left to the user to determine whether loggers are declared as static variables or not.
+
+
+如下是声明logger的一种写法，static由开发人员自主决定是否使用：
 
 ```
 package some.package;
@@ -63,9 +65,9 @@ public class MyClass {
 }
 ```
 
-Unfortunately, given that the name of the hosting class is part of the logger declaration, the above logger declaration idiom is\_not\_resistant to cut-and-pasting between classes.
+上面这种写法中，class作为声明的一部分导致代码无法复制粘贴。
 
-Alternatively, you can use`MethodHandles.lookup()`introduced in JDK 7 to pass the caller class.
+在JDK7+中可以使用`MethodHandles.lookup()`来解决如上问题：
 
 ```
 package some.package;
@@ -79,5 +81,5 @@ public class MyClass {
 }
 ```
 
-This pattern can be cut and pasted across classes.
+这样就可以复制粘贴了。
 
