@@ -6,6 +6,8 @@
 
 用于设置启动用参数。
 
+示例：
+
 ```
 SN-MQ.Comm.Name=SN-MQ
 SN-MQ.Comm.Client=SN-MQ
@@ -63,7 +65,6 @@ SN-MQ.Comm.cache.port=6379
 #MQ MongoDB 
 SN-MQ.Comm.mongo=true
 SN-MQ.Comm.mongo.uri=mongodb://10.8.5.30:27017/n10
-
 ```
 
 ## WorkSpace.xml
