@@ -51,6 +51,10 @@
 * [JavaDoc](chapter-33-javadoc.md)
 * [Maven](chapter-34-maven.md)
 * [MongoDB](chapter-35-mongodb.md)
+* [Etcd](etcd.md)
+* [Prometheus](prometheus.md)
+* [Metrics](metrics.md)
+* [Grafana](grafana.md)
 
 ## Appendix
 
