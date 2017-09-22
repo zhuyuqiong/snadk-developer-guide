@@ -59,7 +59,7 @@ import org.slf4j.LoggerFactory;
 
 public class MyClass {
   final (static) Logger logger = LoggerFactory.getLogger(MyClass.class);
-  ... etc
+
 }
 ```
 
@@ -75,7 +75,7 @@ import java.lang.invoke.MethodHandles;
 
 public class MyClass {
   final (static) Logger logger = LoggerFactory.getLogger(MethodHandles.lookup().lookupClass());
-  ... etc
+
 }
 ```
 
