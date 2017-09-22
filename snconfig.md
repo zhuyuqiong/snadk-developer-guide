@@ -71,6 +71,40 @@ SN-MQ.Comm.mongo.uri=mongodb://10.8.5.30:27017/n10
 
 帐套文件，必须含有默认的00帐套。
 
+示例：
+
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- type= 
+1:SqlServer 
+2:Oracle 
+4:MySql 
+-->
+
+<workspace-list>
+
+	<workspace id="00" title="开发环境(mysql)">
+		<datasource id="DEFAULT" host="10.8.5.50" port="3306" database="snadk" user="snadk" password="snadk" type="4" />
+		<datasource id="CONFIG" host="10.8.5.50" port="3306" database="snadk" user="snadk" password="snadk" type="4" />
+		<datasource id="UCODECFG" host="10.8.5.50" port="3306" database="snadk" user="snadk" password="snadk" type="4" />
+		<datasource id="HELP" host="10.8.5.50" port="3306" database="snadk" user="snadk" password="snadk" type="4" />
+	</workspace>
+	
+	<workspace id="N10DEVORACLE" title="开发环境(oracle)">
+		<datasource id="CONFIG" host="10.8.5.1" port="1521" database="orcl" user="n10_dev_config" password="sinolink" type="2" />
+		<datasource id="UCODECFG" host="10.8.5.1" port="1521" database="orcl" user="n10_dev_ucodecfg" password="sinolink" type="2" />
+	</workspace>
+	
+	<workspace id="LOCAL" title="N9升级(本地)">
+		<datasource id="CONFIG" host="127.0.0.1" port="3306" database="n10test" user="root" password="root" type="4" />
+		<datasource id="UCODECFG" host="127.0.0.1" port="3306" database="n10test" user="root" password="root" type="4" />
+	</workspace>
+</workspace-list> 
+ 
+
+
+```
+
 ## Spring-Configs.xml
 
 用于配置启动后的Spring-Bean参数、选项。
