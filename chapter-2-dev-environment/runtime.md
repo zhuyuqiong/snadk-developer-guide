@@ -9,13 +9,27 @@
 
 Tomcat要求版本为Tomcat8+。
 
-i. Tomcat8+；
+### SpringBoot
 
-ii. SpringBoot：标准
+使用SpringBoot启动可以省去web.xml配置，使用Java Code进行Servlet注册。且启动过程中都可调试源码，启动过程更加透明。建议开发人员使用此方式作为日常开发的启动方式。
 
-1. boot-ui；
+在服务部署上，目前平台采用Service服务组件和UI控制分层的方案，因此在启动工程中需要有两个启动项：
 
-2. boot-server；
+1. boot-ui
+
+2. boot-server
+
+boot-ui Run/Debug 配置
+
+```
+Name: Boot-UI
+Main Class: snsoftboot.BootLaunch
+Project: boot-run-ui
+VM options: -DSN.ID=SN-HostUI
+
+```
+
+
 
 java2js的Arguments配置示例
 
