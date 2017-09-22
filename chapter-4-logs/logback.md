@@ -1,6 +1,6 @@
 # LogBack
 
-LogBack是一个日志框架，它与slf4j都出自Ceki Gülcü之手。据原作者描述，LogBack相比log4j实现更快，具有更好的处理I/O异常的能力，以及原生支持slf4j等特性。
+LogBack是一个日志框架，它与slf4j都出自Ceki Gülcü之手。据原作者描述，LogBack相比log4j实现效率更高，具有更好的处理I/O异常的能力，以及原生支持slf4j等特性。
 
 ## **LogBack的结构**
 
