@@ -2,7 +2,7 @@
 
 ## System.properties
 
-用于设置启用参数。
+用于设置启动用参数。
 
 ## WorkSpace.xml
 
@@ -10,7 +10,7 @@
 
 ## Spring-Configs.xml
 
-用于配置启动后的Spring-Bean参数
+用于配置启动后的Spring-Bean参数。
 
 ## TimerTask.xml
 
