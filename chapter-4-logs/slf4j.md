@@ -32,6 +32,8 @@ if (logger.isDebugEnabled()) {
 logger.debug("There are now {} user accounts: {}", count, userAccountList);
 ```
 
+以下是两个官方说明，可以解决各位开发同学日常使用中的部分选择疑惑。
+
 ### Should Logger members of a class be declared as static?
 
 We`used`to recommend that loggers members be declared as instance variables instead of static. After further analysis,**we no longer recommend one approach over the other.**
@@ -44,7 +46,7 @@ Here is a summary of the pros and cons of each approach.
 | Advantages for declaring loggers as instance variables | Disadvantages for declaring loggers as instance variables |
 | Possible to take advantage of repository selectors even for libraries shared between applications. However, repository selectors only work if the underlying logging system is logback-classic. Repository selectors do not work for the SLF4J+log4j combination.IOC-friendly | Less common idiom than declaring loggers as static variableshigher CPU overhead: loggers are retrieved and assigned for each instance of the hosting classhigher memory overhead: logger declaration will consume one reference per instance of the hosting class |
 
-###  Is there a recommended idiom for declaring a logger in a class?
+### Is there a recommended idiom for declaring a logger in a class?
 
 The following is the recommended logger declaration idiom. For reasons[explained above](https://www.slf4j.org/faq.html#declared_static), it is left to the user to determine whether loggers are declared as static variables or not.
 
@@ -52,14 +54,14 @@ The following is the recommended logger declaration idiom. For reasons[explained
 package some.package;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-      
+
 public class MyClass {
   final (static) Logger logger = LoggerFactory.getLogger(MyClass.class);
   ... etc
 }
 ```
 
-Unfortunately, given that the name of the hosting class is part of the logger declaration, the above logger declaration idiom is_not_resistant to cut-and-pasting between classes.
+Unfortunately, given that the name of the hosting class is part of the logger declaration, the above logger declaration idiom is\_not\_resistant to cut-and-pasting between classes.
 
 Alternatively, you can use`MethodHandles.lookup()`introduced in JDK 7 to pass the caller class.
 
@@ -133,6 +135,4 @@ lookupClass
 ```
 
 This pattern can be cut and pasted across classes.
-
-
 
