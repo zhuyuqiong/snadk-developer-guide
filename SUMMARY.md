@@ -14,7 +14,7 @@
 * [Git](chapter-3-git.md)
 * [Logging](chapter-4-logs.md)
   * [SLF4J](chapter-4-logs/slf4j.md)
-  * [logback](chapter-4-logs/logback.md)
+  * [LogBack](chapter-4-logs/logback.md)
 
 ## SNADK
 
