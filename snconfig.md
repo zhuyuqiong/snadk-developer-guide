@@ -146,7 +146,7 @@ SN-MQ.Comm.mongo.uri=mongodb://10.8.5.30:27017/n10
          auto-start="true"
          thread = "true"
          task-type="bean"
-		 disabled="true"
+         disabled="true"
         >SN-MQ.MQPushTimer</timertask>
 </timertask-list>
 ```
@@ -158,6 +158,54 @@ SN-MQ.Comm.mongo.uri=mongodb://10.8.5.30:27017/n10
 示例：
 
 ```
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<m:B title="分库分表规则" fullPage="true"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://snsoft.cn/schema/UI"
+	xmlns:m="http://snsoft.cn/schema/UI"
+	xsi:schemaLocation="http://snsoft.cn/schema/UI
+	https://adk-svn.sino-clink.com.cn/svn/adkdoc/configs/schema/UI.xsd
+		">
+	<m:Panel hidden="true" layoutm="grid" name="query" title="查询面板" />
+	<m:V>
+		<m:HtmlView layoutwidth="2" name="Title" title="标题"
+			titleHidden="true">
+			<uiprops.html>
+       <![CDATA[
+          <h1>分库分表规则：<br>
+          	1、修改workspace.xml文件，见workspace说明<br>
+          	2、新建ShardingRule.xml文件，见ShardingRule.xml说明<br>
+          </h1>
+ 			 ]]>
+			</uiprops.html>
+		</m:HtmlView>
+		<m:H title="workspace说明" uiprops.leftSize="355">
+			<m:T region="center">
+				<m:GridTable autoRefresh="true" disableSave="true"
+					layoutm="grid" mainui="query" name="workspace" hight="100" rdonly="true"
+					sqlexpr="null" title="workspace说明"
+					xprops.LoadDataService="SN-CMC.CMCWorkSpaceQueryService#queryWorkspaceSharding">
+					<c name="key" sqltype="12" title="帐套Id" width="150"
+						aidInputableIfRdonly="true" aidInputerBtn="true" mutipleLine="true" />
+					<c name="value" sqltype="12" title="标题" width="200"
+						tipIfOverflow="true" aidInputableIfRdonly="true" aidInputerBtn="true"
+						mutipleLine="true" />
+				</m:GridTable>
+			</m:T>
+
+			<m:T>
+				<m:GridTable autoRefresh="true" disableSave="true"
+					layoutm="grid" mainui="query" name="shardingrule" rdonly="true"
+					sqlexpr="null" title="ShardingRule.xml说明" xprops.LoadDataService="SN-CMC.CMCWorkSpaceQueryService#querySharding">
+					<c name="key" sqltype="12" title="key" width="200" tipIfOverflow="true"
+						aidInputableIfRdonly="true" aidInputerBtn="true" mutipleLine="true" />
+					<c name="value" sqltype="12" title="value" width="600"
+						tipIfOverflow="true" aidInputableIfRdonly="true" aidInputerBtn="true"
+						mutipleLine="true" />
+				</m:GridTable>
+			</m:T>
+		</m:H>
+	</m:V>
+</m:B>
 
 ```
 
