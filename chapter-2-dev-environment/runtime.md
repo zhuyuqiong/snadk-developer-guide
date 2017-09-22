@@ -1,5 +1,14 @@
 ## 运行环境
 
+目前的工程支持两种方式启动：
+
+1. Tomcat启动
+2. SpringBoot方式启动。（建议开发使用）
+
+### Tomcat
+
+Tomcat要求版本为Tomcat8+。
+
 i. Tomcat8+；
 
 ii. SpringBoot：标准
