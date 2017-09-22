@@ -83,31 +83,54 @@ SN-MQ.Comm.mongo.uri=mongodb://10.8.5.30:27017/n10
 
 <workspace-list>
 
-	<workspace id="00" title="开发环境(mysql)">
-		<datasource id="DEFAULT" host="10.8.5.50" port="3306" database="snadk" user="snadk" password="snadk" type="4" />
-		<datasource id="CONFIG" host="10.8.5.50" port="3306" database="snadk" user="snadk" password="snadk" type="4" />
-		<datasource id="UCODECFG" host="10.8.5.50" port="3306" database="snadk" user="snadk" password="snadk" type="4" />
-		<datasource id="HELP" host="10.8.5.50" port="3306" database="snadk" user="snadk" password="snadk" type="4" />
-	</workspace>
-	
-	<workspace id="N10DEVORACLE" title="开发环境(oracle)">
-		<datasource id="CONFIG" host="10.8.5.1" port="1521" database="orcl" user="n10_dev_config" password="sinolink" type="2" />
-		<datasource id="UCODECFG" host="10.8.5.1" port="1521" database="orcl" user="n10_dev_ucodecfg" password="sinolink" type="2" />
-	</workspace>
-	
-	<workspace id="LOCAL" title="N9升级(本地)">
-		<datasource id="CONFIG" host="127.0.0.1" port="3306" database="n10test" user="root" password="root" type="4" />
-		<datasource id="UCODECFG" host="127.0.0.1" port="3306" database="n10test" user="root" password="root" type="4" />
-	</workspace>
-</workspace-list> 
- 
+    <workspace id="00" title="开发环境(mysql)">
+        <datasource id="DEFAULT" host="10.8.5.50" port="3306" database="snadk" user="snadk" password="snadk" type="4" />
+        <datasource id="CONFIG" host="10.8.5.50" port="3306" database="snadk" user="snadk" password="snadk" type="4" />
+        <datasource id="UCODECFG" host="10.8.5.50" port="3306" database="snadk" user="snadk" password="snadk" type="4" />
+        <datasource id="HELP" host="10.8.5.50" port="3306" database="snadk" user="snadk" password="snadk" type="4" />
+    </workspace>
 
+    <workspace id="N10DEVORACLE" title="开发环境(oracle)">
+        <datasource id="CONFIG" host="10.8.5.1" port="1521" database="orcl" user="n10_dev_config" password="sinolink" type="2" />
+        <datasource id="UCODECFG" host="10.8.5.1" port="1521" database="orcl" user="n10_dev_ucodecfg" password="sinolink" type="2" />
+    </workspace>
 
+    <workspace id="LOCAL" title="N9升级(本地)">
+        <datasource id="CONFIG" host="127.0.0.1" port="3306" database="n10test" user="root" password="root" type="4" />
+        <datasource id="UCODECFG" host="127.0.0.1" port="3306" database="n10test" user="root" password="root" type="4" />
+    </workspace>
+</workspace-list>
 ```
 
 ## Spring-Configs.xml
 
 用于配置启动后的Spring-Bean参数、选项。
+
+示例：
+
+```
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:amq="http://activemq.apache.org/schema/core" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:sn="http://snsoft.cn/schema/config"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	  http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+      http://activemq.apache.org/schema/core 
+      http://activemq.apache.org/schema/core/activemq-core.xsd
+      http://www.springframework.org/schema/context 
+	  http://www.springframework.org/schema/context/spring-context-3.0.xsd 
+	  http://snsoft.cn/schema/config
+	  http://snsoft.cn/schema/config.xsd
+      ">
+	<sn:option name="Diag.TraceLevel">9</sn:option>
+	<sn:option name="SYSDEF.WSID">N10TEST</sn:option>
+	<sn:option name="SYSDEF.MGWSID">N10TEST</sn:option>
+	<sn:option name="Languages">zh_CN:简体中文,en:English</sn:option>
+	<sn:option name="FSID.DOCROOT">file:/temp/attach/</sn:option>
+	<sn:option name="FSID.FTPROOT">ftp://sinolinktest:test.2016@10.8.1.11/Attachments/N10/</sn:option>
+	<sn:option name="Diag._IgnorePWD">true</sn:option>
+
+</beans>    
+```
 
 ## TimerTask.xml
 
