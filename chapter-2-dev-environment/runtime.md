@@ -44,6 +44,18 @@ VM options: -DSN.ID=SN-HostTom
 
 其中，`dubbo.protocol.port`为dubbo服务使用端口，dubbo默认会使用20880端口，而当我们启动多个dubbo服务时，需要为每个服务都指定不同的端口。
 
+### Java2js
+
+java2js Run/Debug 配置
+
+```
+Name: java2js
+Main Class: snsoftx.j2stools.LibBuild
+Project: snadk-java2js
+Program arguments: 
+
+```
+
 java2js的Arguments配置示例
 
 @/snsoft90/snsoft\_adk/test/erp/SNS-Invoicing/xjs/build/J2SLibBuild\(invoicing\).Args.txt
