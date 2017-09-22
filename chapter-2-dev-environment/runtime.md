@@ -111,11 +111,11 @@ SN.ConfigPath： D:\snsoft90\snconfig
 
 #### SN.ConfigPath目录下的标准文件
 
-* a. System.properties：用于设置启用参数
-* b. WorkSpace.xml：必须含有默认的00帐套
-* c. Spring-Configs.xml：用于配置启动后的Spring-Bean参数
-* d. TimerTask.xml：定时任务定义文件
-* e. ShardingRule.xml：分表分库规则
+* System.properties：用于设置启用参数
+* WorkSpace.xml：必须含有默认的00帐套
+* Spring-Configs.xml：用于配置启动后的Spring-Bean参数
+* TimerTask.xml：定时任务定义文件
+*  ShardingRule.xml：分表分库规则
 
 
 
