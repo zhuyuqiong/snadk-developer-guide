@@ -34,7 +34,7 @@ logger.debug("There are now {} user accounts: {}", count, userAccountList);
 
 以下是两个官方说明，可以解决各位开发同学日常使用中的部分选择疑惑。
 
-### Should Logger members of a class be declared as static?
+### Logger变量是否应该声明为 static?
 
 We`used`to recommend that loggers members be declared as instance variables instead of static. After further analysis,**we no longer recommend one approach over the other.**
 
@@ -70,7 +70,7 @@ package some.package;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import java.lang.invoke.MethodHandles;
-      
+
 public class MyClass {
   final static Logger logger = LoggerFactory.getLogger(MethodHandles.lookup().lookupClass());
   ... etc
