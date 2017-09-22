@@ -60,9 +60,24 @@ Program arguments:
     @/snsoft90/snsoft_adk/snadk-ui/snadk-ui/theme-src/BuildJs.txt
 ```
 
-java2js的Arguments配置示例
+java2js中的Arguments文件配置示例：
 
-@/snsoft90/snsoft\_adk/test/erp/SNS-Invoicing/xjs/build/J2SLibBuild\(invoicing\).Args.txt
+方式一：只使用路径描述编译目标
+
+```
+-path /snsoft90/snsoft_adk/snadk-cmc/xjs/src/main/java=>/snsoft90/snsoft_adk/snadk-cmc/cmc-ui/web/xjslib
+```
+
+方式二：支持宏替换方式
+
+```
+
+#define SNADKSRC_ROOT ${BASEDIR}/../../..
+
+-classpath ${BASEDIR}/../target/classes
+
+-path ${BASEDIR}/../src/main/java=>${SNADKSRC_ROOT}/snadk-ui/snadk-ui/web/xjslib
+```
 
 ### Webstart-cli
 
@@ -79,7 +94,6 @@ VM options:
     -DServerURL=http://127.0.0.1:1010/n10
     -ea
     -Dsn.test=true
-
 ```
 
 iii. 默认规则
