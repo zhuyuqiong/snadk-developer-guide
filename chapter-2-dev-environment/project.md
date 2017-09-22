@@ -53,5 +53,5 @@ Maven工程下仅存在pom.xml文件和src目录。不在包含eclipse的.projec
 
 ### 生成工程
 
-？？
+目前工程只需要pom.xml和src目录，因此只需复制`snadk-blank`中内容，修改pom.xml文件为新工程名称和依赖后，导入WorkSpace即可。
 
