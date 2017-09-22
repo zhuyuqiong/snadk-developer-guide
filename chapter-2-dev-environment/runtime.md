@@ -28,6 +28,8 @@ Project: boot-run-ui
 VM options: -DSN.ID=SN-HostUI
 ```
 
+其中，`SN.ID`为服务器ID，用于dubbo的Service注册group参数。
+
 boot-service Run/Debug 配置
 
 ```
@@ -37,6 +39,8 @@ Project: boot-run-service
 VM options: -DSN.ID=SN-HostTom
             -Ddubbo.protocol.port=20881
 ```
+
+其中，`dubbo.protocol.port`为dubbo服务使用端口，dubbo默认会使用20880端口，而当我们启动多个dubbo服务时，需要为每个服务都指定不同的端口。
 
 java2js的Arguments配置示例
 
