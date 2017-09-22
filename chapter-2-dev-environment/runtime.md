@@ -26,10 +26,17 @@ Name: Boot-UI
 Main Class: snsoftboot.BootLaunch
 Project: boot-run-ui
 VM options: -DSN.ID=SN-HostUI
-
 ```
 
+boot-service Run/Debug 配置
 
+```
+Name: Boot-UI
+Main Class: snsoftboot.BootLaunch
+Project: boot-run-service
+VM options: -DSN.ID=SN-HostTom
+            -Ddubbo.protocol.port=20881
+```
 
 java2js的Arguments配置示例
 
