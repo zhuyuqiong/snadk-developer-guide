@@ -36,6 +36,8 @@ logger.debug("There are now {} user accounts: {}", count, userAccountList);
 
 ### Logger变量是否应该声明为 static?
 
+声明Logger变量是否为static，目前官方给出的意见是两者各有优缺，交给各位开发同学选择。
+
 We`used`to recommend that loggers members be declared as instance variables instead of static. After further analysis,**we no longer recommend one approach over the other.**
 
 Here is a summary of the pros and cons of each approach.
