@@ -66,71 +66,14 @@ Unfortunately, given that the name of the hosting class is part of the logger de
 Alternatively, you can use`MethodHandles.lookup()`introduced in JDK 7 to pass the caller class.
 
 ```
-package
- some
-.
-package
-;
-
-
-import
- org
-.
-slf4j
-.
-Logger
-;
-
-
-import
- org
-.
-slf4j
-.
-LoggerFactory
-;
-
-
-import
- java
-.
-lang
-.
-invoke
-.
-MethodHandles
-;
-
-
-
-
-public
-class
-MyClass
-{
-
-
-final
-static
-Logger
- logger 
-=
-LoggerFactory
-.
-getLogger
-(
-MethodHandles
-.
-lookup
-().
-lookupClass
-());
-
-
-...
- etc
-
-
+package some.package;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import java.lang.invoke.MethodHandles;
+      
+public class MyClass {
+  final static Logger logger = LoggerFactory.getLogger(MethodHandles.lookup().lookupClass());
+  ... etc
 }
 ```
 
