@@ -64,6 +64,14 @@ java2js的Arguments配置示例
 
 @/snsoft90/snsoft\_adk/test/erp/SNS-Invoicing/xjs/build/J2SLibBuild\(invoicing\).Args.txt
 
+### Webstart-cli
+
+新平台中，我们强烈建议开发/运维人员在Web环境下工作，支持大家使用浏览器进行配置设置，鼓励使用第三方工具促进开发/运维效率，作为一种Java官方已不建议使用的技术方案，我们同样不建议使用webstart方式。同时在发布项目时，webstart相关工程可能不会发布支持。
+
+webstart-cli Run/Debug 配置
+
+
+
 iii. 默认规则
 
 1. SN.ConfigPath：指定环境变量，开发环境与单元测试环境可以共用；
