@@ -156,7 +156,28 @@ SN-MQ.Comm.mongo.uri=mongodb://10.8.5.30:27017/n10
 示例：
 
 ```
+<?xml version="1.0" encoding="UTF-8"?>
 
+<data-partion-rules>
+
+
+<datasource id="snsoft80_demo_sharding">
+
+<db-master type="mysql" password="111111" user="root" database="snsoft80_demo" host="127.0.0.1"/>
+
+<db-node id="dn001" type="4" password="111111" user="root" database="snsoft80_demo_part01" host="127.0.0.1" port="3306"/>
+
+<db-node id="dn02" type="4" password="111111" user="root" database="snsoft80_demo_part02" host="127.0.0.1" port="3306"/>
+
+<table rule="snsoft.dx.sharding.rulealg.ShardingRuleSuffixAlgorithm.new?DBIDPos=0&TBLIDPos=2" tbl-nodes="*_01,*_02" db-nodes="dn02" by-column="dicticode" name="gxtest"/>
+
+<table rule="snsoft.dx.sharding.rulealg.ShardingRuleSuffixAlgorithm.new?DBIDPos=0&DBIDSize=3&TBLIDPos=3&TBLIDSize=3" tbl-nodes="*_001,*_002" db-nodes="dn001,dn02" by-column="id" name="mdef"/>
+
+<table rule="snsoft.dx.sharding.rulealg.ShardingRuleSuffixAlgorithm.new?DBIDPos=0&DBIDSize=3&TBLIDPos=3&TBLIDSize=3" tbl-nodes="*_001,*_002" db-nodes="dn001,dn02" by-column="code" name="gdef"/>
+
+</datasource>
+
+</data-partion-rules>
 ```
 
 
