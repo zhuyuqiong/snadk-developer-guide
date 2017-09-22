@@ -122,8 +122,6 @@ SN-MQ.Comm.mongo.uri=mongodb://10.8.5.30:27017/n10
       http://snsoft.cn/schema/config.xsd
       ">
     <sn:option name="Diag.TraceLevel">9</sn:option>
-    <sn:option name="SYSDEF.WSID">N10TEST</sn:option>
-    <sn:option name="SYSDEF.MGWSID">N10TEST</sn:option>
     <sn:option name="Languages">zh_CN:简体中文,en:English</sn:option>
     <sn:option name="FSID.DOCROOT">file:/temp/attach/</sn:option>
     <sn:option name="FSID.FTPROOT">ftp://sinolinktest:test.2016@10.8.1.11/Attachments/N10/</sn:option>
