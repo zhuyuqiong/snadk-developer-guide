@@ -76,12 +76,11 @@ java2js中的Arguments文件配置示例：
 -classpath ${BASEDIR}/../target/classes
 
 -path ${BASEDIR}/../src/main/java=>${SNADKSRC_ROOT}/snadk-ui/snadk-ui/web/xjslib
-
 ```
 
 ```
 #BASEDIR 为当前文件所在目录
-@see snsoftx.j2stools.LibBuild#parseArgSet
+@see snsoftx.j2stools.LibBuild#parseArgSet中代码逻辑
 ```
 
 ### Webstart-cli
