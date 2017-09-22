@@ -1,6 +1,6 @@
 ## 运行环境
 
-i. Tomcat7+；
+i. Tomcat8+；
 
 ii. SpringBoot：标准
 
