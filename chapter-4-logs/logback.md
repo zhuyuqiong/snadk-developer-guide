@@ -66,9 +66,7 @@ StaticLoggerBinder.getSingleton().getLoggerFactory();
 
 第二个过程就是每一个和slf4j集成的日志框架中实现ILoggerFactory方法getLogger\(\)的实例所做的事了。
 
-## Logger, Appenders and Layouts
-
-
+## Logger, Appenders ,Layouts
 
 
 
