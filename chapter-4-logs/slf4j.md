@@ -50,8 +50,6 @@ Here is a summary of the pros and cons of each approach.
 
 ### 在class中声明logger的推荐方式?
 
-
-
 如下是声明logger的一种写法，static由开发人员自主决定是否使用：
 
 ```
@@ -76,7 +74,7 @@ import org.slf4j.LoggerFactory;
 import java.lang.invoke.MethodHandles;
 
 public class MyClass {
-  final static Logger logger = LoggerFactory.getLogger(MethodHandles.lookup().lookupClass());
+  final (static) Logger logger = LoggerFactory.getLogger(MethodHandles.lookup().lookupClass());
   ... etc
 }
 ```
