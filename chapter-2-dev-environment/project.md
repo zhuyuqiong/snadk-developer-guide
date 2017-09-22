@@ -10,13 +10,45 @@
 
 ### 工作空间
 
-【ftp/开发环境/底层workspace/snsoft\_adk\_ws2.zip】；
+目前提供的标准eclipse workspace位置如下：
 
-解压缩到目录：D:\snsoft90下，改名为snsoft\_adk\_ws
+```
+ftp/开发环境/底层workspace/snsoft_adk_ws2.zip
+```
+
+解压缩到目录：`D:\snsoft90`下，改名为`snsoft_adk_ws`
 
 ### 导入Maven工程
 
-Maven工程下仅存在pom.xml文件和src目录。
+Maven工程下仅存在pom.xml文件和src目录。不在包含eclipse的.project和.classpath等工程描述文件。目前SNADK相关工程是按照功能划分多个组件，每个组件下划分多个模块：
+
+```
+#SNADK
+.
+|—— snadk-core
+|    |—— snadk-bas
+|    |—— snadk-bpm
+|    |—— snadk-dx
+|    └── snadk-util
+|── snadk-dubbo
+|—— snadk-sso
+|—— snadk-ui
+|    |—— snadk-ui
+|    └── snadk-prt
+|—— snadk-approval
+|—— snadk-cmc
+|—— snadk-cli
+|    |—— snadk-cli-app
+|    |—— snadk-cli-launcher
+|    |—— snadk-cli-tools
+└── snadk-xjs
+
+#java2js
+.
+└── snadk-tools
+     |—— snadk-jparser
+     └── snadk-java2js
+```
 
 ### 生成工程
 
