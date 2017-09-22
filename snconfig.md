@@ -4,11 +4,9 @@
 
 用于设置启用参数。
 
-
-
 ## WorkSpace.xml
 
-必须含有默认的00帐套
+帐套文件，必须含有默认的00帐套。
 
 ## Spring-Configs.xml
 
@@ -21,6 +19,4 @@
 ## ShardingRule.xml
 
 分表分库规则
-
-
 
