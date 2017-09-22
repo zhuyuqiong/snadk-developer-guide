@@ -42,11 +42,11 @@ We`used`to recommend that loggers members be declared as instance variables inst
 
 Here is a summary of the pros and cons of each approach.
 
-| Advantages for declaring loggers as static | Disadvantages for declaring loggers as static |
-| :--- | :--- |
-| common and well-established idiomless CPU overhead: loggers are retrieved and assigned only once, at hosting class initializationless memory overhead: logger declaration will consume one reference per class | For libraries shared between applications, not possible to take advantage of repository selectors. It should be noted that if the SLF4J binding and the underlying API ships with each application \(not shared between applications\), then each application will still have its own logging environment.not IOC-friendly |
-| Advantages for declaring loggers as instance variables | Disadvantages for declaring loggers as instance variables |
-| Possible to take advantage of repository selectors even for libraries shared between applications. However, repository selectors only work if the underlying logging system is logback-classic. Repository selectors do not work for the SLF4J+log4j combination.IOC-friendly | Less common idiom than declaring loggers as static variableshigher CPU overhead: loggers are retrieved and assigned for each instance of the hosting classhigher memory overhead: logger declaration will consume one reference per instance of the hosting class |
+| static 优点 | static缺点 |
+| :------- | :--- |
+| 1. static写法更为常见和成熟 </br>2. CPU占用更少: loggers 只在主类初始化时加载一次</br>3. 内存占用更低: logger 声明只占用一个引用 | 1. 无法在应用间通过某种logger仓库技术共享logger实例</br>2. 无法IOC |
+| non-static优点 | non-static缺点 |
+| 1. 可以在应用间共享logger实例</br>2. 支持IOC | 1. 写法不常见</br>2. CPU占用更高：每次创建主类实例时都会加载 2. 内存占用更高：主类的每个实例都会创建一个引用 |
 
 ### Is there a recommended idiom for declaring a logger in a class?
 
