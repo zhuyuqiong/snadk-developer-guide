@@ -83,6 +83,12 @@ java2js中的Arguments文件配置示例：
 @see snsoftx.j2stools.LibBuild#parseArgSet中代码逻辑
 ```
 
+注意：IntelliJ Idea中，启动配置无法显式地配置classpath，需要在VM options中手工指定：
+
+```
+-Xbootclasspath/a:D:\snsoft90\snsoft_adk\snadk-cmc\xjs\target\classes;D:\snsoft90\snsoft_adk\snadk-cli\snadk-xjs\target\classes
+```
+
 ### Webstart-cli
 
 新平台中，我们强烈建议开发/运维人员在Web环境下工作，支持大家使用浏览器进行配置设置，鼓励使用第三方工具促进开发/运维效率，作为一种Java官方已不建议使用的技术方案，我们同样不建议使用webstart方式。同时在发布项目时，webstart相关工程可能不会发布支持。
@@ -115,7 +121,7 @@ SN.ConfigPath： D:\snsoft90\snconfig
 * WorkSpace.xml：必须含有默认的00帐套
 * Spring-Configs.xml：用于配置启动后的Spring-Bean参数
 * TimerTask.xml：定时任务定义文件
-*  ShardingRule.xml：分表分库规则
+* ShardingRule.xml：分表分库规则
 
 
 
