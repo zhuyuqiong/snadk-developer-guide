@@ -32,5 +32,107 @@ if (logger.isDebugEnabled()) {
 logger.debug("There are now {} user accounts: {}", count, userAccountList);
 ```
 
+### Should Logger members of a class be declared as static?
+
+We`used`to recommend that loggers members be declared as instance variables instead of static. After further analysis,**we no longer recommend one approach over the other.**
+
+Here is a summary of the pros and cons of each approach.
+
+| Advantages for declaring loggers as static | Disadvantages for declaring loggers as static |
+| :--- | :--- |
+| common and well-established idiomless CPU overhead: loggers are retrieved and assigned only once, at hosting class initializationless memory overhead: logger declaration will consume one reference per class | For libraries shared between applications, not possible to take advantage of repository selectors. It should be noted that if the SLF4J binding and the underlying API ships with each application \(not shared between applications\), then each application will still have its own logging environment.not IOC-friendly |
+| Advantages for declaring loggers as instance variables | Disadvantages for declaring loggers as instance variables |
+| Possible to take advantage of repository selectors even for libraries shared between applications. However, repository selectors only work if the underlying logging system is logback-classic. Repository selectors do not work for the SLF4J+log4j combination.IOC-friendly | Less common idiom than declaring loggers as static variableshigher CPU overhead: loggers are retrieved and assigned for each instance of the hosting classhigher memory overhead: logger declaration will consume one reference per instance of the hosting class |
+
+###  Is there a recommended idiom for declaring a logger in a class?
+
+The following is the recommended logger declaration idiom. For reasons[explained above](https://www.slf4j.org/faq.html#declared_static), it is left to the user to determine whether loggers are declared as static variables or not.
+
+```
+package some.package;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+      
+public class MyClass {
+  final (static) Logger logger = LoggerFactory.getLogger(MyClass.class);
+  ... etc
+}
+```
+
+Unfortunately, given that the name of the hosting class is part of the logger declaration, the above logger declaration idiom is_not_resistant to cut-and-pasting between classes.
+
+Alternatively, you can use`MethodHandles.lookup()`introduced in JDK 7 to pass the caller class.
+
+```
+package
+ some
+.
+package
+;
+
+
+import
+ org
+.
+slf4j
+.
+Logger
+;
+
+
+import
+ org
+.
+slf4j
+.
+LoggerFactory
+;
+
+
+import
+ java
+.
+lang
+.
+invoke
+.
+MethodHandles
+;
+
+
+
+
+public
+class
+MyClass
+{
+
+
+final
+static
+Logger
+ logger 
+=
+LoggerFactory
+.
+getLogger
+(
+MethodHandles
+.
+lookup
+().
+lookupClass
+());
+
+
+...
+ etc
+
+
+}
+```
+
+This pattern can be cut and pasted across classes.
+
 
 
