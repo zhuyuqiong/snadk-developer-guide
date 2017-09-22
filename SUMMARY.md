@@ -10,6 +10,7 @@
   * [Runtime](chapter-2-dev-environment/runtime.md)
   * [Plugins](chapter-2-dev-environment/plugins.md)
   * [MySQL](dev-environment-mysql.md)
+* [SNConfig](snconfig.md)
 * [Git](chapter-3-git.md)
 * [Logging](chapter-4-logs.md)
   * [slf4j](chapter-4-logs/slf4j.md)
