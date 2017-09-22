@@ -52,8 +52,12 @@ java2js Run/Debug 配置
 Name: java2js
 Main Class: snsoftx.j2stools.LibBuild
 Project: snadk-java2js
-Program arguments: 
-
+Program arguments:
+    #@/snsoft90/snsoft_adk/snadk-mq/xjs/build/J2SLibBuild(mq).Args.txt
+    #@/snsoft90/snsoft_adk/snadk-cli/snadk-xjs/build/J2SLibBuild.Args.txt
+    @/snsoft90/snsoft_adk/snadk-cmc/xjs/build/J2SLibBuild(cmc).Args.txt
+    #@/snsoft90/snsoft_adk/snadk-help/xjs/build/J2SLibBuild(help).Args.txt
+    @/snsoft90/snsoft_adk/snadk-ui/snadk-ui/theme-src/BuildJs.txt
 ```
 
 java2js的Arguments配置示例
