@@ -70,7 +70,17 @@ java2js的Arguments配置示例
 
 webstart-cli Run/Debug 配置
 
+```
+Name: webstart
+Main Class: snsoft.cli.app.TApplication
+Project: snadk-cli-app
+VM options: 
+    -Xmx1024m
+    -DServerURL=http://127.0.0.1:1010/n10
+    -ea
+    -Dsn.test=true
 
+```
 
 iii. 默认规则
 
