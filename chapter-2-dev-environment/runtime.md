@@ -79,7 +79,7 @@ java2js中的Arguments文件配置示例：
 ```
 
 ```
-#BASEDIR 为当前文件所在目录
+#BASEDIR 为当前txt文件所在目录
 @see snsoftx.j2stools.LibBuild#parseArgSet中代码逻辑
 ```
 
