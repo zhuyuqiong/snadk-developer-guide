@@ -110,33 +110,56 @@ SN-MQ.Comm.mongo.uri=mongodb://10.8.5.30:27017/n10
 
 ```
 <beans xmlns="http://www.springframework.org/schema/beans" xmlns:amq="http://activemq.apache.org/schema/core" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
-	xmlns:sn="http://snsoft.cn/schema/config"
-	xmlns:p="http://www.springframework.org/schema/p"
-	xsi:schemaLocation="http://www.springframework.org/schema/beans 
-	  http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+    xmlns:sn="http://snsoft.cn/schema/config"
+    xmlns:p="http://www.springframework.org/schema/p"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans 
+      http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
       http://activemq.apache.org/schema/core 
       http://activemq.apache.org/schema/core/activemq-core.xsd
       http://www.springframework.org/schema/context 
-	  http://www.springframework.org/schema/context/spring-context-3.0.xsd 
-	  http://snsoft.cn/schema/config
-	  http://snsoft.cn/schema/config.xsd
+      http://www.springframework.org/schema/context/spring-context-3.0.xsd 
+      http://snsoft.cn/schema/config
+      http://snsoft.cn/schema/config.xsd
       ">
-	<sn:option name="Diag.TraceLevel">9</sn:option>
-	<sn:option name="SYSDEF.WSID">N10TEST</sn:option>
-	<sn:option name="SYSDEF.MGWSID">N10TEST</sn:option>
-	<sn:option name="Languages">zh_CN:简体中文,en:English</sn:option>
-	<sn:option name="FSID.DOCROOT">file:/temp/attach/</sn:option>
-	<sn:option name="FSID.FTPROOT">ftp://sinolinktest:test.2016@10.8.1.11/Attachments/N10/</sn:option>
-	<sn:option name="Diag._IgnorePWD">true</sn:option>
+    <sn:option name="Diag.TraceLevel">9</sn:option>
+    <sn:option name="SYSDEF.WSID">N10TEST</sn:option>
+    <sn:option name="SYSDEF.MGWSID">N10TEST</sn:option>
+    <sn:option name="Languages">zh_CN:简体中文,en:English</sn:option>
+    <sn:option name="FSID.DOCROOT">file:/temp/attach/</sn:option>
+    <sn:option name="FSID.FTPROOT">ftp://sinolinktest:test.2016@10.8.1.11/Attachments/N10/</sn:option>
+    <sn:option name="Diag._IgnorePWD">true</sn:option>
 
-</beans>    
+</beans>
 ```
 
 ## TimerTask.xml
 
 定时任务定义文件。
 
+示例：
+
+```
+<?xml version="1.0" encoding="UTF-8"?>
+ <timertask-list>
+        <timertask id="50000" name="SN-MQ.PushTimer" 
+         work-time="0:0-24:0" interval="10"
+         auto-start="true"
+         thread = "true"
+         task-type="bean"
+		 disabled="true"
+        >SN-MQ.MQPushTimer</timertask>
+</timertask-list>
+```
+
 ## ShardingRule.xml
 
 分表分库规则。
+
+示例：
+
+```
+
+```
+
+
 
