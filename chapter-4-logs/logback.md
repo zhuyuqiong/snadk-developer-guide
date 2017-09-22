@@ -68,25 +68,43 @@ StaticLoggerBinder.getSingleton().getLoggerFactory();
 
 ## Logger, Appenders ,Layouts
 
+Logger作为日志的记录器，把它关联到应用的对应的context上后，主要用于存放日志对象，也可以定义日志类型、级别。
 
+  Appender主要用于指定日志输出的目的地，目的地可以是控制台、文件、远程套接字服务器、 MySQL、 PostreSQL、 Oracle和其他数据库、JMS和远程UNIX Syslog守护进程等。
+
+  Layout 负责把事件转换成字符串，格式化的日志信息的输出。
+
+**2、logger context**
+
+各个logger 都被关联到一个 LoggerContext，LoggerContext负责制造logger，也负责以树结构排列各 logger。其他所有logger也通过org.slf4j.LoggerFactory 类的静态方法getLogger取得。 getLogger方法以 logger 名称为参数。用同一名字调用LoggerFactory.getLogger 方法所得到的永远都是同一个logger对象的引用。
+
+**3、有效级别及级别的继承**
+
+  Logger 可以被分配级别。级别包括：TRACE、DEBUG、INFO、WARN 和 ERROR，定义于 ch.qos.logback.classic.Level类。如果logger没有被分配级别，那么它将从有被分配级别的最近的祖先那里继承级别。root logger 默认级别是 DEBUG。
+
+**4、打印方法与基本的选择规则**
+
+打印方法决定记录请求的级别。例如，如果 L 是一个 logger 实例，那么，语句 L.info\(".."\)是一条级别为 INFO 的记录语句。记录请求的级别在高于或等于其 logger 的有效级别时被称为被启用，否则，称为被禁用。记录请求级别为 p，其 logger的有效级别为 q，只有则当p&gt;=q时，该请求才会被执行。
+
+**该规则是 logback 的核心。级别排序为： TRACE &lt; DEBUG &lt; INFO &lt; WARN &lt; ERROR。 **
 
 ## 配置
 
 ### 默认配置
 
-如果配置文件 logback-test.xml 和 logback.xml 都不存在，那么 logback 默认地会调用BasicConfigurator ，创建一个最小化配置。最小化配置由一个关联到根 logger 的ConsoleAppender 组成。输出用模式为`%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n`的 PatternLayoutEncoder 进行格式化。root logger 默认级别是 DEBUG。
+如果配置文件 logback-test.xml 和 logback.xml 都不存在，那么 logback 默认地会调用BasicConfigurator ，创建一个最小化配置。最小化配置由一个关联到根 logger 的ConsoleAppender 组成。输出用模式为`%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n`的 PatternLayoutEncoder 进行格式化。root logger 默认级别是 DEBUG。
 
 **Logback的配置文件**
 
-Logback 配置文件的语法非常灵活。正因为灵活，所以无法用 DTD 或 XML schema 进行定义。尽管如此，可以这样描述配置文件的基本结构：以&lt;configuration&gt;开头，后面有零个或多个&lt;appender&gt;元素，有零个或多个&lt;logger&gt;元素，有最多一个&lt;root&gt;元素。
+Logback 配置文件的语法非常灵活。正因为灵活，所以无法用 DTD 或 XML schema 进行定义。尽管如此，可以这样描述配置文件的基本结构：以&lt;configuration&gt;开头，后面有零个或多个&lt;appender&gt;元素，有零个或多个&lt;logger&gt;元素，有最多一个&lt;root&gt;元素。
 
 **Logback默认配置的步骤**
 
-* 尝试在 classpath 下查找文件 logback-test.xml
-* 如果文件不存在，则查找文件 logback.xml
-* 如果两个文件都不存在，logback 用 BasicConfigurator 自动对自己进行配置，这会导致记录输出到控制台。
+* 尝试在 classpath 下查找文件 logback-test.xml
+* 如果文件不存在，则查找文件 logback.xml
+* 如果两个文件都不存在，logback 用 BasicConfigurator 自动对自己进行配置，这会导致记录输出到控制台。
 
-### l**ogback.xml 文件**
+### l**ogback.xml 文件**
 
 ## 参考文档
 
@@ -106,17 +124,17 @@ Logback 配置文件的语法非常灵活。正因为灵活，所以无法用 
 - configuration 子节点为 appender、logger、root
 -->
 <configuration scan="true" scanPeriod="60 second" debug="false">
- 
+
     <!-- 负责写日志,控制台日志 -->
     <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
- 
+
         <!-- 一是把日志信息转换成字节数组,二是把字节数组写入到输出流 -->
         <encoder>
             <Pattern>[%d{yyyy-MM-dd HH:mm:ss.SSS}] [%5level] [%thread] %logger{0} %msg%n</Pattern>
             <charset>UTF-8</charset>
         </encoder>
     </appender>
- 
+
     <!-- 文件日志 -->
     <appender name="DEBUG" class="ch.qos.logback.core.FileAppender">
         <file>debug.log</file>
@@ -133,21 +151,21 @@ Logback 配置文件的语法非常灵活。正因为灵活，所以无法用 
             <charset>UTF-8</charset>
         </encoder>
     </appender>
- 
+
     <!-- 滚动记录文件，先将日志记录到指定文件，当符合某个条件时，将日志记录到其他文件 -->
     <appender name="INFO" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <File>info.log</File>
- 
+
         <!-- ThresholdFilter:临界值过滤器，过滤掉 TRACE 和 DEBUG 级别的日志 -->
         <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
             <level>INFO</level>
         </filter>
- 
+
         <encoder>
             <Pattern>[%d{yyyy-MM-dd HH:mm:ss.SSS}] [%5level] [%thread] %logger{0} %msg%n</Pattern>
             <charset>UTF-8</charset>
         </encoder>
- 
+
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <!-- 每天生成一个日志文件，保存30天的日志文件
             - 如果隔一段时间没有输出日志，前面过期的日志不会被删除，只有再重新打印日志的时候，会触发删除过期日志的操作。
@@ -159,7 +177,7 @@ Logback 配置文件的语法非常灵活。正因为灵活，所以无法用 
             </TimeBasedFileNamingAndTriggeringPolicy>
         </rollingPolicy>
     </appender >
- 
+
     <!--<!– 异常日志输出 –>-->
     <!--<appender name="EXCEPTION" class="ch.qos.logback.core.rolling.RollingFileAppender">-->
         <!--<file>exception.log</file>-->
@@ -173,21 +191,21 @@ Logback 配置文件的语法非常灵活。正因为灵活，所以无法用 
             <!--<OnMatch>ACCEPT</OnMatch>-->
             <!--<OnMismatch>DENY</OnMismatch>-->
         <!--</filter>-->
- 
+
         <!--<triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">-->
             <!--<!– 触发节点，按固定文件大小生成，超过5M，生成新的日志文件 –>-->
             <!--<maxFileSize>5MB</maxFileSize>-->
         <!--</triggeringPolicy>-->
     <!--</appender>-->
- 
+
     <appender name="ERROR" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <file>error.log</file>
- 
+
         <encoder>
             <Pattern>[%d{yyyy-MM-dd HH:mm:ss.SSS}] [%5level] [%thread] %logger{0} %msg%n</Pattern>
             <charset>UTF-8</charset>
         </encoder>
- 
+
         <!-- 按照固定窗口模式生成日志文件，当文件大于20MB时，生成新的日志文件。
         -    窗口大小是1到3，当保存了3个归档文件后，将覆盖最早的日志。
         -    可以指定文件压缩选项
@@ -202,7 +220,7 @@ Logback 配置文件的语法非常灵活。正因为灵活，所以无法用 
             <maxHistory>30</maxHistory>
         </rollingPolicy>
     </appender>
- 
+
     <!-- 异步输出 -->
     <appender name ="ASYNC" class= "ch.qos.logback.classic.AsyncAppender">
         <!-- 不丢失日志.默认的,如果队列的80%已满,则会丢弃TRACT、DEBUG、INFO级别的日志 -->
@@ -212,7 +230,7 @@ Logback 配置文件的语法非常灵活。正因为灵活，所以无法用 
         <!-- 添加附加的appender,最多只能添加一个 -->
         <appender-ref ref ="ERROR"/>
     </appender>
- 
+
     <!--
     - 1.name：包名或类名，用来指定受此logger约束的某一个包或者具体的某一个类
     - 2.未设置打印级别，所以继承他的上级<root>的日志级别“DEBUG”
@@ -221,7 +239,7 @@ Logback 配置文件的语法非常灵活。正因为灵活，所以无法用 
     -  root接到下级传递的信息，交给已经配置好的名为“STDOUT”的appender处理，“STDOUT”appender将信息打印到控制台；
     -->
     <logger name="ch.qos.logback" />
- 
+
     <!--
     - 1.将级别为“INFO”及大于“INFO”的日志信息交给此logger指定的名为“STDOUT”的appender处理，在控制台中打出日志，
     -   不再向次logger的上级 <logger name="logback"/> 传递打印信息
@@ -238,7 +256,7 @@ Logback 配置文件的语法非常灵活。正因为灵活，所以无法用 
         <!--<appender-ref ref="ERROR"/>-->
         <appender-ref ref="ASYNC"/>
     </logger>
- 
+
     <!--
     - 根logger
     - level:设置打印级别，大小写无关：TRACE, DEBUG, INFO, WARN, ERROR, ALL 和 OFF，不能设置为INHERITED或者同义词NULL。

@@ -34,7 +34,7 @@ logger.debug("There are now {} user accounts: {}", count, userAccountList);
 
 以下是两个官方说明，可以解决各位开发同学日常使用中的部分选择疑惑。
 
-### Logger变量是否应该声明为 static?
+### Logger变量是否应该声明为 static
 
 声明Logger变量是否为static，目前官方给出的意见是两者各有优缺，交给各位开发同学选择。
 
@@ -48,7 +48,7 @@ Here is a summary of the pros and cons of each approach.
 | non-static优点 | non-static缺点 |
 | 1. 可以在应用间共享logger实例&lt;/br&gt;2. 支持IOC | 1. 写法不常见&lt;/br&gt;2. CPU占用更高：每次创建主类实例时都会加载 2. 内存占用更高：主类的每个实例都会创建一个引用 |
 
-### 在class中声明logger的推荐方式?
+### 在class中声明logger的推荐方式
 
 如下是声明logger的一种写法，static由开发人员自主决定是否使用：
 
