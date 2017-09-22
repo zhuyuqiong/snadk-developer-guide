@@ -30,6 +30,8 @@ VM options: -DSN.ID=SN-HostUI
 
 其中，`SN.ID`为服务器ID，用于dubbo的Service注册group参数。
 
+在ui启动工程中，还有个类`snsoftboot.BootConfig`值得我们关注，这个类使用Spring `@Configuration`注解，用于向Spring 的web上下文注入平台应用所依赖的Servlet。
+
 boot-service Run/Debug 配置
 
 ```
