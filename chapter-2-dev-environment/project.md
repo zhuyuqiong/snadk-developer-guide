@@ -25,29 +25,30 @@ Maven工程下仅存在pom.xml文件和src目录。不在包含eclipse的.projec
 ```
 #SNADK
 .
-|—— snadk-core
-|    |—— snadk-bas
-|    |—— snadk-bpm
-|    |—— snadk-dx
-|    └── snadk-util
-|── snadk-dubbo
-|—— snadk-sso
-|—— snadk-ui
-|    |—— snadk-ui
-|    └── snadk-prt
-|—— snadk-approval
-|—— snadk-cmc
-|—— snadk-cli
-|    |—— snadk-cli-app
+|—— snadk-core     //核心组件
+|    |—— snadk-bas     //基础服务
+|    |—— snadk-bpm     //工作流程
+|    |—— snadk-dx     //数据服务
+|    └── snadk-util     //util工程
+|── snadk-dubbo     //dubbo服务注册和调用
+|—— snadk-sso     //登陆
+|—— snadk-ui     //UI组件
+|    |—— snadk-ui     //界面展示、请求调度
+|    └── snadk-prt     //打印服务
+|—— snadk-approval     //审批流程
+|—— snadk-cmc     //管控中心
+|—— snadk-help     //帮助中心
+|—— snadk-cli     //webstart客户端
+|    |—— snadk-cli-app     
 |    |—— snadk-cli-launcher
 |    |—— snadk-cli-tools
-└── snadk-xjs
+└── snadk-xjs     //js客户端
 
-#java2js
+#java2js     //js编译
 .
-└── snadk-tools
-     |—— snadk-jparser
-     └── snadk-java2js
+└── snadk-tools     //辅助工具
+     |—— snadk-jparser     //java解析
+     └── snadk-java2js     //js转换
 ```
 
 ### 生成工程
