@@ -100,11 +100,16 @@ VM options:
     -Dsn.test=true
 ```
 
-iii. 默认规则
+### 默认规则
 
-1. SN.ConfigPath：指定环境变量，开发环境与单元测试环境可以共用；
+环境变量中配置参数：
 
-2. snconfig目录下的标准文件
+```
+#指定平台配置文件所在文件夹
+SN.ConfigPath： D:\snsoft90\snconfig
+```
+
+1. snconfig目录下的标准文件
 
    a. System.properties：用于设置启用参数；
 
