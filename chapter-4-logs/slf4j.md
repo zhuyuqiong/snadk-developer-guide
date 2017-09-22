@@ -42,8 +42,8 @@ We`used`to recommend that loggers members be declared as instance variables inst
 
 Here is a summary of the pros and cons of each approach.
 
-| static 优点 | static缺点 |
-| :------- | :--- |
+| static 优点  | static缺点 |
+| :---- | :--- |
 | 1. static写法更为常见和成熟 </br>2. CPU占用更少: loggers 只在主类初始化时加载一次</br>3. 内存占用更低: logger 声明只占用一个引用 | 1. 无法在应用间通过某种logger仓库技术共享logger实例</br>2. 无法IOC |
 | non-static优点 | non-static缺点 |
 | 1. 可以在应用间共享logger实例</br>2. 支持IOC | 1. 写法不常见</br>2. CPU占用更高：每次创建主类实例时都会加载 2. 内存占用更高：主类的每个实例都会创建一个引用 |
