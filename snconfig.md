@@ -10,13 +10,13 @@
 
 ## Spring-Configs.xml
 
-用于配置启动后的Spring-Bean参数。
+用于配置启动后的Spring-Bean参数、选项。
 
 ## TimerTask.xml
 
-定时任务定义文件
+定时任务定义文件。
 
 ## ShardingRule.xml
 
-分表分库规则
+分表分库规则。
 
