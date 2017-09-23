@@ -18,6 +18,7 @@
 
 ## SNADK
 
+* [Architecture](architecture.md)
 * [SNADK-DX-DB](chapter-5-snadk-dx-db.md)
 * [SNADK-DX-VO](chapter-6-snadk-dx-vo.md)
 * [SNADK-UI-View](chapter-7-snadk-ui-view.md)
