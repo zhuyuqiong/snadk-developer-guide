@@ -16,13 +16,13 @@ logback-access是为了集成Servlet环境而准备的，可提供HTTP-access的
 
 我们从java代码最简单的获取logger开始
 
-```
+```java
 Logger logger = LoggerFactory.getLogger(xxx.class.getName());
 ```
 
 LoggerFactory是slf4j的日志工厂，获取logger方法就来自这里。
 
-```
+```java
 public static Logger getLogger(String name) {
     ILoggerFactory iLoggerFactory = getILoggerFactory();
     return iLoggerFactory.getLogger(name);
@@ -34,7 +34,7 @@ public static Logger getLogger(String name) {
 
 **第一个部分加载org/slf4j/impl/StaticLoggerBinder.class文件**
 
-```
+```java
 paths = ClassLoader.getSystemResources(STATIC_LOGGER_BINDER_PATH);
 //STATIC_LOGGER_BINDER_PATH = "org/slf4j/impl/StaticLoggerBinder.class"
 ```
@@ -42,7 +42,7 @@ paths = ClassLoader.getSystemResources(STATIC_LOGGER_BINDER_PATH);
 **第二部分随机选取一个StaticLoggerBinder.class来创建一个单例**  
 当项目中存在多个StaticLoggerBinder.class文件时，运行项目会出现以下日志：
 
-```
+```java
 SLF4J: Class path contains multiple SLF4J bindings.
 SLF4J: Found binding in [jar:file:/C:/Users/jiangmitiao/.m2/repository/ch/qos/logback/logback-classic/1.1.3/logback-classic-1.1.3.jar!/org/slf4j/impl/StaticLoggerBinder.class]
 SLF4J: Found binding in [jar:file:/C:/Users/jiangmitiao/.m2/repository/org/slf4j/slf4j-log4j12/1.7.12/slf4j-log4j12-1.7.12.jar!/org/slf4j/impl/StaticLoggerBinder.class]
@@ -52,13 +52,13 @@ SLF4J: Actual binding is of type [ch.qos.logback.classic.util.ContextSelectorSta
 
 最后会随机选择一个StaticLoggerBinder.class来创建一个单例
 
-```
-StaticLoggerBinder.getSingleton()
+```java
+StaticLoggerBinder.getSingleton();
 ```
 
 **第三部分返回一个ILoggerFactory实例**
 
-```
+```java
 StaticLoggerBinder.getSingleton().getLoggerFactory();
 ```
 
@@ -115,7 +115,7 @@ Logback 配置文件的语法非常灵活。正因为灵活，所以无法用 DT
 
 XML代码：
 
-```
+```java
 <configuration scan="true"scanPeriod="60 second"debug="false">
     <!-- 其他配置省略-->
 </configuration>
@@ -135,7 +135,7 @@ LogBack的配置大概包括3部分：appender, logger和root。
 
 XML代码：
 
-```
+```java
 <configuration scan="true" scanPeriod="60 second" debug="false">  
       <property name="APP_Name" value="myAppName" />   
       <contextName>${APP_Name}</contextName>  
@@ -149,7 +149,7 @@ XML代码：
 
 XML代码：
 
-```
+```java
 <configuration scan="true" scanPeriod="60 second" debug="false">  
       <timestamp key="bySecond" datePattern="yyyyMMdd'T'HHmmss"/>   
       <contextName>${bySecond}</contextName>  
@@ -187,14 +187,14 @@ XML代码：
 * &lt;encoder&gt;：对日志进行格式化。（具体参数稍后讲解 ）
 * &lt;target&gt;：字符串 System.out 或者 System.err ，默认 System.out 
 
-```
+```java
 <configuration>  
   <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">  
     <encoder>  
       <pattern>%-4relative [%thread] %-5level %logger{35} - %msg %n</pattern>  
     </encoder>  
   </appender>  
- 
+
   <root level="DEBUG">  
     <appender-ref ref="STDOUT" />  
   </root>  
@@ -281,8 +281,6 @@ decide方法返回ch.qos.logback.core.spi.FilterReply的枚举类型：`DENY`,`N
 
 在`LoggingEvent`创建前调用，因此，相比普通FIlter会更高效。
 
-
-
 ## 参考文档
 
 * [http://www.importnew.com/22290.html](http://www.importnew.com/22290.html)
@@ -290,7 +288,7 @@ decide方法返回ch.qos.logback.core.spi.FilterReply的枚举类型：`DENY`,`N
 
 ## 完整配置案例
 
-```
+```java
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 -scan:当此属性设置为true时，配置文件如果发生改变，将会被重新加载，默认值为true

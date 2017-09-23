@@ -14,13 +14,13 @@ log4j 提供 TRACE, DEBUG, INFO, WARN, ERROR 5个级别日志等级。
 
 传统的日志中，我们大量使用字符串拼接的方式，如果当前系统日志Level不需要记录Debug等级的信息，就会浪费时间在产生不必要的信息上。
 
-```
+```java
 logger.debug("There are now " + count + " user accounts: " + userAccountList);
 ```
 
 或者会使用是否debug模式的判断：
 
-```
+```java
 if (logger.isDebugEnabled()) {
     logger.debug("There are now " + count + " user accounts: " + userAccountList);
 }
@@ -28,7 +28,7 @@ if (logger.isDebugEnabled()) {
 
 而slf4j提供了一种新的记录方式，就是使用**占位符**，在代码中表示为"{}"。"{}"会在运行时被某个提供的实际字符串所替换。这不仅降低了你代码中字符串连接次数，而且还节省了新建的String对象。
 
-```
+```java
 logger.debug("There are now {} user accounts: {}", count, userAccountList);
 ```
 
@@ -52,7 +52,7 @@ Here is a summary of the pros and cons of each approach.
 
 如下是声明logger的一种写法，static由开发人员自主决定是否使用：
 
-```
+```java
 package some.package;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -67,7 +67,7 @@ public class MyClass {
 
 在JDK7+中可以使用`MethodHandles.lookup()`来解决如上问题：
 
-```
+```java
 package some.package;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
