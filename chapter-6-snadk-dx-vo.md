@@ -28,9 +28,30 @@ c. Mapper：VO拷贝；
 snsoft/res/vomapper/vomapper*.xml
 ```
 
-d. Validation：VO校验；
+## Validation：VO校验
 
-Java标准Validation方案，javax.validation.constraints 中注解。
+VO校验采用Java标准Validation方案，在需要校验的Field上打上javax.validation.constraints 中注解。
+
+例如：
+
+```
+public class User extends BcodeVO
+{
+	@NotNull
+	private String usercode;
+}
+```
+
+注解校验的实现方法可参见
+
+```
+#Service
+snsoft.dx.vo.validate.service.ValidateService
+#以及其实现类
+snsoft.dx.vo.validate.service.impl.ValidateServiceImpl
+#测试类
+snsoftx.test.adk.validation.ValidationTest
+```
 
 e. JAXB：XML与Schema，VO与XML转换；
 
