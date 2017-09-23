@@ -37,7 +37,7 @@
 * [BPM](chapter-20-bpm.md)
 * [CMC](chapter-21-cmc.md)
 * [MQ](chapter-22-mq.md)
-* [Help Center](chapter-23-help-center.md)
+* [HelpCenter](chapter-23-help-center.md)
 * [XJS](chapter-24-xjs.md)
 
 ## Third Part
