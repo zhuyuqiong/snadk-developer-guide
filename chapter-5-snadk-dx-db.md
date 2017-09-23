@@ -45,10 +45,29 @@ try (Database db = AppContext.getUserSession(true).newDatabaseByTable(String tab
 
 ## 事务
 
-* 单表存储，不需要启用事务，程序自动处理
-* 多表存储，需要在最外层Service启用相关事务
+* 单DAO存储时，不需要启用事务，程序自动处理
+
+相关程序参见：
+
+```
+snsoft.dx.DefaultDAO#saveRecord
+```
+
+* 多DAO存储时，需要在最外层Service启用事务
 
 ## DefaultDAO
 
-VO的CRUD
+VO的CRUD方法，该类是非线程安全的，因此注意不要使用注入的方式使用。
+
+常用的写法例子：
+
+```
+public void save1(WCodeVO[] records)
+{
+    DefaultDAO<WCodeVO> dao = new DefaultDAO<>();
+    dao.save(records);
+}
+```
+
+
 
