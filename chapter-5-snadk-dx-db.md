@@ -1,5 +1,7 @@
 # SNADK-DX-DB
 
+本章节介绍一下SNADK中使用数据库存取的相关内容。
+
 ## Database的使用原则
 
 * **谁new谁关闭**
