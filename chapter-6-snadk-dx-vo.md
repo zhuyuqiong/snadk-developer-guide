@@ -1,6 +1,8 @@
 # SNADK-DX-VO
 
-a. JPA注解
+在与关系型数据库进行数据存取操作时，我们要求使用VO对象方式编程。通过在VO对象中标注的一系列注解，平台底层可以统一管理VO对象的事务和VO对象的数据合法性校验。
+
+## JPA注解
 
 i. Table：表名
 
@@ -22,7 +24,7 @@ ii. 屏蔽Jackson的注解：JsonIgnore，设置在字段上及get方法上；
 
 iii. 屏蔽XML的注解：XmlTransient，设置在get方法上，同时不能出现在类注解XmlType的propOrder属性中；
 
-c. Mapper：VO拷贝；
+## Mapper：VO拷贝
 
 ```
 snsoft/res/vomapper/vomapper*.xml
@@ -37,8 +39,8 @@ VO校验采用Java标准Validation方案，在需要校验的Field上打上javax
 ```
 public class User extends BcodeVO
 {
-	@NotNull
-	private String usercode;
+    @NotNull
+    private String usercode;
 }
 ```
 
