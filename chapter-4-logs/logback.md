@@ -68,25 +68,25 @@ StaticLoggerBinder.getSingleton().getLoggerFactory();
 
 ## Logger, Appenders ,Layouts
 
-Logger作为日志的记录器，把它关联到应用的对应的context上后，主要用于存放日志对象，也可以定义日志类型、级别。
+**Logger**作为日志的记录器，把它关联到应用的对应的context上后，主要用于存放日志对象，也可以定义日志类型、级别。
 
-  Appender主要用于指定日志输出的目的地，目的地可以是控制台、文件、远程套接字服务器、 MySQL、 PostreSQL、 Oracle和其他数据库、JMS和远程UNIX Syslog守护进程等。
+**Appender**主要用于指定日志输出的目的地，目的地可以是控制台、文件、远程套接字服务器、 MySQL、 PostreSQL、 Oracle和其他数据库、JMS和远程UNIX Syslog守护进程等。
 
-  Layout 负责把事件转换成字符串，格式化的日志信息的输出。
+**Layout **负责把事件转换成字符串，格式化的日志信息的输出。
 
-**2、logger context**
+**2、logger context**
 
-各个logger 都被关联到一个 LoggerContext，LoggerContext负责制造logger，也负责以树结构排列各 logger。其他所有logger也通过org.slf4j.LoggerFactory 类的静态方法getLogger取得。 getLogger方法以 logger 名称为参数。用同一名字调用LoggerFactory.getLogger 方法所得到的永远都是同一个logger对象的引用。
+各个logger 都被关联到一个 LoggerContext，LoggerContext负责制造logger，也负责以树结构排列各 logger。其他所有logger也通过org.slf4j.LoggerFactory 类的静态方法getLogger取得。 getLogger方法以 logger 名称为参数。用同一名字调用LoggerFactory.getLogger 方法所得到的永远都是同一个logger对象的引用。
 
 **3、有效级别及级别的继承**
 
-  Logger 可以被分配级别。级别包括：TRACE、DEBUG、INFO、WARN 和 ERROR，定义于 ch.qos.logback.classic.Level类。如果logger没有被分配级别，那么它将从有被分配级别的最近的祖先那里继承级别。root logger 默认级别是 DEBUG。
+Logger 可以被分配级别。级别包括：TRACE、DEBUG、INFO、WARN 和 ERROR，定义于 ch.qos.logback.classic.Level类。如果logger没有被分配级别，那么它将从有被分配级别的最近的祖先那里继承级别。root logger 默认级别是 DEBUG。
 
 **4、打印方法与基本的选择规则**
 
-打印方法决定记录请求的级别。例如，如果 L 是一个 logger 实例，那么，语句 L.info\(".."\)是一条级别为 INFO 的记录语句。记录请求的级别在高于或等于其 logger 的有效级别时被称为被启用，否则，称为被禁用。记录请求级别为 p，其 logger的有效级别为 q，只有则当p&gt;=q时，该请求才会被执行。
+打印方法决定记录请求的级别。例如，如果 L 是一个 logger 实例，那么，语句 L.info\(".."\)是一条级别为 INFO 的记录语句。记录请求的级别在高于或等于其 logger 的有效级别时被称为被启用，否则，称为被禁用。记录请求级别为 p，其 logger的有效级别为 q，只有则当p&gt;=q时，该请求才会被执行。
 
-**该规则是 logback 的核心。级别排序为： TRACE &lt; DEBUG &lt; INFO &lt; WARN &lt; ERROR。 **
+**该规则是 logback 的核心。级别排序为： TRACE &lt; DEBUG &lt; INFO &lt; WARN &lt; ERROR。 **
 
 ## 配置
 
