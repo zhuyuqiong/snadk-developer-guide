@@ -107,7 +107,7 @@ Logback 配置文件的语法非常灵活。正因为灵活，所以无法用 DT
 
 ### l**ogback.xml 文件**
 
-#### **根节点&lt;configuration&gt;包含的属性**
+#### **根节点&lt;configuration&gt;**
 
 * scan：当此属性设置为true时，配置文件如果发生改变，将会被重新加载，默认值为true.
 * scanPeriod：设置监测配置文件是否有修改的时间间隔，如果没有给出时间单位，默认单位是毫秒。当scan为true时，此属性生效。默认的时间间隔为1分钟.
@@ -118,6 +118,40 @@ XML代码：
 ```
 <configuration scan="true"scanPeriod="60 second"debug="false">
     <!-- 其他配置省略-->
+</configuration>
+```
+
+#### 子节点
+
+LogBack的配置大概包括3部分：appender, logger和root。
+
+**设置上下文名称&lt;contextName&gt;**
+
+每个logger都关联到logger上下文，默认上下文名称为“default”。但可以使用&lt;contextName&gt;设置成其他名字，用于区分不同应用程序的记录。一旦设置，不能修改。
+
+**设置变量 &lt;property&gt;**
+
+用来定义变量值的标签，&lt;property&gt; 有两个属性，name和value；其中name的值是变量的名称，value的值时变量定义的值。通过&lt;property&gt;定义的值会被插入到logger上下文中。定义变量后，可以使“${}”来使用变量。
+
+```
+<configuration scan="true" scanPeriod="60 second" debug="false">  
+      <property name="APP_Name" value="myAppName" />   
+      <contextName>${APP_Name}</contextName>  
+      <!-- 其他配置省略-->  
+</configuration>
+```
+
+**获取时间戳字符串 &lt;timestamp&gt;**
+
+两个属性 key:标识此&lt;timestamp&gt; 的名字；datePattern：设置将当前时间（解析配置文件的时间）转换为字符串的模式，遵循Java.txt.SimpleDateFormat的格式。
+
+XML代码：
+
+```
+<configuration scan="true" scanPeriod="60 second" debug="false">  
+      <timestamp key="bySecond" datePattern="yyyyMMdd'T'HHmmss"/>   
+      <contextName>${bySecond}</contextName>  
+      <!-- 其他配置省略-->  
 </configuration>
 ```
 
