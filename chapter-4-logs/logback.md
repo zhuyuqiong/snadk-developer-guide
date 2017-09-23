@@ -74,15 +74,15 @@ StaticLoggerBinder.getSingleton().getLoggerFactory();
 
 **Layout **负责把事件转换成字符串，格式化的日志信息的输出。
 
-**2、logger context**
+**logger context**
 
 各个logger 都被关联到一个 LoggerContext，LoggerContext负责制造logger，也负责以树结构排列各 logger。其他所有logger也通过org.slf4j.LoggerFactory 类的静态方法getLogger取得。 getLogger方法以 logger 名称为参数。用同一名字调用LoggerFactory.getLogger 方法所得到的永远都是同一个logger对象的引用。
 
-**3、有效级别及级别的继承**
+**有效级别及级别的继承**
 
 Logger 可以被分配级别。级别包括：TRACE、DEBUG、INFO、WARN 和 ERROR，定义于 ch.qos.logback.classic.Level类。如果logger没有被分配级别，那么它将从有被分配级别的最近的祖先那里继承级别。root logger 默认级别是 DEBUG。
 
-**4、打印方法与基本的选择规则**
+**打印方法与基本的选择规则**
 
 打印方法决定记录请求的级别。例如，如果 L 是一个 logger 实例，那么，语句 L.info\(".."\)是一条级别为 INFO 的记录语句。记录请求的级别在高于或等于其 logger 的有效级别时被称为被启用，否则，称为被禁用。记录请求级别为 p，其 logger的有效级别为 q，只有则当p&gt;=q时，该请求才会被执行。
 
@@ -101,10 +101,25 @@ Logback 配置文件的语法非常灵活。正因为灵活，所以无法用 DT
 **Logback默认配置的步骤**
 
 * 尝试在 classpath 下查找文件 logback-test.xml
+* 如果文件不存在，则查找 logback.groovy
 * 如果文件不存在，则查找文件 logback.xml
-* 如果两个文件都不存在，logback 用 BasicConfigurator 自动对自己进行配置，这会导致记录输出到控制台。
+* 如果文件都不存在，logback 用 BasicConfigurator 自动对自己进行配置，这会导致记录输出到控制台。
 
 ### l**ogback.xml 文件**
+
+#### **根节点&lt;configuration&gt;包含的属性**
+
+* scan：当此属性设置为true时，配置文件如果发生改变，将会被重新加载，默认值为true.
+* scanPeriod：设置监测配置文件是否有修改的时间间隔，如果没有给出时间单位，默认单位是毫秒。当scan为true时，此属性生效。默认的时间间隔为1分钟.
+* debug：当此属性设置为true时，将打印出logback内部日志信息，实时查看logback运行状态。默认值为false。
+
+XML代码：
+
+```
+<configuration scan="true"scanPeriod="60 second"debug="false">
+    <!-- 其他配置省略-->
+</configuration>
+```
 
 ## 参考文档
 
