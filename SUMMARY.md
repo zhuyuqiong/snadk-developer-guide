@@ -25,7 +25,7 @@
 * [SNADK-UI-Servlet](chapter-8-snadk-ui-servlet.md)
 * [SNADK-UI-CodeData](chapter-9-snadk-ui-codedata.md)
 * [SNADK-UI-Print](chapter-10-snadk-ui-print.md)
-* [SNADK-SERVICE](chapter-11-snadk-service.md)
+* [SNADK-Service](chapter-11-snadk-service.md)
 * [SNADK-SpringBean](chapter-12-snadk-service-springbean.md)
 * [FileResource](chapter-13-fileresource.md)
 * [Bas Service](chapter-14-bas-service.md)
