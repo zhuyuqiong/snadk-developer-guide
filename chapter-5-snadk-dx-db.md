@@ -62,7 +62,7 @@ VO的CRUD方法，该类是非线程安全的，因此注意不要使用注入�
 常用的写法例子：
 
 ```
-public void save1(WCodeVO[] records)
+public void save(WCodeVO[] records)
 {
     DefaultDAO<WCodeVO> dao = new DefaultDAO<>();
     dao.save(records);
