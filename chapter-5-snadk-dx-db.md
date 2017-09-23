@@ -1,9 +1,31 @@
 # SNADK-DX-DB
 
-a. Database的使用方法：
+Database的使用原则
+
+* **谁new谁关闭**
+
+在程序中要求的写法如下：
 
 ```java
-    snsoft.commons.dx.Database db = AppContext.getUserSession(true).newDatabaseByTable(String table, boolean checkNull);
+import snsoft.commons.dx.Database;
+#创建db
+Database db = AppContext.getUserSession(true).newDatabaseByTable(String table, boolean checkNull);
+try{
+    ... 
+}finally{
+    db.close();
+}
+```
+
+由于JDK1.7新特性，try block中创建的对象可以实现java.lang.AutoCloseable接口来自动关闭，因此写法可以省略为如下：
+
+```java
+import snsoft.commons.dx.Database;
+#创建db
+
+try (Database db = AppContext.getUserSession(true).newDatabaseByTable(String table, boolean checkNull)){
+    ... 
+}
 ```
 
 i. 谁new谁关闭 try\\(Database db = ;\\)；
