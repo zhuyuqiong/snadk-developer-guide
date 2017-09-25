@@ -2,7 +2,7 @@
 
 在与关系型数据库进行数据存取操作时，我们要求使用VO对象方式编程。通过在VO对象中标注的一系列注解，平台底层可以统一管理VO对象的事务和VO对象的数据合法性校验。
 
-在将VO与数据库表进行映射时，要求使用JPA注解实现。
+**在将VO与数据库表进行映射时，要求使用JPA注解实现。**
 
 ## JPA注解
 
@@ -91,18 +91,76 @@ public class DecSupplementListType
 }
 ```
 
-b. 相关注解
+## 其他相关注解
 
-i. 屏蔽spring-data的注解：spring.Transient，设置在字段上；
+在实际使用中，平台目前应用到了Spring、Jackson、Xml等技术来做数据绑定。因此，与相关技术配合的一些注解需要各位开发同学了解。
 
-ii. 屏蔽Jackson的注解：JsonIgnore，设置在字段上及get方法上；
+### 屏蔽类注解
 
-iii. 屏蔽XML的注解：XmlTransient，设置在get方法上，同时不能出现在类注解XmlType的propOrder属性中；
+当我们使用VO对象同Spring-data、Jackson、Xml转换时，有些字段我们并不需要转换到相应数据结构中。此时就需要使用一些屏蔽类的注解来实现该功能。
+
+* 屏蔽spring-data的注解：`spring.Transient`，设置在字段上
+* 屏蔽Jackson的注解：`JsonIgnore`，设置在字段上及get方法上
+* 屏蔽XML的注解：`XmlTransient`，设置在get方法上，同时不能出现在类注解XmlType的propOrder属性中
 
 ## Mapper：VO拷贝
 
+在实际业务中，两个VO实体进行上下游数据拷贝是频繁出现的业务场景。目前在平台中支持通过XML定义来支撑这一场景。
+
+### vomapper.xml定义
+
+平台中会扫描如下目录中的xml文件，将对应配置加载到缓存中进行VO对象拷贝操作。
+
 ```
 snsoft/res/vomapper/vomapper*.xml
+```
+
+关于vomapper.xml的定义方式可参见列子：`vomapper_template.xml`
+
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 类名的全名与简写名称同等使用 -->
+<mapper xmlns="http://www.snsoft.com.cn" 
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		xsi:schemaLocation="http://www.snsoft.com.cn vomapper.xsd "
+		fromClass="a.vo.AClass" toClass="a.appvo.BClass">
+	<!-- 同名不拷贝 -->
+	<m fm="field0" />
+	
+	<!-- 同名拷贝（默认，可以不配置） -->
+	<m fm="field" to="field" />
+
+	<!-- 非同名拷贝 -->
+	<m fm="field1" to="field2" />
+
+	<!-- 码表：转换为名称 -->
+	<m fm="field3" to="field3" codeDefId="#xxx" />
+
+	<!-- 码表：转换为名称，指定分隔符分隔多值 -->
+	<m fm="field4" to="field4" codeDefId="#xxx" codeDeli="," />
+
+	<!-- 默认值：常量 -->
+	<m to="field5" dftValue="1" />
+
+	<!-- 日期、时间类默认值：参见SimpleDateFormat 将宏的返回值转换为字段的值。 -->
+	<m to="field6" dftMacro="YYYY-MM-DD" />
+
+	<!-- VO字段对应关系 -->
+	<m fm="vfield1" to="vfield2">
+		<mapper>
+			<m fm="xx" to="yy" />
+		</mapper>
+	</m>
+
+	<!-- 集合字段对应关系 -->
+	<m fm="cfield1" to="cfield2">
+		<mapper fromClass="a.vo.A1Class" toClass="a.appvo.B1Class">
+			<!-- 子表拷贝主表字段 -->
+			<m fm="AClass.field1" to="field2" />
+		</mapper>
+	</m>
+</mapper>
+
 ```
 
 ## Validation：VO校验
