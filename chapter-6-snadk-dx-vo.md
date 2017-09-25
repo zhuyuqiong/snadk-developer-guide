@@ -115,52 +115,58 @@ public class DecSupplementListType
 snsoft/res/vomapper/vomapper*.xml
 ```
 
+#### 标签
+
+* &lt;mapper&gt;：定义拷贝映射的实体class
+* &lt;m&gt;：定义实体中字段映射关系
+
+以上拷贝映射在定义时支持嵌套。
+
 关于vomapper.xml的定义方式可参见列子：`vomapper_template.xml`
 
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- 类名的全名与简写名称同等使用 -->
 <mapper xmlns="http://www.snsoft.com.cn" 
-		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-		xsi:schemaLocation="http://www.snsoft.com.cn vomapper.xsd "
-		fromClass="a.vo.AClass" toClass="a.appvo.BClass">
-	<!-- 同名不拷贝 -->
-	<m fm="field0" />
-	
-	<!-- 同名拷贝（默认，可以不配置） -->
-	<m fm="field" to="field" />
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+        xsi:schemaLocation="http://www.snsoft.com.cn vomapper.xsd "
+        fromClass="a.vo.AClass" toClass="a.appvo.BClass">
+    <!-- 同名不拷贝：只定义fm -->
+    <m fm="field0" />
 
-	<!-- 非同名拷贝 -->
-	<m fm="field1" to="field2" />
+    <!-- 同名拷贝（默认，可以不配置） -->
+    <m fm="field" to="field" />
 
-	<!-- 码表：转换为名称 -->
-	<m fm="field3" to="field3" codeDefId="#xxx" />
+    <!-- 非同名拷贝 -->
+    <m fm="field1" to="field2" />
 
-	<!-- 码表：转换为名称，指定分隔符分隔多值 -->
-	<m fm="field4" to="field4" codeDefId="#xxx" codeDeli="," />
+    <!-- 码表：转换为名称 -->
+    <m fm="field3" to="field3" codeDefId="#xxx" />
 
-	<!-- 默认值：常量 -->
-	<m to="field5" dftValue="1" />
+    <!-- 码表：转换为名称，指定分隔符分隔多值 -->
+    <m fm="field4" to="field4" codeDefId="#xxx" codeDeli="," />
 
-	<!-- 日期、时间类默认值：参见SimpleDateFormat 将宏的返回值转换为字段的值。 -->
-	<m to="field6" dftMacro="YYYY-MM-DD" />
+    <!-- 默认值：常量 -->
+    <m to="field5" dftValue="1" />
 
-	<!-- VO字段对应关系 -->
-	<m fm="vfield1" to="vfield2">
-		<mapper>
-			<m fm="xx" to="yy" />
-		</mapper>
-	</m>
+    <!-- 日期、时间类默认值：参见SimpleDateFormat 将宏的返回值转换为字段的值。 -->
+    <m to="field6" dftMacro="YYYY-MM-DD" />
 
-	<!-- 集合字段对应关系 -->
-	<m fm="cfield1" to="cfield2">
-		<mapper fromClass="a.vo.A1Class" toClass="a.appvo.B1Class">
-			<!-- 子表拷贝主表字段 -->
-			<m fm="AClass.field1" to="field2" />
-		</mapper>
-	</m>
+    <!-- VO字段对应关系 -->
+    <m fm="vfield1" to="vfield2">
+        <mapper>
+            <m fm="xx" to="yy" />
+        </mapper>
+    </m>
+
+    <!-- 集合字段对应关系 -->
+    <m fm="cfield1" to="cfield2">
+        <mapper fromClass="a.vo.A1Class" toClass="a.appvo.B1Class">
+            <!-- 子表拷贝主表字段 -->
+            <m fm="AClass.field1" to="field2" />
+        </mapper>
+    </m>
 </mapper>
-
 ```
 
 ## Validation：VO校验
