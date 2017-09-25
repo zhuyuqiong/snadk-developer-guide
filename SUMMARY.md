@@ -42,6 +42,7 @@
 
 ## Third Part
 
+* [JavaDoc](chapter-33-javadoc.md)
 * [Spring](chapter-25-spring.md)
 * [Dubbo](chapter-26-dubbo.md)
 * [Zookeeper](chapter-27-zookeeper.md)
@@ -50,7 +51,6 @@
 * [WebService](chapter-30-webservice.md)
 * [Jenkins](chapter-31-jenkins.md)
 * [Docker](chapter-32-docker.md)
-* [JavaDoc](chapter-33-javadoc.md)
 * [Maven](chapter-34-maven.md)
 * [MongoDB](chapter-35-mongodb.md)
 * [Etcd](etcd.md)
