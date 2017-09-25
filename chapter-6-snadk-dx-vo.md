@@ -224,11 +224,11 @@ marshaller.setClassesToBeBound(SignatureType.class);
 try (InputStream in = new ClassPathResource("snsoft/convert/vomapper_signature.xml").getInputStream())
 {
       Source source = new StreamSource(in);
-            signatureType = (SignatureType) marshaller.unmarshal(source);
-            System.out.println(signatureType);
-        }
-        DecMain decMainout = new DecMain();
-        mapperService.mapper(signatureType, decMainout);
+      signatureType = (SignatureType) marshaller.unmarshal(source);
+      System.out.println(signatureType);
+}
+DecMain decMainout = new DecMain();
+mapperService.mapper(signatureType, decMainout);
 ```
 
 ### VO与JSON转换
