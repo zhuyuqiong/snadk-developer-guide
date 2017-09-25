@@ -8,7 +8,7 @@
 
 ### @Table
 
-用于标注VO对象同数据库表的映射，`name`属性必须填写。
+用于标注VO对象同数据库表的映射，`name`属性可选填写。当VO名与数据库表名不一致时必须指定。
 
 ```
 @Table(name = "users")
@@ -16,7 +16,9 @@ public class User extends BcodeVO
 {...}
 ```
 
-ii. Column：列
+### @Column
+
+
 
 iii. Id：主键
 
