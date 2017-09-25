@@ -10,7 +10,7 @@
 
 用于标注VO对象同数据库表的映射，`name`属性可选填写。当VO名与数据库表名不一致时必须指定，否则使用小写VO类名作为表名。
 
-```
+```java
 @Table(name = "users")
 public class User extends BcodeVO
 {...}
@@ -20,7 +20,7 @@ public class User extends BcodeVO
 
 用于标注VO对象的属性同数据库表列的映射关系，`name`属性可选填写。当属性名与列名不一致时必须指定，否则使用小写属性名作为列名。
 
-```
+```java
 @Column
 private int     wadmin;
 @Column
@@ -31,7 +31,7 @@ private Date    bedate;
 
 标识列为表的主键。
 
-```
+```java
 @Table(name = "users")
 public class User extends BcodeVO
 {
@@ -56,7 +56,7 @@ JoinColumn有若干属性需要关注：name 属性标识为目标表（子表�
 
 下面是一个表关系映射的的示例：
 
-```
+```java
 @Table(name = "decmessage")
 public class DecMessage extends VO
 {
@@ -111,7 +111,7 @@ public class DecSupplementListType
 
 平台中会扫描如下目录中的xml文件，将对应配置加载到缓存中进行VO对象拷贝操作。
 
-```
+```java
 snsoft/res/vomapper/vomapper*.xml
 ```
 
@@ -124,7 +124,7 @@ snsoft/res/vomapper/vomapper*.xml
 
 关于vomapper.xml的定义方式可参见列子：`vomapper_template.xml`
 
-```
+```java
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- 类名的全名与简写名称同等使用 -->
 <mapper xmlns="http://www.snsoft.com.cn" 
@@ -173,7 +173,7 @@ snsoft/res/vomapper/vomapper*.xml
 
 在程序中，我们可以使用`MapperService`来实现VO对象拷贝：
 
-```
+```java
 /**
  *@param F 拷贝源VO
  *@param T 目标VO
@@ -187,7 +187,7 @@ VO校验采用Java标准Validation方案，在需要校验的Field上打上javax
 
 例如：
 
-```
+```java
 public class User extends BcodeVO
 {
     @NotNull
@@ -198,7 +198,7 @@ public class User extends BcodeVO
 
 注解校验的实现方法可参见
 
-```
+```java
 #Service
 snsoft.dx.vo.validate.service.ValidateService
 #以及其实现类
@@ -215,7 +215,7 @@ VO的数据绑定目前平台实现了如下几种方式，对应功能都可以
 
 使用JAXB进行转换，示例参考帮助中心。如下是简单的说明：
 
-```
+```java
 //解析xml的类
 org.springframework.oxm.jaxb.Jaxb2Marshaller
 //解绑
@@ -240,7 +240,7 @@ marshaller.marshal(signatureType, result);
 
 平台使用Jackson框架进行json数据转换，示例参考帮助中心。如下是简单说明：
 
-```
+```java
 #解析json的类
 com.fasterxml.jackson.databind.ObjectMapper
 Person person =...
@@ -255,7 +255,7 @@ Person p = mapper.readValue(json, Person.class);
 
 通过ReadDataSetFactory获得对应数据转换对象操作。如下是简单说明：
 
-```
+```java
 //dbf
 ReadDataSetFactory.impl.newDbfReadDataSetImpl
 //txt
