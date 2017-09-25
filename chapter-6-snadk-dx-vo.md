@@ -180,6 +180,7 @@ public class User extends BcodeVO
 {
     @NotNull
     private String usercode;
+    ...
 }
 ```
 
