@@ -59,7 +59,7 @@ snsoft.dx.DefaultDAO#saveRecord
 
 ## DefaultDAO
 
-VO的CRUD方法，该类是非线程安全的，因此注意不要使用注入的方式使用。
+该类是VO的CRUD方法，是非线程安全的，因此注意不要使用注入的方式使用。
 
 常用的写法例子：
 
