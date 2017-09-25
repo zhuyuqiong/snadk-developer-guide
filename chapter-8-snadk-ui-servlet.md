@@ -38,7 +38,7 @@ comp.uiInvoke(pm, 6);
 该类型使用的标准方式如下：
 
 ```
-//1.服务端定义Service interface
+ //1.服务端定义Service interface
  @Remotable//与方法注解选择其一
  @SpringBean(name="SN.HELP.TestService",...)
  public interface snsoft.demo.service.TestService {
@@ -50,11 +50,11 @@ comp.uiInvoke(pm, 6);
            public String echo(String text){...}
  }
  //3.客户端js中定义
-@js.JSCode(remoteBean="SN.HELP.TestService")
-public interface TestService {
+ @js.JSCode(remoteBean="SN.HELP.TestService")
+ public interface TestService {
        public String echo(String text);
 }
-//4.客户端调用
+ //4.客户端调用
  TestService s = RInvoke.newBean(TestService.class);
  // 调用 echo
  s.echo("abc");
