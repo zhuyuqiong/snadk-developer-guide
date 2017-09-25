@@ -179,10 +179,7 @@ snsoft/res/vomapper/vomapper*.xml
  *@param T 目标VO
  */
 snsoft.dx.vo.convert.service.MapperService.mapper(F, T)
-
 ```
-
-
 
 ## Validation：VO校验
 
@@ -210,9 +207,35 @@ snsoft.dx.vo.validate.service.impl.ValidateServiceImpl
 snsoftx.test.adk.validation.ValidationTest
 ```
 
-e. JAXB：XML与Schema，VO与XML转换；
+## VO相关数据绑定
 
-f. Jackson：VO与JSON转换；
+VO的数据绑定目前平台实现了如下几种方式，对应功能都可以在**帮助中心-数据功能**中找到例子。
 
-g. Excel、DBF、TXT导入转换VO；
+### VO与XML转换
+
+使用JAXB进行转换，示例参考帮助中心。如下是简单的说明：
+
+```
+//解析xml的类
+org.springframework.oxm.jaxb.Jaxb2Marshaller
+//使用
+Jaxb2Marshaller marshaller = new Jaxb2Marshaller();
+		marshaller.setClassesToBeBound(SignatureType.class);
+		try (InputStream in = new ClassPathResource("snsoft/convert/vomapper_signature.xml").getInputStream())
+		{
+			Source source = new StreamSource(in);
+			signatureType = (SignatureType) marshaller.unmarshal(source);
+			System.out.println(signatureType);
+		}
+		DecMain decMainout = new DecMain();
+		mapperService.mapper(signatureType, decMainout);
+```
+
+### VO与JSON转换
+
+f. Jackson：
+
+### Excel、DBF、TXT导入转换VO
+
+
 
