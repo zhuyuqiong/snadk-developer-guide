@@ -50,6 +50,14 @@ comp.uiInvoke(pm, 6);
            public String echo(String text){...}
  }
  //3.客户端js中定义
+ @js.JSCode(remoteBean="SN.HELP.TestService")
+public interface TestService {
+	   public String echo(String text);
+}
+//4.客户端调用
+ TestService s = RInvoke.newBean(TestService.class);
+ // 调用 echo
+ s.echo("abc");
 ```
 
 b. FileSystemServlet：文件读写；
