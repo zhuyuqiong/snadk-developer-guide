@@ -256,12 +256,13 @@ Person p = mapper.readValue(json, Person.class);
 通过ReadDataSetFactory获得对应数据转换对象操作。如下是简单说明：
 
 ```
+//dbf
 ReadDataSetFactory.impl.newDbfReadDataSetImpl
+//txt
 ReadDataSetFactory.impl.newTxtReadDataSet
+//xls
 ReadDataSetFactory.impl.newXlsReadDataSet
 ```
-
-
 
 
 
