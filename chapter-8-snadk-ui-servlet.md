@@ -56,7 +56,6 @@ comp.uiInvoke(pm, 6);
 }
  //4.客户端调用
  TestService s = RInvoke.newBean(TestService.class);
- // 调用 echo
  s.echo("abc");
 ```
 
