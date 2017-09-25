@@ -18,14 +18,12 @@
 
 ```
 xjs.ui.util.ProgressParam p = new xjs.ui.util.ProgressParam();
-		p.title = "更新表 " + tblname + "(" + tblexpl + ") 结构";
-		p.options = 1;
-		p.runMethod = "createDatabase";
-		p.params = params;
-		mTbl.uiInvoke(p);
+p.title = "更新表 " + tblname + "(" + tblexpl + ") 结构";
+p.options = 1;
+p.runMethod = "createDatabase";
+p.params = params;
+mTbl.uiInvoke(p);
 ```
-
-
 
 b. FileSystemServlet：文件读写；
 
