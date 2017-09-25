@@ -35,10 +35,10 @@ private Date    bedate;
 @Table(name = "users")
 public class User extends BcodeVO
 {
-	@Id
-	@Column
-	private String				usercode;
-	...
+    @Id
+    @Column
+    private String    usercode;
+    ...
 }
 ```
 
