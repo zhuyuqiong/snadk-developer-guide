@@ -41,7 +41,7 @@ try (Database db = AppContext.getUserSession(true).newDatabaseByTable(String tab
     ...
     rollback rollback= false; 
 }finally{
-    db.commitTrans();
+    db.commitTrans(rollback);
 }
 ```
 
