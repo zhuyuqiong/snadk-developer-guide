@@ -220,15 +220,15 @@ VO的数据绑定目前平台实现了如下几种方式，对应功能都可以
 org.springframework.oxm.jaxb.Jaxb2Marshaller
 //使用
 Jaxb2Marshaller marshaller = new Jaxb2Marshaller();
-		marshaller.setClassesToBeBound(SignatureType.class);
-		try (InputStream in = new ClassPathResource("snsoft/convert/vomapper_signature.xml").getInputStream())
-		{
-			Source source = new StreamSource(in);
-			signatureType = (SignatureType) marshaller.unmarshal(source);
-			System.out.println(signatureType);
-		}
-		DecMain decMainout = new DecMain();
-		mapperService.mapper(signatureType, decMainout);
+marshaller.setClassesToBeBound(SignatureType.class);
+try (InputStream in = new ClassPathResource("snsoft/convert/vomapper_signature.xml").getInputStream())
+{
+      Source source = new StreamSource(in);
+            signatureType = (SignatureType) marshaller.unmarshal(source);
+            System.out.println(signatureType);
+        }
+        DecMain decMainout = new DecMain();
+        mapperService.mapper(signatureType, decMainout);
 ```
 
 ### VO与JSON转换
