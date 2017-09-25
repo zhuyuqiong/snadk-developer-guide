@@ -245,9 +245,9 @@ marshaller.marshal(signatureType, result);
 com.fasterxml.jackson.databind.ObjectMapper
 //绑定
 
-			ObjectMapper mapper = new ObjectMapper();
-			String json = mapper.writeValueAsString(signatureType);
-			System.out.println(json);
+ObjectMapper mapper = new ObjectMapper();
+String json = mapper.writeValueAsString(signatureType);
+
 ```
 
 ### Excel、DBF、TXT导入转换VO
