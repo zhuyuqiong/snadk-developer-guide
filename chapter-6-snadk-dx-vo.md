@@ -22,9 +22,9 @@ public class User extends BcodeVO
 
 ```
 @Column
-private int					wadmin;
+private int     wadmin;
 @Column
-private Date				bedate;
+private Date    bedate;
 ```
 
 iii. Id：主键
