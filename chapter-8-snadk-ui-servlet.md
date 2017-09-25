@@ -40,12 +40,12 @@ comp.uiInvoke(pm, 6);
 ```
 //1.服务端定义Service interface
  @Remotable//与方法注解选择其一
+ @SpringBean(name="SN.HELP.TestService",...)
  public interface snsoft.demo.service.TestService {
            @Remotable//与类注解选择其一
            public String echo(String text);
  }
  //2.服务端实现Service
- @SpringBean(name="SN.HELP.TestService",...)
  public class snsoft.demo.service.impl.TestServiceImpl implements  snsoft.demo.service.TestService{
            public String echo(String text){...}
  }
