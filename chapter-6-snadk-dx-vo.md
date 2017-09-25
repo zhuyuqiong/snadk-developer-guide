@@ -169,6 +169,21 @@ snsoft/res/vomapper/vomapper*.xml
 </mapper>
 ```
 
+### Mapper实现
+
+在程序中，我们可以使用`MapperService`来实现VO对象拷贝：
+
+```
+/**
+ *@param F 拷贝源VO
+ *@param T 目标VO
+ */
+snsoft.dx.vo.convert.service.MapperService.mapper(F, T)
+
+```
+
+
+
 ## Validation：VO校验
 
 VO校验采用Java标准Validation方案，在需要校验的Field上打上javax.validation.constraints 中注解。
