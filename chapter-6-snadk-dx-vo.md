@@ -54,38 +54,40 @@ public class User extends BcodeVO
 
 JoinColumn有若干属性需要关注：name 属性标识为目标表（子表）关系字段，referencedColumnName属性标识当前表（主表）关系字段。
 
+下面是一个表关系映射的的示例：
+
 ```
 @Table(name = "decmessage")
 public class DecMessage extends VO
 {
-	@Id
-	@Column
-	private String					id;//主键
-	@OneToMany
-	@JoinColumn(name = "refid", referencedColumnName = "id")
-	private List<DecContainerType>	decContainer;//一对多关系
-	@OneToOne
-	@JoinColumn(name = "id")
-	private DecSupplementListType	decSupplement;//一对一关系
-	...
+    @Id
+    @Column
+    private String                    id;//主键
+    @OneToMany
+    @JoinColumn(name = "refid", referencedColumnName = "id")
+    private List<DecContainerType>    decContainer;//一对多关系
+    @OneToOne
+    @JoinColumn(name = "id")
+    private DecSupplementListType    decSupplement;//一对一关系
+    ...
 }
 @Table(name = "deccontainer")
 public class DecContainerType
 {
-	@Id
-	@Column
-	protected String		id;//主键
-	@Column
-	protected String		refid;//拷贝主表字段
-	...
+    @Id
+    @Column
+    protected String        id;//主键
+    @Column
+    protected String        refid;//拷贝主表字段
+    ...
 }
 @Table(name = "decsupplement")
 public class DecSupplementListType
 {
-	@Id
-	@Column
-	protected String	id;//主键以及关系字段
-	...
+    @Id
+    @Column
+    protected String    id;//主键以及关系字段
+    ...
 }
 ```
 
