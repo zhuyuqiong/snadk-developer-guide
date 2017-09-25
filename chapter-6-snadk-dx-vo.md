@@ -6,7 +6,15 @@
 
 ## JPA注解
 
-i. Table：表名
+### @Table
+
+用于标注VO对象同数据库表的映射，`name`属性必须填写。
+
+```
+@Table(name = "users")
+public class User extends BcodeVO
+{...}
+```
 
 ii. Column：列
 
