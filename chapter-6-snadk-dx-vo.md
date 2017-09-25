@@ -243,11 +243,10 @@ marshaller.marshal(signatureType, result);
 ```
 #解析json的类
 com.fasterxml.jackson.databind.ObjectMapper
-//绑定
 
+//绑定
 ObjectMapper mapper = new ObjectMapper();
 String json = mapper.writeValueAsString(signatureType);
-
 ```
 
 ### Excel、DBF、TXT导入转换VO
