@@ -17,12 +17,16 @@
 该类型调用来自客户端使用Component中uiinvoke方法的远程请求，示例如下：
 
 ```
-xjs.ui.util.ProgressParam p = new xjs.ui.util.ProgressParam();
-p.title = "更新表 " + tblname + "(" + tblexpl + ") 结构";
-p.options = 1;
-p.runMethod = "createDatabase";
-p.params = params;
-mTbl.uiInvoke(p);
+#普通方式
+comp.uiInvoke("echo", "[ABC123]");
+#进度条方式
+ProgressParam pm = new ProgressParam();
+pm.title = "调用UI层RInvokeDemoUIListener方法progInvoke";
+pm.runMethod = "progInvoke";
+pm.options = 1 | 2;
+pm.onRunCall = new js.FunctionCall(this.$getAsFunction("onProgressReturn"), this);
+comp.uiInvoke(pm, 6);
+
 ```
 
 b. FileSystemServlet：文件读写；
