@@ -29,9 +29,20 @@ private Date    bedate;
 
 ### @Id
 
+标识列为表的主键。
 
+```
+@Table(name = "users")
+public class User extends BcodeVO
+{
+	@Id
+	@Column
+	private String				usercode;
+	...
+}
+```
 
-iv. OneToOne：一对一关系（扩展表）
+OneToOne：一对一关系（扩展表）
 
 v. OneToMany：一对多关系（子表）
 
