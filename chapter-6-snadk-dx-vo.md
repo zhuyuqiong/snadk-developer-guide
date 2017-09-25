@@ -253,5 +253,15 @@ Person p = mapper.readValue(json, Person.class);
 
 ### Excel、DBF、TXT导入转换VO
 
+通过ReadDataSetFactory获得对应数据转换对象操作。如下是简单说明：
+
+```
+ReadDataSetFactory.impl.newDbfReadDataSetImpl
+ReadDataSetFactory.impl.newTxtReadDataSet
+ReadDataSetFactory.impl.newXlsReadDataSet
+```
+
+
+
 
 
