@@ -27,7 +27,9 @@ private int     wadmin;
 private Date    bedate;
 ```
 
-iii. Id：主键
+### @Id
+
+
 
 iv. OneToOne：一对一关系（扩展表）
 
