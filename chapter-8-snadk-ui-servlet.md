@@ -24,9 +24,7 @@ ProgressParam pm = new ProgressParam();
 pm.title = "调用UI层RInvokeDemoUIListener方法progInvoke";
 pm.runMethod = "progInvoke";
 pm.options = 1 | 2;
-pm.onRunCall = new js.FunctionCall(this.$getAsFunction("onProgressReturn"), this);
 comp.uiInvoke(pm, 6);
-
 ```
 
 b. FileSystemServlet：文件读写；
