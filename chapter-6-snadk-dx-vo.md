@@ -218,7 +218,7 @@ VO的数据绑定目前平台实现了如下几种方式，对应功能都可以
 ```
 //解析xml的类
 org.springframework.oxm.jaxb.Jaxb2Marshaller
-//使用
+//绑定
 Jaxb2Marshaller marshaller = new Jaxb2Marshaller();
 marshaller.setClassesToBeBound(SignatureType.class);
 try (InputStream in = new ClassPathResource("snsoft/convert/vomapper_signature.xml").getInputStream())
@@ -229,6 +229,11 @@ try (InputStream in = new ClassPathResource("snsoft/convert/vomapper_signature.x
 }
 DecMain decMainout = new DecMain();
 mapperService.mapper(signatureType, decMainout);
+//解绑
+Jaxb2Marshaller marshaller = new Jaxb2Marshaller();
+marshaller.setClassesToBeBound(SignatureType.class);
+Result result = new StreamResult(System.out);
+marshaller.marshal(signatureType, result);
 ```
 
 ### VO与JSON转换
