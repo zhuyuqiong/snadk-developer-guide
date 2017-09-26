@@ -70,6 +70,11 @@ DBUtils.trans("bcode", db -> {
     list.forEach(btype -> createRootBcode(bname, btype.getBtype());
     return true;
 });
+//以下是例子
+DBUtils.trans("bcode", db -> {
+    list.forEach(btype -> createRootBcode(bname, btype.getBtype());
+    return true;
+});
 ```
 
 对读数据源操作的方法：
