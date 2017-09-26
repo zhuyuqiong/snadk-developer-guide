@@ -58,9 +58,9 @@ try (Database db = AppContext.getUserSession(true).newDatabaseByTable(String tab
 
 ```
 //按表获取db执行逻辑
-snsoft.dx.DBUtils.trans(String table, Function<Database,T> function)
+snsoft.dx.DBUtils.trans(String table, Function<Database,T> function);
 //按数据源获取db执行逻辑
-snsoft.dx.DBUtils.transForDataSource(String dataSource, Function<Database,T> function)
+snsoft.dx.DBUtils.transForDataSource(String dataSource, Function<Database,T> function);
 
 //以下是例子
 DBUtils.trans("bcode", db -> {
@@ -73,7 +73,7 @@ DBUtils.trans("bcode", db -> {
 
 ```
 //按表获取只读db执行逻辑
-snsoft.dx.DBUtils.read(String table, Function<Database,T> function)
+snsoft.dx.DBUtils.read(String table, Function<Database,T> function);
 ```
 
 ## 事务
