@@ -68,6 +68,8 @@ snsoft.dx.DefaultDAO#saveRecord
 
 * **多DAO存储时，需要在最外层Service启用事务**
 
+通过UserSession获取db后启用事务，在DAO实现中，会从UserSession中获取同一个db实例。
+
 ## DefaultDAO
 
 该类是VO的CRUD方法，是非线程安全的，因此注意不要使用注入的方式使用。
