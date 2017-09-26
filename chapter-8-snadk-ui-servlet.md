@@ -41,7 +41,7 @@ public class RInvokeDemoUIListener extends snsoft.ui.DefaultUIListener
     static public String progInvoke(UIEvent event,int count)
     {
         UserSession userSession = UserSession.factory.getUserSession();
-        Progress progress = userSession.getRunProgress();                    //服务端进度条
+        Progress progress = userSession.getRunProgress();                    //服务端进度条！！
         System.out.println("调用RInvokeDemoUIListener.progInvoke。。。。");
         progress.setProgressTitle("TestUIInvoke.progInvoke。。。。", null);
         for(int i=0;i<count;i++)
