@@ -52,7 +52,9 @@ try (Database db = AppContext.getUserSession(true).newDatabaseByTable(String tab
 
 ## FunctionalInterface封装
 
-通过Java 1.8新的lambda表达式特性，我们对Database的使用进行了封装，向应用层开发屏蔽了获取Database对象、事务管理等实现。在应用层只需要关系我拿Database可以做什么，不需要关系获取的方式以及事务管理。
+通过Java 1.8新的lambda表达式特性，我们对Database的使用进行了封装，向应用层开发屏蔽了获取Database对象、事务管理等实现。在应用层只需要关系我拿Database可以做什么，不需要关心获取的方式以及事务管理。
+
+
 
 ## 事务
 
