@@ -89,6 +89,27 @@ public class RInvokeDemoUIListener extends snsoft.ui.DefaultUIListener
 
 改类型使用标准方法如下：
 
+```
+//1.服务端静态方法
+@Remoteable
+public static java.util.Map<String,Object> echo(java.util.Map<String,Object> params)
+{
+    ...
+}
+@Remoteable
+static public String progInvoke(int count)
+{
+	UserSession userSession = UserSession.factory.getUserSession();
+	Progress progress = userSession.getRunProgress();
+}
+//2.客户端调用
+String retVal = (String) RInvoke.rmInvoke("snsoft.ui.test.Test.echo", $o("x", 100, "y", 200));
+//3.进度条方式
+ProgressParam pm = new ProgressParam();
+pm.runMethod = "snsoft.ui.test.Test.progInvoke";
+RInvoke.rmInvoke(pm, 5);
+```
+
 b. FileSystemServlet：文件读写；
 
 i. DxFileSystem
