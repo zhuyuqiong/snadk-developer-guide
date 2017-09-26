@@ -14,6 +14,8 @@
 
 本章节仅对几种调用方法做简单介绍，实际应用中，调用方式可以更加灵活。更详细的规范需参见**帮助中心-远程方法调用**菜单的示例。
 
+关于进度条方式的调用，从以下例子就可以看出，它的服务端方法定义与普通方式一致，仅仅在客户端调用时声明是进度条类型即可。服务端Progress对象可以从UserSession声明进度条有两种方式
+
 ### UI\_INVOKE
 
 客户端请求使用底层实现标准方法可以在`snsoft.ui.UIInvoke`中查看。
@@ -99,8 +101,8 @@ public static java.util.Map<String,Object> echo(java.util.Map<String,Object> par
 @Remoteable
 static public String progInvoke(int count)
 {
-	UserSession userSession = UserSession.factory.getUserSession();
-	Progress progress = userSession.getRunProgress();
+    UserSession userSession = UserSession.factory.getUserSession();
+    Progress progress = userSession.getRunProgress();
 }
 //2.客户端调用
 String retVal = (String) RInvoke.rmInvoke("snsoft.ui.test.Test.echo", $o("x", 100, "y", 200));

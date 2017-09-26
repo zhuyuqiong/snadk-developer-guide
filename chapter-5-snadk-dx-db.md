@@ -35,13 +35,16 @@ try (Database db = AppContext.getUserSession(true).newDatabaseByTable(String tab
 ```java
 import snsoft.dx.Database;
 #创建db
-boolean rollback = true;
-try (Database db = AppContext.getUserSession(true).newDatabaseByTable(String table, boolean checkNull)){
+try (Database db = AppContext.getUserSession(true).newDatabaseByTable(String table, boolean checkNull))
+{
     db.beginTrans();
-    ...
-    rollback rollback= false; 
-}finally{
-    db.commitTrans(rollback);
+    boolean rollback = true;
+    try{
+        ...
+        rollback= false; 
+    } finally {
+        db.commitTrans(rollback);
+    }
 }
 ```
 
