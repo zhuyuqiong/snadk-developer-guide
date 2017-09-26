@@ -63,6 +63,9 @@ snsoft.dx.DBUtils.trans(String table, Consumer<Database> function);
 
 //按数据源获取db执行逻辑
 snsoft.dx.DBUtils.transForDataSource(String dataSource, Function<Database,T> function);
+snsoft.dx.DBUtils.transForDataSource(String dataSource, Consumer<Database> function);
+
+
 
 //以下是例子
 DBUtils.trans("bcode", db -> {
