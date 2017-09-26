@@ -73,7 +73,6 @@ DBUtils.trans("bcode", db -> {
 //以下是例子
 DBUtils.trans("bcode", db -> {
     list.forEach(btype -> createRootBcode(bname, btype.getBtype());
-    return true;
 });
 ```
 
