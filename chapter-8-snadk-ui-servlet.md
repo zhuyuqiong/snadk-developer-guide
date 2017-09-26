@@ -37,7 +37,7 @@ comp.uiInvoke(pm, 6);
 #服务端UI监听
 public class RInvokeDemoUIListener extends snsoft.ui.DefaultUIListener 
 {
-    public static String echo(UIEvent event,String value)
+    public String echo(UIEvent event,String value)
     {
         return "RInvokeDemoUIListener.echo:"+value;
     }
