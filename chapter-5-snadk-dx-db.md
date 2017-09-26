@@ -59,6 +59,8 @@ try (Database db = AppContext.getUserSession(true).newDatabaseByTable(String tab
 ```
 //按表获取db执行逻辑
 snsoft.dx.DBUtils.trans(String table, Function<Database,T> function);
+snsoft.dx.DBUtils.trans(String table, Consumer<Database,T> function);
+
 //按数据源获取db执行逻辑
 snsoft.dx.DBUtils.transForDataSource(String dataSource, Function<Database,T> function);
 
