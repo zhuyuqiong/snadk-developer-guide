@@ -29,11 +29,35 @@ pm.title = "调用UI层RInvokeDemoUIListener方法progInvoke";
 pm.runMethod = "progInvoke";
 pm.options = 1 | 2;
 comp.uiInvoke(pm, 6);
+
+#服务端UI监听
+public class RInvokeDemoUIListener extends snsoft.ui.DefaultUIListener 
+{
+	public static String echo(UIEvent event,String value)
+	{
+		return "RInvokeDemoUIListener.echo:"+value;
+	}
+	
+	static public String progInvoke(UIEvent event,int count)
+	{
+		UserSession userSession = UserSession.factory.getUserSession();
+		Progress progress = userSession.getRunProgress();//服务端进度条
+		System.out.println("调用RInvokeDemoUIListener.progInvoke。。。。");
+		progress.setProgressTitle("TestUIInvoke.progInvoke。。。。", null);
+		for(int i=0;i<count;i++)
+		{
+			progress.addProgressMessage("Step "+i);
+			progress.setProgress("setp-"+i, i+1, count);
+			try { Thread.sleep(500);} catch( Throwable ex){}
+		}
+		return "RInvokeDemoUIListener.progInvoke:count="+count;
+	}
+}
 ```
 
 ### SV\_INVOKE
 
-此类型是服务组件方法调用，该类型是目前推广使用的远程请求方式。
+此类型是服务组件方法调用，该类型是目前推广使用的远程请求方式。这种调用方式将客户端调用和服务端Service的绑定定义在客户端Service上。这样就实现一处修改，处处生效的效果。
 
 该类型使用的标准方式如下：
 
@@ -58,6 +82,14 @@ comp.uiInvoke(pm, 6);
  TestService s = RInvoke.newBean(TestService.class);
  s.echo("abc");
 ```
+
+### ST\_INVOKE
+
+远程静态方法调用，该类型调用不推荐开发使用。因其需要按字符串方式声明调用方法的全路径，导致后期修改以及阅读维护代码十分困难。
+
+改类型使用标准方法如下：
+
+
 
 b. FileSystemServlet：文件读写；
 
