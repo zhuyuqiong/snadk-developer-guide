@@ -64,8 +64,8 @@ snsoft.dx.DBUtils.transForDataSource(String dataSource, Function<Database,T> fun
 
 //以下是例子
 DBUtils.trans("bcode", db -> {
-	list.forEach(btype -> createRootBcode(bname, btype.getBtype());
-	return null;
+    list.forEach(btype -> createRootBcode(bname, btype.getBtype());
+    return true;
 });
 ```
 
@@ -74,7 +74,6 @@ DBUtils.trans("bcode", db -> {
 ```
 //按表获取只读db执行逻辑
 snsoft.dx.DBUtils.read(String table, Function<Database,T> function)
-
 ```
 
 ## 事务
