@@ -50,7 +50,13 @@ try (Database db = AppContext.getUserSession(true).newDatabaseByTable(String tab
 }
 ```
 
+## FunctionalInterface封装
+
+通过Java 1.8新的lambda表达式特性，我们对Database的使用进行了封装，向应用层开发屏蔽了获取Database对象、事务管理等实现。在应用层只需要关系我拿Database可以做什么，不需要关系获取的方式以及事务管理。
+
 ## 事务
+
+从上一节我们已经了解到使用Database对象进行数据库操作时，事务已交由平台底层实现。而数据库存取还有一种方式，就是使用DAO存取，这种方式在应用层可能会出现，使用时的事务就尤为需要注意。
 
 * **单DAO存储时，不需要启用事务，程序自动处理**
 
