@@ -61,11 +61,21 @@ try (Database db = AppContext.getUserSession(true).newDatabaseByTable(String tab
 snsoft.dx.DBUtils.trans(String table, Function<Database,T> function)
 //按数据源获取db执行逻辑
 snsoft.dx.DBUtils.transForDataSource(String dataSource, Function<Database,T> function)
-//按表获取只读db执行逻辑
-snsoft.dx.DBUtils.read(String table, Function<Database,T> function)
+
+//以下是例子
+DBUtils.trans("bcode", db -> {
+	list.forEach(btype -> createRootBcode(bname, btype.getBtype());
+	return null;
+});
 ```
 
 对读数据源操作的方法：
+
+```
+//按表获取只读db执行逻辑
+snsoft.dx.DBUtils.read(String table, Function<Database,T> function)
+
+```
 
 ## 事务
 
