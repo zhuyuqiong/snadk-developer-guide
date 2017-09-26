@@ -80,7 +80,7 @@ DBUtils.trans("bcode", db -> {
 
 ```
 //按表获取只读db执行逻辑
-snsoft.dx.DBUtils.read(String table, Function<Database,T> function);
+snsoft.dx.DBUtils.read(String table, Function<Database,T> function);//read必须有返回值
 ```
 
 ## 事务
