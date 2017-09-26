@@ -16,7 +16,7 @@
 
 关于进度条方式的调用，从以下例子就可以看出，它的服务端方法定义与普通方式一致，仅仅在客户端调用时声明是进度条类型即可。服务端Progress对象可以从UserSession中获取。
 
-而在客户端，声明进度条有两种方式，一种是在远程调用时方法显式声明进度条对象，并且在方法参数列表加入进度条。另一种是在调用的客户端Service方法上加上注解@JSCode\(progressMode=true\)，这种不需要在参数列表中声明进度条对象。
+而在客户端，声明进度条有两种方式，一种是在远程调用时方法显式声明进度条对象，并且在方法参数列表加入进度条。另一种是在调用的客户端Service方法上加上注解`@JSCode(progressMode=true)`，这种不需要在参数列表中声明进度条对象。
 
 ### UI\_INVOKE
 
@@ -113,6 +113,10 @@ ProgressParam pm = new ProgressParam();
 pm.runMethod = "snsoft.ui.test.Test.progInvoke";
 RInvoke.rmInvoke(pm, 5);
 ```
+
+### FLOW\_INVOKE
+
+### WS\_INVOKE
 
 b. FileSystemServlet：文件读写；
 
