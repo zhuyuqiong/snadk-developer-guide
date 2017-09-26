@@ -4,9 +4,11 @@
 
 ## Database的使用原则
 
+本节的目的是强调Database的使用原则，主要是为了向各位同学介绍底层实现，因此如下代码片段都是底层实现方式。在应用层，我们按照FunctionalInterface有更好的封装。
+
 * **谁new谁关闭**
 
-在程序中原有的写法如下：
+在程序中的写法如下：
 
 ```java
 import snsoft.dx.Database;
