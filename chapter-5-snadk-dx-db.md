@@ -6,7 +6,7 @@
 
 * **谁new谁关闭**
 
-在程序中要求的写法如下：
+在程序中原有的写法如下：
 
 ```java
 import snsoft.dx.Database;
