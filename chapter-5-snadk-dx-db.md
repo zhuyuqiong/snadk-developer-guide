@@ -65,8 +65,6 @@ snsoft.dx.DBUtils.trans(String table, Consumer<Database> function);
 snsoft.dx.DBUtils.transForDataSource(String dataSource, Function<Database,T> function);
 snsoft.dx.DBUtils.transForDataSource(String dataSource, Consumer<Database> function);
 
-
-
 //以下是例子
 DBUtils.trans("bcode", db -> {
     list.forEach(btype -> createRootBcode(bname, btype.getBtype());
