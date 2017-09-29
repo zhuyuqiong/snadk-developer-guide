@@ -19,7 +19,7 @@ CodeData定义分为文件和数据库两部分：
 
 ？？补充元素以及属性的含义表格
 
-### &lt;column&gt; 
+### &lt;column&gt;
 
 配置码名映射的列。该元素仅仅用于CodeData码名映射，或者一些简单码表的辅助录入列。
 
@@ -63,23 +63,19 @@ snsoft.ui.aid.service.impl.AidInfoServiceImpl
 常见的使用方式如下：
 
 ```
-			AidInfoParam param = new AidInfoParam(codeid, null);
-			AidInfo aidInfo = AidInfo.createAidInfo(param);
-			if (aidInfo.aidInputer != null)
-			{
-				c.setAidInputer(aidInfo.aidInputer);
-			}
-			if (aidInfo.selectOptions != null)
-			{
-				c.setSelectOptions(aidInfo.toCodeData());
-			}
+AidInfoParam param = new AidInfoParam("#00.users", null);
+AidInfo aidInfo = AidInfo.createAidInfo(param);
+if (aidInfo.aidInputer != null)//此时判断是弹出辅助录入
+{
+    c.setAidInputer(aidInfo.aidInputer);
+}
+if (aidInfo.selectOptions != null)//或者是下拉选择
+{
+    c.setSelectOptions(aidInfo.toCodeData());
+}
 ```
 
-i. AidInfoService；
 
-ii. AidInfo；
-
-iii. AidInfoParam；
 
 e. 相关接口：参见类图；
 
@@ -96,6 +92,4 @@ service:服务组件
 ```
 
 i. 字典；
-
-
 
