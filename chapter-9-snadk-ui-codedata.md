@@ -40,10 +40,10 @@ CodeData定义分为文件和数据库两部分：
 #一个改写辅助录入属性的例子
 if( e.item.name=="gcode" )
 {    
-xjs.ui.util.SelectCodeDialog select = (SelectCodeDialog)((xjs.ui.InputField)e.item).aidInputer;
-CodeData codeData = select.codeData;
-// CodeData codeData = (CodeData)e.item.selectOptions;//aidInputer中没有时，需要这样取codedata          
-codeData.setLoadParameter("dclass", dclass);
+    xjs.ui.util.SelectCodeDialog select = (SelectCodeDialog)((xjs.ui.InputField)e.item).aidInputer;
+    CodeData codeData = select.codeData;
+    // CodeData codeData = (CodeData)e.item.selectOptions;//aidInputer中没有时，需要这样取codedata          
+    codeData.setLoadParameter("dclass", dclass);
 }
 ```
 
