@@ -38,22 +38,22 @@ CodeData定义分为文件和数据库两部分：
 
 ```
 #一个改写辅助录入属性的例子
-		if( e.item.name=="gcode" )
-		{	
-			String dclass = (String)dialog.getItemValue("dclass");
-			int p = dclass==null?-1:dclass.indexOf(':');
-			if( p>=0 ) dclass = dclass.substring(0,p);
-			String ieflag = (String)dialog.getItemValue("ieflag");
-			 p = ieflag==null?-1:ieflag.indexOf(':');
-			if( p>=0 ) ieflag = ieflag.substring(0,p);
-			//if( )
-			xjs.ui.util.SelectCodeDialog select = (SelectCodeDialog)((xjs.ui.InputField)item).aidInputer;
-			CodeData codeData = select.codeData;
-			// CodeData codeData = (CodeData)e.item.selectOptions;
-window.xconsole.log("itemAidInputing:dclass="+dclass+",ieflag="+ieflag);			
-			codeData.setLoadParameter("dclass", dclass);
-			codeData.setLoadParameter("ieflag", ieflag);
-		}
+if( e.item.name=="gcode" )
+{    
+String dclass = (String)dialog.getItemValue("dclass");
+            int p = dclass==null?-1:dclass.indexOf(':');
+            if( p>=0 ) dclass = dclass.substring(0,p);
+            String ieflag = (String)dialog.getItemValue("ieflag");
+             p = ieflag==null?-1:ieflag.indexOf(':');
+            if( p>=0 ) ieflag = ieflag.substring(0,p);
+            //if( )
+            xjs.ui.util.SelectCodeDialog select = (SelectCodeDialog)((xjs.ui.InputField)item).aidInputer;
+            CodeData codeData = select.codeData;
+            // CodeData codeData = (CodeData)e.item.selectOptions;
+window.xconsole.log("itemAidInputing:dclass="+dclass+",ieflag="+ieflag);            
+            codeData.setLoadParameter("dclass", dclass);
+            codeData.setLoadParameter("ieflag", ieflag);
+        }
 ```
 
 在itemAdiInputing事件中我们可以改写辅助录入的属性，甚至使用动态码表章节介绍的功能设置Column使用动态获取的辅助录入。
