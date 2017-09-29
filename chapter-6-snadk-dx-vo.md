@@ -222,7 +222,7 @@ VO的数据绑定目前平台实现了如下几种方式，对应功能都可以
 org.springframework.oxm.jaxb.Jaxb2Marshaller
 //解绑
 Jaxb2Marshaller marshaller = new Jaxb2Marshaller();
-marshaller.setClassesToBeBound(SignatureType.class);
+marshaller.setMappedClass(SignatureType.class);
 try (InputStream in = new ClassPathResource("snsoft/convert/vomapper_signature.xml").getInputStream())
 {
       Source source = new StreamSource(in);
