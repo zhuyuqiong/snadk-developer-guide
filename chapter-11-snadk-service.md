@@ -4,11 +4,19 @@
 声明一个Service组件都通过注解实现，目前平台提供了两个注解：
     1. SpringBean
     2. org.springframework.stereotype.Service
+### SpringBean
+当一个Service需要对外暴露时使用SpringBean注解，打了该注解的Service接口对应实现会通过dubbo对外发布，在调用方调用时随机选取服务提供方。
+该注解打在interface上。
+### spring.Service
+当一个Service不需要对外暴露，仅仅在用于本地服务调用时使用Service注解。
+该注解打在实现上。
 
+## DAO层
+DAO层也需要使用注解来标记服务组件，平台提供Repository注解实现DAO层的Bean注入。
 
-a. 暴露服务：SpringBean注解（在接口上）；
-
-b. 普通服务：spring.Service注解（在实现上），DAO层使用spring.Repository；
+```
+org.springframework.stereotype.Repository
+```
 
 c. 远程服务：Remoteable注解（接口类或接口方法上）
 
