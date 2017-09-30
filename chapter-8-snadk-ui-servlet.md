@@ -96,7 +96,7 @@ public class RInvokeDemoUIListener extends snsoft.ui.DefaultUIListener
 
 远程静态方法调用，该类型调用不推荐开发使用。因其需要按字符串方式声明调用方法的全路径，导致后期修改以及阅读维护代码十分困难。
 
-改类型使用标准方法如下：
+该类型使用标准方法如下：
 
 ```
 //1.服务端静态方法
