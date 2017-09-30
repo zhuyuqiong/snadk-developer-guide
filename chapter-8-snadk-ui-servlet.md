@@ -124,11 +124,45 @@ RInvoke.rmInvoke(pm, 5);
 
 ## FileSystemServlet
 
-文件读写。
+该Servlet是文件读写相关的Servlet。根据文件存储方式，目前系统支持如下几种文件系统：
 
-* DxFileSystem
-* FtpFileSystem
-* LocalFileSystem
+* DxFileSystem：数据库存储
+* FtpFileSystem：Ftp存储
+* LocalFileSystem：本地存储。
+
+在Servlet中根据系统选项中设置的方式来决定启用哪种文件系统。
+
+**DX**
+
+```
+格式：dx://wsp:table:KeyColumn1.KeyColumn2..FileNameColumn:SizeColumn:TimeColumn:valueColumn
+例子：dx://N9TEST:tmpfiledata:kid.filenm:datasize:filedate:filedata
+```
+
+**Ftp**
+
+```
+格式：ftp://user:password@host:port or sftp://...
+例子：
+ftp://snsoftftp:snftp.2009@219.239.133.249:21
+或
+sftp://
+```
+
+**Local**
+
+```
+格式：file:///path or file:/path
+例子：
+file:///D:/snsoftn7 
+file:/d:/snsoft80/
+```
+
+以上关于路径的解析可以参见`snsoft.file.service.impl.FileSystemFactoryImpl.newFileSystem`
+
+其它还有DxrFileSystem，ZipFileSystem有兴趣的同学可以自己研究。
+
+
 
 
 
