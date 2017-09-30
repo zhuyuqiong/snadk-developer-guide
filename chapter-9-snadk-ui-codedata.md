@@ -144,24 +144,25 @@ i. 主界面：供服务端数据加载时获取名称使用？？
 
 ii. 客户端：供动态录入时获取名称使用？？
 
-配置文件/数据库定义的码表：
+配置文件/数据库定义的**码表**：
 
 ```
 #00.users
 ```
 
-配置字典，以CMC.STATUS字典为例：
+配置**字典**，以CMC.STATUS字典为例：
 
 ```
 #DT_CMC.STATUS
 ```
 
-当数据源非数据库表时，我们往往需要在服务端提供静态方法或Service来返回码表数据，此时界面配置方式为：
+当数据源非数据库表时，我们往往需要在服务端提供静态方法或Service来返回二维数组作为码表数据，此时界面配置方式为：
 
 ```
 //codedata中
-jmethod:服务端静态方法
-service:服务组件.方法
+jmethod:服务端静态方法，配置方法全路径
+service:服务组件方法，例如 SN-CMC.QueryCacheService.listCachServer
+//listCachServer方法可以无参，也可以有一个Map参数
 ```
 
 
