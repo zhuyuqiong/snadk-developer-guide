@@ -29,7 +29,7 @@
 * [FileResource](chapter-13-fileresource.md)
 * [SNADK-DX-DB](chapter-5-snadk-dx-db.md)
 * [Bas Service](chapter-14-bas-service.md)
-* [SNADK-UI-Print](chapter-10-snadk-ui-print.md)
+* [Cache](chapter-15-cache.md)
 * [UnitTest](chapter-16-unittest.md)
 * [JavaConfig](chapter-17-javaconfig.md)
 * [SSO](chapter-18-sso.md)
