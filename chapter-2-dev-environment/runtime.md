@@ -35,10 +35,10 @@ VM options: -DSN.ID=SN-HostUI
 boot-service Run/Debug 配置
 
 ```
-Name: Boot-UI
+Name: Boot-Service
 Main Class: snsoftboot.BootLaunch
 Project: boot-run-service
-VM options: -DSN.ID=SN-HostTom
+VM options: -DSN.ID=SN-HostService
             -Ddubbo.protocol.port=20881
 ```
 
