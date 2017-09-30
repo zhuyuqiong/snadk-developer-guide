@@ -12,8 +12,8 @@
 该注解打在实现上。
 
 ## DAO层
-DAO层也需要使用注解来标记服务组件，平台提供Repository注解实现DAO层的Bean注入。
-
+DAO层也需要使用注解来标记服务组件，平台提供spring.Repository注解实现DAO层的Bean注入。
+该注解打在DAO实现上。
 ```
 org.springframework.stereotype.Repository
 ```
