@@ -19,7 +19,6 @@
 ## SNADK
 
 * [Architecture](architecture.md)
-* [SNADK-DX-DB](chapter-5-snadk-dx-db.md)
 * [SNADK-DX-VO](chapter-6-snadk-dx-vo.md)
 * [SNADK-UI-View](chapter-7-snadk-ui-view.md)
 * [SNADK-UI-CodeData](chapter-9-snadk-ui-codedata.md)
@@ -28,6 +27,7 @@
 * [SNADK-Service](chapter-11-snadk-service.md)
 * [SNADK-SpringBean](chapter-12-snadk-service-springbean.md)
 * [FileResource](chapter-13-fileresource.md)
+* [SNADK-DX-DB](chapter-5-snadk-dx-db.md)
 * [Bas Service](chapter-14-bas-service.md)
 * [SNADK-UI-Print](chapter-10-snadk-ui-print.md)
 * [UnitTest](chapter-16-unittest.md)
