@@ -17,7 +17,13 @@ CodeData定义分为文件和数据库两部分：
 
 同所有xml格式定义一样，CodeData的定义也有其约束文件：CodeData.xsd。其中定义了xml文件中可用的元素以及其属性，开发在配置CodeData时，请严格按照约束配置。否则解析xml文件时，xsd校验是无法通过的。
 
-？？补充元素以及属性的含义表格
+### &lt;codedata-list&gt;
+
+码表定义根节点，只包含&lt;codedata&gt;一个元素。
+
+### &lt;codedata&gt;
+
+该节点即为码表节点，包含&lt;column&gt;一个元素。常用的属性为id以及table。其它属性可参见CodeData.xsd中codedataType定义相关内容。
 
 ### &lt;column&gt;
 
