@@ -68,7 +68,7 @@ public class RInvokeDemoUIListener extends snsoft.ui.DefaultUIListener
 ```
  //1.服务端定义Service interface
  @Remotable//与方法注解选择其一
- @SpringBean(name="SN.HELP.TestService"
+ @SpringBean(name="SN.HELP.TestService")
  public interface snsoft.demo.service.TestService {
            @Remotable//与类注解选择其一
            public String echo(String text);
