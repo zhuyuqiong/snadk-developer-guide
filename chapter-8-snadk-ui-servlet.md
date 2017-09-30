@@ -68,7 +68,7 @@ public class RInvokeDemoUIListener extends snsoft.ui.DefaultUIListener
 ```
  //1.服务端定义Service interface
  @Remotable//与方法注解选择其一
- @SpringBean(name="SN.HELP.TestService",...)
+ @SpringBean(name="SN.HELP.TestService"
  public interface snsoft.demo.service.TestService {
            @Remotable//与类注解选择其一
            public String echo(String text);
@@ -161,8 +161,4 @@ file:/d:/snsoft80/
 以上关于路径的解析可以参见`snsoft.file.service.impl.FileSystemFactoryImpl.newFileSystem`
 
 其它还有DxrFileSystem，ZipFileSystem有兴趣的同学可以自己研究。
-
-
-
-
 
