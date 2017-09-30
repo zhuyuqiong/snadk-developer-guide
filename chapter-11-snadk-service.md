@@ -27,15 +27,24 @@ DAO层也需要使用注解来标记服务组件，平台提供spring.Repository
 org.springframework.stereotype.Repository
 ```
 
-c. 远程服务：Remoteable注解（接口类或接口方法上）
+## 远程服务
 
-d. 注入：
+针对客户端调用服务端的远程调用服务，不仅要注解Service，平台还提供Remoteable注解实现。
 
-i. 自动类型匹配：AutoWired；
+该注解打在接口或接口方法上。
 
-ii. 指定名称：Resource；
+## Bean注入
 
-iii. 动态获取：SpringBeanUtil.getBeanByName\\(\\)（底层有些服务提供factory或impl可以直接使用）；
+**Bean自动注入**可以使用Spring标准注入方式：
 
-a. 默认的接口DataAccessService\(DefaultDataAccessService\)（仅供参考）；
+* 自动类型匹配：AutoWired
+* 指定名称：Resource
+
+建议注入第三方Bean时可以使用AutoWired，而注入业务层Bean时，都按照Resource指定名称的方式实现。
+
+**Bean动态获取**
+
+有时我们会遇到某些Bean不能自动注入的情况，此时可以通过`SpringBeanUtil.getBeanByName`方式按照名字获取Bean。
+
+而底层有些服务在interface中提供了factory或impl，可以直接使用，不需要注入Bean。
 
