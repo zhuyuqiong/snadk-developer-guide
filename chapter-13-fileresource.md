@@ -16,7 +16,8 @@ iv. XSD发布；
 
 d. 菜单：Menu\\*.xml
 
-e. 建表文件：CreateDatabase\\*.xml
+e. 建表文件：CreateDatabase\*.xml
+CreateView\*.xml
 
 f. 系统选项
 
