@@ -1,8 +1,8 @@
 # FileResource
 
-a. ResBundle\\*\\[\\_lang\\].properties
+a. ResBundle\*\[\_lang\].properties
 
-b. ValidationMessage\\[\\_lang\\].inf
+b. ValidationMessage\[\_lang\].inf
 
 c. Schema
 
@@ -14,14 +14,14 @@ iii. XML；
 
 iv. XSD发布；
 
-d. 菜单：Menu\\*.xml
+d. 菜单：Menu\*.xml
 
 e. 建表文件：CreateDatabase\*.xml
 CreateView\*.xml
 
 f. 系统选项
 
-g. 系统号及系统模块配置：AppConfig\\*.xml
+g. 系统号及系统模块配置：AppConfig\*.xml
 
-h. 系统功能配置：AppFunc\\*.xml
+h. 系统功能配置：AppFunc\*.xml
 
