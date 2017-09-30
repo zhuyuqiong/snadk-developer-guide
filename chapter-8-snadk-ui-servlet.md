@@ -87,6 +87,11 @@ public class RInvokeDemoUIListener extends snsoft.ui.DefaultUIListener
  s.echo("abc");
 ```
 
+从上面的例子可以看到：
+
+* Remotable注解可以放在interface上或者interface方法上，放在interface上时，作用域为接口的所有方法。
+* 服务注册注解可以使用SpringBean或org.springframework.stereotype.Service。SpringBean注解打在interface上，是暴露服务的方式，调用时随机选取服务提供方。Service注解打在实现类上，调用时只会调用UI层本地实现。
+
 ### ST\_INVOKE
 
 远程静态方法调用，该类型调用不推荐开发使用。因其需要按字符串方式声明调用方法的全路径，导致后期修改以及阅读维护代码十分困难。
