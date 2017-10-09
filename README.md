@@ -9,7 +9,7 @@
 ### Licensing
 
 This book is licensed under the Apache License, Version 2.0. See [LICENSE](LICENSE) for the full license text.
- {{book.snhost}}
+ {%{book.snhost}%}
 [abc](http://{{book.snhost}})
 ---
 
