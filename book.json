@@ -1,6 +1,6 @@
 {
     "author":"zhuyuqiong",
-    variables:{
+    "variables":{
         snhost:"www.snsoft.com.cn"
     },
     "plugins": [
