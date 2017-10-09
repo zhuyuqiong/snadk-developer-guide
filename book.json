@@ -1,7 +1,7 @@
 {
     "author":"zhuyuqiong",
     "variables":{
-        "snhost":"www.snsoft.com.cn"
+        snhost:"www.snsoft.com.cn"
     },
     "plugins": [
         "github",
