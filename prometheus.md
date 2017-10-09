@@ -1,4 +1,4 @@
-{{book.snhost}}  1
+{{book.snhost}}  
 
 [abc](http://{{book.snhost}})
 
