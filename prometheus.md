@@ -1,4 +1,4 @@
 {{book.snhost}}  
 
-[abc](http://{{book.snhost}})
+[guide](http://{{book.snhost}})
 
