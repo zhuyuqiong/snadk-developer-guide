@@ -1,4 +1,4 @@
-{{book.snhost}}  1
+{{readme.path}}  1
 
 [abc](http://{{book.snhost}})
 
